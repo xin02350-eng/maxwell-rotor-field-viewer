@@ -68,7 +68,7 @@ python research/build_website.py --mesh research/rotor_surface_mesh.npz --output
 
 生成器从 `work/rotor_dataset.npz` 和 `work/predictions.npz` 读取真值与留出预测。界面模板、加载逻辑和样式均在 `research/` 内；修改后运行上面的命令即可更新网站。
 
-数据与源码检查见[独立审核记录](research/website_review.md)和[数据核对结果](research/website_data_audit.json)。
+数据与源码检查见[独立审核记录](research/website_review.md)和[数据核对结果](research/website_data_audit.json)。桌面、手机与公网交互实测见[浏览器验收记录](research/website_qa.md)，发布文件比对见[公网文件核对](research/website_live_audit.json)。导出内容已验证；自动化浏览器最终保存到磁盘的步骤未通过，报告中保留了此项限制。
 
 ## 发布
 

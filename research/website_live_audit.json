@@ -1,0 +1,492 @@
+{
+  "site_url": "https://xin02350-eng.github.io/maxwell-rotor-field-viewer/",
+  "commit": "bd509a3e81f1890ef478a68d66669a96a55f5a88",
+  "checked_utc": "2026-10-03T14:21:16Z",
+  "files_checked": 69,
+  "all_passed": true,
+  "results": [
+    {
+      "path": "README.md",
+      "http": 200,
+      "bytes": 4305,
+      "matches_local": true,
+      "sha256": "e491438ff89d2c9289a12dd424e01aa53c39abfd7a49c892fd1c63e541fa54dc"
+    },
+    {
+      "path": "assets/loading-preview.png",
+      "http": 200,
+      "bytes": 334597,
+      "matches_local": true,
+      "sha256": "3898deffd57e2ece5e1ec0acce76754d71adca896651a858302e539be42bf9f5"
+    },
+    {
+      "path": "assets/viewer.css",
+      "http": 200,
+      "bytes": 13850,
+      "matches_local": true,
+      "sha256": "a1f05d5db4ff85656e8498e5ed251c039f2c685f354acc3bd967d8ea363c7168"
+    },
+    {
+      "path": "assets/viewer.js",
+      "http": 200,
+      "bytes": 24341,
+      "matches_local": true,
+      "sha256": "866a166ca0f9d533fcdbe39ef5977c276e88eb41b2d0d9f6563553aeeea7f190"
+    },
+    {
+      "path": "build-manifest.json",
+      "http": 200,
+      "bytes": 568,
+      "matches_local": true,
+      "sha256": "4965c7e97398f55bca519f63539aa7e16ea3946273f786b0b0484309c5bf363e"
+    },
+    {
+      "path": "data/case_01.bin.gz",
+      "http": 200,
+      "bytes": 2950508,
+      "matches_local": true,
+      "sha256": "b0ee1ef9355022629182adad3a8f94794c77357b6a73fcdd19f004f756ca4746"
+    },
+    {
+      "path": "data/case_02.bin.gz",
+      "http": 200,
+      "bytes": 2948449,
+      "matches_local": true,
+      "sha256": "fdcec643133ddd4521c74e9a0bc3dfa964f5fb5d557d9c50aef230574407dbf3"
+    },
+    {
+      "path": "data/case_03.bin.gz",
+      "http": 200,
+      "bytes": 2948418,
+      "matches_local": true,
+      "sha256": "8b7932c54ad530c500f9ca7a14b2db8e73505036cc5dc99b2b46e0cd52f1b4b2"
+    },
+    {
+      "path": "data/case_04.bin.gz",
+      "http": 200,
+      "bytes": 2950891,
+      "matches_local": true,
+      "sha256": "100d1b1799b71e3e510ce2df1b749bd2cd51c673edd788ecc27ab02e2245d7ae"
+    },
+    {
+      "path": "data/case_05.bin.gz",
+      "http": 200,
+      "bytes": 2949208,
+      "matches_local": true,
+      "sha256": "c73a5c8c993b37b17b578a95e09a270aa3ee3a791c592b368113e6e9dbc71b7e"
+    },
+    {
+      "path": "data/case_06.bin.gz",
+      "http": 200,
+      "bytes": 2948979,
+      "matches_local": true,
+      "sha256": "3b21ccc8f16191686742f36b0da07593fd6d0df11ef0af24d43ae170c0f2286f"
+    },
+    {
+      "path": "data/case_07.bin.gz",
+      "http": 200,
+      "bytes": 2952229,
+      "matches_local": true,
+      "sha256": "d955e0d407ee4da5473610f3ccaeeddd4b8d9373575316e2cdda3c751450163e"
+    },
+    {
+      "path": "data/case_08.bin.gz",
+      "http": 200,
+      "bytes": 2950775,
+      "matches_local": true,
+      "sha256": "e037a19050142b528a144d6e627cf3d512f7bd2e8453cae4a92f5f08942884dc"
+    },
+    {
+      "path": "data/case_09.bin.gz",
+      "http": 200,
+      "bytes": 2950010,
+      "matches_local": true,
+      "sha256": "a19690e3ce43f5b4b684028980644004d35cb05c9d99b2e3135a7a93f6ab402c"
+    },
+    {
+      "path": "data/case_10.bin.gz",
+      "http": 200,
+      "bytes": 2953918,
+      "matches_local": true,
+      "sha256": "86f34c85e2e551cba95dd7054b1117da9b429e71d466a107eb5f365f4afa4e1d"
+    },
+    {
+      "path": "data/case_11.bin.gz",
+      "http": 200,
+      "bytes": 2951164,
+      "matches_local": true,
+      "sha256": "9160d13246b767a2bb094c35b65f336a5c8df2357ed706ef369f30ce483f1111"
+    },
+    {
+      "path": "data/case_12.bin.gz",
+      "http": 200,
+      "bytes": 2951215,
+      "matches_local": true,
+      "sha256": "737e435f2577772f6f89a67795ec6d7117011a95424e5bdc4c9ceef97f7106f8"
+    },
+    {
+      "path": "data/metadata.json",
+      "http": 200,
+      "bytes": 461225,
+      "matches_local": true,
+      "sha256": "56a06129f8d9f928c282b4ae1a99afae135b80e076043f4db01da548e5aa6bdb"
+    },
+    {
+      "path": "downloads/01_representative_test.png",
+      "http": 200,
+      "bytes": 271226,
+      "matches_local": true,
+      "sha256": "aa8314fee099b332d6bdbd62aa48b00b1f224113b4cebda8a893adbbceaf0c61"
+    },
+    {
+      "path": "downloads/02_worst_test.png",
+      "http": 200,
+      "bytes": 274151,
+      "matches_local": true,
+      "sha256": "df6a3dcc366c213210586d0b1e64511a6acf76fb25f5e516470d3107d72ab2b5"
+    },
+    {
+      "path": "downloads/03_twelve_conditions.png",
+      "http": 200,
+      "bytes": 638893,
+      "matches_local": true,
+      "sha256": "8cec9c920dde984d807b4819f4c139a8111a0b34da45c645cfde03e430a30e17"
+    },
+    {
+      "path": "downloads/04_evaluation_metrics.png",
+      "http": 200,
+      "bytes": 277926,
+      "matches_local": true,
+      "sha256": "da08f8415ef834270a52780dd488b022fbec548d16432ed155acfdcb3edd3f9f"
+    },
+    {
+      "path": "downloads/05_training_loss.png",
+      "http": 200,
+      "bytes": 217139,
+      "matches_local": true,
+      "sha256": "7c82991a4cfd4f8f54479009f13835880c5293345d87142cd32a54e672d92197"
+    },
+    {
+      "path": "downloads/06_model_structure.png",
+      "http": 200,
+      "bytes": 245646,
+      "matches_local": true,
+      "sha256": "b89e185e68e6f9ca320975313fe10496e083e4d05149f348e6d9c7037581919f"
+    },
+    {
+      "path": "downloads/07_dynamic_variation.png",
+      "http": 200,
+      "bytes": 308192,
+      "matches_local": true,
+      "sha256": "59c89753f14e4d270f358ca7ddf75c3226f42173e16a6f94bab1f96fb650aecc"
+    },
+    {
+      "path": "downloads/2d-cloud.pdf",
+      "http": 200,
+      "bytes": 193795,
+      "matches_local": true,
+      "sha256": "df43daef44a674d4d2b3e6560182ba13fa9de2e60461d815b853dbeb2d284a8a"
+    },
+    {
+      "path": "downloads/2d-cloud.png",
+      "http": 200,
+      "bytes": 850676,
+      "matches_local": true,
+      "sha256": "09600a6ecd3445e3f491c1bb9138f9d243be238c0eb01f663582fdcebd30e6dd"
+    },
+    {
+      "path": "downloads/3d-surface.pdf",
+      "http": 200,
+      "bytes": 366646,
+      "matches_local": true,
+      "sha256": "35aea30edb5f378f0903350db7c84a5d4010bd238c2a00b6b817ab28802aecc5"
+    },
+    {
+      "path": "downloads/3d-surface.png",
+      "http": 200,
+      "bytes": 1525545,
+      "matches_local": true,
+      "sha256": "b947a3526d972e1a98628b2213966b2cd96a0060dfe41f28b6ad94c811607b31"
+    },
+    {
+      "path": "downloads/overview.pdf",
+      "http": 200,
+      "bytes": 209331,
+      "matches_local": true,
+      "sha256": "81c576fc02b83f33f80f7f228365694ae22deb617724f931f31587a16a0f9425"
+    },
+    {
+      "path": "downloads/overview.png",
+      "http": 200,
+      "bytes": 1207097,
+      "matches_local": true,
+      "sha256": "d716e93e937ba8265115e4875c1008c9698506ace4f46ca8b6da0a112fb07a3e"
+    },
+    {
+      "path": "downloads/results-report.md",
+      "http": 200,
+      "bytes": 11524,
+      "matches_local": true,
+      "sha256": "6c3d7567146f2c950361b969592a788c5ffbf9d47ce05811f45b7534f6407b0d"
+    },
+    {
+      "path": "downloads/rotor_production.npz",
+      "http": 200,
+      "bytes": 1484054,
+      "matches_local": true,
+      "sha256": "d7d1a93fbd56d28a7ef3b9a6600c6e348042d67887276343cd9436d9717a4c81"
+    },
+    {
+      "path": "downloads/sample-comparison.csv",
+      "http": 200,
+      "bytes": 184918,
+      "matches_local": true,
+      "sha256": "69bc12ca479a44045d0f934e88c38c30338e96ab1bf019cdc9893a76501d2d4b"
+    },
+    {
+      "path": "downloads/visualization-guide.md",
+      "http": 200,
+      "bytes": 1057,
+      "matches_local": true,
+      "sha256": "d72956bec32b9afacaad9c6d9d8d535215eb2039fbc4e07740891777cf6f3b57"
+    },
+    {
+      "path": "favicon.svg",
+      "http": 200,
+      "bytes": 284,
+      "matches_local": true,
+      "sha256": "f62f7db95d4048b4ab50958da8fea2f6002095d1b75b1d645e3b690078f091ed"
+    },
+    {
+      "path": "guide.html",
+      "http": 200,
+      "bytes": 6224,
+      "matches_local": true,
+      "sha256": "573a6a9e9d9eaae7d8056452fc08e8ee11eb33b761fce465ff37cdc0978aa16b"
+    },
+    {
+      "path": "index.html",
+      "http": 200,
+      "bytes": 9428,
+      "matches_local": true,
+      "sha256": "d29d17f1cbda657762e1db7def7b4b23e91954577005fb270ad64e0dea2a47a7"
+    },
+    {
+      "path": "models/rotor_angle_evaluation.npz",
+      "http": 200,
+      "bytes": 1483720,
+      "matches_local": true,
+      "sha256": "13753e54a4c524405f9cf854a0928dbdf151d103a73afe276f12c9512feaa32e"
+    },
+    {
+      "path": "models/rotor_held_current_evaluation.npz",
+      "http": 200,
+      "bytes": 1484548,
+      "matches_local": true,
+      "sha256": "e9e45e8fe05f98744d5a50d7c3c50b97c836ad5005bff2bccb1163115c2a8dff"
+    },
+    {
+      "path": "models/rotor_held_phase_evaluation.npz",
+      "http": 200,
+      "bytes": 1483031,
+      "matches_local": true,
+      "sha256": "e2f18f53e77eae60ecb615d74857c295e0df52136ede2796a8804fcfac3b9580"
+    },
+    {
+      "path": "models/rotor_production.npz",
+      "http": 200,
+      "bytes": 1484054,
+      "matches_local": true,
+      "sha256": "d7d1a93fbd56d28a7ef3b9a6600c6e348042d67887276343cd9436d9717a4c81"
+    },
+    {
+      "path": "models/rotor_production.pt",
+      "http": 200,
+      "bytes": 1547541,
+      "matches_local": true,
+      "sha256": "c6283700aa7dde089308e144e4b9ad7fa820489441ca89ffddbb7b24ccca713c"
+    },
+    {
+      "path": "research/build_website.py",
+      "http": 200,
+      "bytes": 11419,
+      "matches_local": true,
+      "sha256": "d595773f4e81f247e9fb7ca6036b8bbcb21fe35d8943d86358fbaf7b527cf587"
+    },
+    {
+      "path": "research/data_audit.json",
+      "http": 200,
+      "bytes": 4425,
+      "matches_local": true,
+      "sha256": "ea11545266378087e247f44f423d1e5f5991a36f8983ad307ca2faeacef68c61"
+    },
+    {
+      "path": "research/evaluation_split.json",
+      "http": 200,
+      "bytes": 3471,
+      "matches_local": true,
+      "sha256": "be36876a6ae9a98a1aacf4515afd1abf453ab287a88cf8deedd2dc17efbe753e"
+    },
+    {
+      "path": "research/figure_selection.json",
+      "http": 200,
+      "bytes": 789,
+      "matches_local": true,
+      "sha256": "144882ad87f6e5d290045d63a45e7ddc44072bb97883a107b4543e5f4682efb6"
+    },
+    {
+      "path": "research/hidden_selection_audit.json",
+      "http": 200,
+      "bytes": 6795,
+      "matches_local": true,
+      "sha256": "c3d51c5548aba5537ddb11583e35b95cd1369e3feb4e5136fd85c3a1762a9059"
+    },
+    {
+      "path": "research/make_2d3d_figures.py",
+      "http": 200,
+      "bytes": 7658,
+      "matches_local": true,
+      "sha256": "cd569589229a89691d430ea40d043df3636eb4a2a2e787cc25cfa14ba1a25b17"
+    },
+    {
+      "path": "research/make_figures.py",
+      "http": 200,
+      "bytes": 25609,
+      "matches_local": true,
+      "sha256": "3814c16e7aee0d342ddf560f279d10c1cceff85a5e14b854f2154984ac10a8f5"
+    },
+    {
+      "path": "research/metrics.json",
+      "http": 200,
+      "bytes": 24888,
+      "matches_local": true,
+      "sha256": "8b8e5bb80ea43bb53fd5c0fd34fc5254140b6671e04ce0d27f3b29c13690cbcd"
+    },
+    {
+      "path": "research/model_validation.json",
+      "http": 200,
+      "bytes": 822,
+      "matches_local": true,
+      "sha256": "c15156faa122264ad9a9a9fe55d14fb31fdf7f26e7ad449ec3ee919f36d166e4"
+    },
+    {
+      "path": "research/per_case_test_metrics.csv",
+      "http": 200,
+      "bytes": 2906,
+      "matches_local": true,
+      "sha256": "16496c8bcc5c84bb58b3a5a39b3d87ada90659881a9fe8c18a42d18cda9984d3"
+    },
+    {
+      "path": "research/prepare_rotor.py",
+      "http": 200,
+      "bytes": 2669,
+      "matches_local": true,
+      "sha256": "de8b42aff95ac02dd35939b8de5daa7b47591170a84a2043d2654c315d6aa945"
+    },
+    {
+      "path": "research/requirements.txt",
+      "http": 200,
+      "bytes": 177,
+      "matches_local": true,
+      "sha256": "70eb5eeebaf792f6547c9c79bd740374dd79da1c7a36f19c64f24c2af7f2e5bc"
+    },
+    {
+      "path": "research/rotor_mesh.py",
+      "http": 200,
+      "bytes": 3931,
+      "matches_local": true,
+      "sha256": "48d18cb82c088a2bd4e04dc488105606d198145bd000205a828d0f79d0f803f9"
+    },
+    {
+      "path": "research/rotor_model.py",
+      "http": 200,
+      "bytes": 5665,
+      "matches_local": true,
+      "sha256": "9c71f1ad3f13ba938b8c9ad25746e468d1928e904dba2db10c85906fa4f794a6"
+    },
+    {
+      "path": "research/rotor_points.csv",
+      "http": 200,
+      "bytes": 117607,
+      "matches_local": true,
+      "sha256": "f5faffa8741ffd20d4c5cdf636432b81693f143d3d555e4a1fbce16871bd073f"
+    },
+    {
+      "path": "research/rotor_surface_mesh.npz",
+      "http": 200,
+      "bytes": 36111,
+      "matches_local": true,
+      "sha256": "de08f129b6b6b4966f9a992980af1696cf0f7c2766acbb4a04fa587c9db467af"
+    },
+    {
+      "path": "research/surface_mesh_audit.json",
+      "http": 200,
+      "bytes": 657,
+      "matches_local": true,
+      "sha256": "bbf3cab94e6bd680686cd80af46f8885205f329beac82f18e7e5b6951ca3e780"
+    },
+    {
+      "path": "research/train_rotor.py",
+      "http": 200,
+      "bytes": 10206,
+      "matches_local": true,
+      "sha256": "ddc4acfb4d28fd836c504deeebb5bd18acdc1816c9bf9ed2be6df35d0715b9cb"
+    },
+    {
+      "path": "research/training_history.json",
+      "http": 200,
+      "bytes": 3306,
+      "matches_local": true,
+      "sha256": "75523ee64977fbd6b2d03225befc491a6332c18bdd1bb2794d3ad3c3ce00563e"
+    },
+    {
+      "path": "research/verify_hidden_selection.py",
+      "http": 200,
+      "bytes": 3169,
+      "matches_local": true,
+      "sha256": "fce2dd8c622b44f8be2a7d15af9bce8dc10956200097e12356b6a2eae7faa7b1"
+    },
+    {
+      "path": "research/viewer_2d3d_template.html",
+      "http": 200,
+      "bytes": 37590,
+      "matches_local": true,
+      "sha256": "50eec070bcaf484a79eb46ea0d07cce15f57129957410bb8d7de77b2ccde343d"
+    },
+    {
+      "path": "research/viewer_export_example.png",
+      "http": 200,
+      "bytes": 334597,
+      "matches_local": true,
+      "sha256": "3898deffd57e2ece5e1ec0acce76754d71adca896651a858302e539be42bf9f5"
+    },
+    {
+      "path": "research/website_data_audit.json",
+      "http": 200,
+      "bytes": 4939,
+      "matches_local": true,
+      "sha256": "6535516cbb9ad018b6dd96aa43b4cd44a93585bd243a0666eadd452cec90637c"
+    },
+    {
+      "path": "research/website_review.md",
+      "http": 200,
+      "bytes": 4481,
+      "matches_local": true,
+      "sha256": "7bb354e248745afe8b0e2ca8f776fd8cc649c12f7b8664ba034450694a660eaa"
+    },
+    {
+      "path": "research/website_runtime.js",
+      "http": 200,
+      "bytes": 6764,
+      "matches_local": true,
+      "sha256": "e055e936a5ebe7f1549f933d2081e24ba53cb952f46f9e24765f223708676839"
+    },
+    {
+      "path": "research/website_styles.css",
+      "http": 200,
+      "bytes": 5206,
+      "matches_local": true,
+      "sha256": "2f5d052b0f7dda3014173ca566c779981f410d4091b6141b70ea5efd3c5ca490"
+    }
+  ]
+}

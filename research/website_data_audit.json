@@ -1,0 +1,150 @@
+{
+  "all_data_checks_passed": true,
+  "case_count": 12,
+  "frames_per_case": 300,
+  "points_per_frame": 2500,
+  "prediction_source": "work/predictions.npz::angle_pred (position-holdout model)",
+  "coordinates_point_ids_conditions_angles_split_mesh_match": true,
+  "all_unquantized_metrics_match": true,
+  "cases": [
+    {
+      "case_id_zero_based": 0,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707274475525331e-05,
+      "max_prediction_display_error_T": 1.1706865196803307e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 1,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707242159609763e-05,
+      "max_prediction_display_error_T": 1.1707228090629407e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 2,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707263561477887e-05,
+      "max_prediction_display_error_T": 1.1707200805344264e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 3,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707271320729462e-05,
+      "max_prediction_display_error_T": 1.1707028908292116e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 4,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707259468696218e-05,
+      "max_prediction_display_error_T": 1.170713259224243e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 5,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707278397842663e-05,
+      "max_prediction_display_error_T": 1.1707135320837558e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 6,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707274475525331e-05,
+      "max_prediction_display_error_T": 1.1707198076860159e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 7,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707249918835316e-05,
+      "max_prediction_display_error_T": 1.1707267654259557e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 8,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707274475636353e-05,
+      "max_prediction_display_error_T": 1.1707266289961993e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 9,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707258786561314e-05,
+      "max_prediction_display_error_T": 1.170711894959986e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 10,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707263561477887e-05,
+      "max_prediction_display_error_T": 1.1706926076951452e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    },
+    {
+      "case_id_zero_based": 11,
+      "frames": 300,
+      "points_per_frame": 2500,
+      "quantized_truth_and_prediction_match": true,
+      "max_truth_display_error_T": 1.1707274219785457e-05,
+      "max_prediction_display_error_T": 1.1707007079975185e-05,
+      "metrics_match": true,
+      "sha256_match": true
+    }
+  ],
+  "quantization_step_T": 2.3414565322327653e-05,
+  "claimed_single_value_bound_T": 1.1707282661163827e-05,
+  "quantizer_numerical_tolerance_T": 1e-12,
+  "publish_file_count": 65,
+  "publish_bytes": 52278769,
+  "forbidden_paths": [],
+  "local_path_matches": [],
+  "credential_pattern_files": [],
+  "broken_relative_links": [],
+  "browser_execution_in_this_audit": false,
+  "published_model_files_byte_identical": [
+    "rotor_angle_evaluation.npz",
+    "rotor_held_current_evaluation.npz",
+    "rotor_held_phase_evaluation.npz",
+    "rotor_production.npz",
+    "rotor_production.pt",
+    "downloads/rotor_production.npz"
+  ],
+  "max_display_error_observed_T": 1.1707278397842663e-05
+}

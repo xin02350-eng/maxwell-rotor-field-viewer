@@ -1,0 +1,19 @@
+{
+  "method": "Delaunay with local circumradius cutoff and archive radial bounds",
+  "purpose": "visualization only, not CAD or FE mesh",
+  "circumradius_limit_mm": 0.4,
+  "max_edge_limit_mm": 0.8,
+  "input_points": 2500,
+  "used_points": 2500,
+  "raw_triangles": 4927,
+  "kept_triangles": 4561,
+  "removed_triangles": 366,
+  "connected_components": 1,
+  "interior_holes_euler_estimate": 4,
+  "rendered_area_mm2": 336.45,
+  "max_kept_edge_mm": 0.7500000000000009,
+  "min_y_mm": 0.125,
+  "no_mirror_expansion": true,
+  "fields_unchanged_at_vertices": true,
+  "caveat": "Hole boundaries are inferred from sample spacing; exact CAD contours are unavailable."
+}

@@ -1,0 +1,25 @@
+{
+  "numpy_export_max_error_T": 5.960424331874492e-08,
+  "periodicity_max_error_T": 2.220446049250313e-16,
+  "test_metrics_recalculated": true,
+  "POD_projection_diagnostic_only_not_prediction": {
+    "rmse_T": 4.273664958511118e-05,
+    "mae_T": 2.2888715009889067e-05,
+    "r2": 0.9999999896125749,
+    "relative_L2_pct": 0.005684997419443576,
+    "frame_relative_L2_median_pct": 0.004796511342125078,
+    "frame_relative_L2_p95_pct": 0.008842462720067388,
+    "abs_error_p95_T": 7.721373825758657e-05,
+    "abs_error_p99_T": 0.0001595512954104983,
+    "max_abs_error_T": 0.0013917047014225283,
+    "peak_abs_error_mean_T": 1.2532234337074103e-05
+  },
+  "cpu_single_field_median_ms": 0.03730000025825575,
+  "neural_parameter_count": 28608,
+  "npz_file_bytes": 1484054,
+  "output_shape": [
+    12,
+    300,
+    2500
+  ]
+}

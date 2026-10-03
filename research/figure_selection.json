@@ -1,0 +1,27 @@
+{
+  "selection_rule": "median and maximum frame RMSE over 12 cases x 60 test frames",
+  "representative": {
+    "case_id": 4,
+    "frame_index": 44,
+    "Irms_A": 19.5,
+    "phase_angle_deg": 30.0,
+    "theta_relative_deg": 52.8,
+    "rmse_T": 0.00011626999515213226,
+    "relative_L2_pct": 0.015447083860635757,
+    "max_abs_error_T": 0.0005628466606140137
+  },
+  "worst_frame_rmse": {
+    "case_id": 6,
+    "frame_index": 84,
+    "Irms_A": 24.5,
+    "phase_angle_deg": 0.0,
+    "theta_relative_deg": 100.8,
+    "rmse_T": 0.0002931573764402504,
+    "relative_L2_pct": 0.038033656775951385,
+    "max_abs_error_T": 0.0012554475106298923
+  },
+  "map_Bmax_T": 1.5343821048736572,
+  "common_error_map_max_T": 0.0019778134301304817,
+  "common_grid_theta_deg": 52.8,
+  "dynamic_point_id": 7329
+}

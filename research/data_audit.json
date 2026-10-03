@@ -1,0 +1,158 @@
+{
+  "counts": {
+    "stator": 5000,
+    "rotor": 2500,
+    "airgap": 1000
+  },
+  "cases": [
+    {
+      "id": 0,
+      "Irms_A": 16.7,
+      "phase_angle_deg": 0,
+      "sha256_verified": true,
+      "closure_max_abs_T": 1.581201943684496e-09,
+      "magnitude_min_T": 0.002812100025134496,
+      "magnitude_max_T": 1.5275855391498279,
+      "radial_magnitude_consistency_max_T": 1.0273559780671349e-11
+    },
+    {
+      "id": 1,
+      "Irms_A": 16.7,
+      "phase_angle_deg": 30,
+      "sha256_verified": true,
+      "closure_max_abs_T": 3.899345512370367e-06,
+      "magnitude_min_T": 0.0032122894523839967,
+      "magnitude_max_T": 1.5187298388172334,
+      "radial_magnitude_consistency_max_T": 9.96336346759108e-12
+    },
+    {
+      "id": 2,
+      "Irms_A": 16.7,
+      "phase_angle_deg": 60,
+      "sha256_verified": true,
+      "closure_max_abs_T": 1.1147164788449793e-10,
+      "magnitude_min_T": 0.0030467410922908177,
+      "magnitude_max_T": 1.5118788422083458,
+      "radial_magnitude_consistency_max_T": 9.868106332078241e-12
+    },
+    {
+      "id": 3,
+      "Irms_A": 19.5,
+      "phase_angle_deg": 0,
+      "sha256_verified": true,
+      "closure_max_abs_T": 3.197906514040838e-07,
+      "magnitude_min_T": 0.002987775841069303,
+      "magnitude_max_T": 1.5297334342551545,
+      "radial_magnitude_consistency_max_T": 9.793499344823431e-12
+    },
+    {
+      "id": 4,
+      "Irms_A": 19.5,
+      "phase_angle_deg": 30,
+      "sha256_verified": true,
+      "closure_max_abs_T": 1.2394145931793332e-08,
+      "magnitude_min_T": 0.0032179807338912326,
+      "magnitude_max_T": 1.5202685473764423,
+      "radial_magnitude_consistency_max_T": 1.0468070854585676e-11
+    },
+    {
+      "id": 5,
+      "Irms_A": 19.5,
+      "phase_angle_deg": 60,
+      "sha256_verified": true,
+      "closure_max_abs_T": 9.199494638290062e-11,
+      "magnitude_min_T": 0.0030222278215006216,
+      "magnitude_max_T": 1.5124089196448636,
+      "radial_magnitude_consistency_max_T": 9.911849119248473e-12
+    },
+    {
+      "id": 6,
+      "Irms_A": 24.5,
+      "phase_angle_deg": 0,
+      "sha256_verified": true,
+      "closure_max_abs_T": 1.5857180235556712e-07,
+      "magnitude_min_T": 0.00300419488594617,
+      "magnitude_max_T": 1.532898093464319,
+      "radial_magnitude_consistency_max_T": 1.0589973342689518e-11
+    },
+    {
+      "id": 7,
+      "Irms_A": 24.5,
+      "phase_angle_deg": 30,
+      "sha256_verified": true,
+      "closure_max_abs_T": 1.0098144542780574e-11,
+      "magnitude_min_T": 0.0031993408064709314,
+      "magnitude_max_T": 1.522663600944534,
+      "radial_magnitude_consistency_max_T": 9.71445146547012e-12
+    },
+    {
+      "id": 8,
+      "Irms_A": 24.5,
+      "phase_angle_deg": 60,
+      "sha256_verified": true,
+      "closure_max_abs_T": 1.695058946676875e-08,
+      "magnitude_min_T": 0.002963818791653089,
+      "magnitude_max_T": 1.5132505630258746,
+      "radial_magnitude_consistency_max_T": 9.89452964006432e-12
+    },
+    {
+      "id": 9,
+      "Irms_A": 27.3,
+      "phase_angle_deg": 0,
+      "sha256_verified": true,
+      "closure_max_abs_T": 4.806004483270954e-10,
+      "magnitude_min_T": 0.0028556242267136333,
+      "magnitude_max_T": 1.5343821545511713,
+      "radial_magnitude_consistency_max_T": 9.884759677447619e-12
+    },
+    {
+      "id": 10,
+      "Irms_A": 27.3,
+      "phase_angle_deg": 30,
+      "sha256_verified": true,
+      "closure_max_abs_T": 5.531014684451163e-09,
+      "magnitude_min_T": 0.0032249349414463593,
+      "magnitude_max_T": 1.5238259733767754,
+      "radial_magnitude_consistency_max_T": 9.863887484584666e-12
+    },
+    {
+      "id": 11,
+      "Irms_A": 27.3,
+      "phase_angle_deg": 60,
+      "sha256_verified": true,
+      "closure_max_abs_T": 6.336365976356007e-08,
+      "magnitude_min_T": 0.0029203269349493102,
+      "magnitude_max_T": 1.513715797579358,
+      "radial_magnitude_consistency_max_T": 9.864553618399441e-12
+    }
+  ],
+  "points_sha256": "6047a39000a6ad79b6904cad0f5312327a6c109cc746e4f272ff039f350c73c4",
+  "geometry": {
+    "xy_min": [
+      -18.45,
+      0.125
+    ],
+    "xy_max": [
+      18.55,
+      18.875
+    ],
+    "radius_range": [
+      8.634813257969162,
+      18.886982951228607
+    ],
+    "frames": {
+      "rotor_reference": 2500
+    }
+  },
+  "shape": [
+    12,
+    300,
+    2500
+  ],
+  "units": {
+    "current": "A RMS",
+    "B": "T",
+    "xy": "mm",
+    "theta": "mechanical deg relative to first frame"
+  }
+}

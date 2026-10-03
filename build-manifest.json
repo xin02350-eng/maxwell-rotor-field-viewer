@@ -1,0 +1,28 @@
+{
+  "formatVersion": 1,
+  "cases": 12,
+  "framesPerCase": 300,
+  "pointsPerFrame": 2500,
+  "defaultConditionZeroBased": 4,
+  "defaultFrameZeroBased": 44,
+  "metadataBytes": 461225,
+  "initialCaseCompressedBytes": 2949208,
+  "allCasesCompressedBytes": 35405764,
+  "indexBytes": 9459,
+  "packFormat": {
+    "compression": "gzip",
+    "dtype": "uint16",
+    "byteOrder": "little-endian",
+    "shape": [
+      2,
+      300,
+      2500
+    ],
+    "axis0": [
+      "truth",
+      "prediction"
+    ],
+    "order": "C",
+    "decode": "B_T = uint16_value * step + offset"
+  }
+}

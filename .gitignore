@@ -1,0 +1,11 @@
+work/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+node_modules/
+research/*.pt
+research/rotor_*evaluation.npz
+research/rotor_production.npz

@@ -1,0 +1,961 @@
+{
+  "version": "NEW60_OPT_V2_PREDICTION_CHOICES",
+  "frozen_utc": "2026-10-14T13:40:11.050520+00:00",
+  "test_metrics_computed": false,
+  "previous_test_already_seen": true,
+  "test_scope": "Reused nine-condition test; not a fresh blind evaluation",
+  "final_source_full60_fitting_allowed": true,
+  "full60_fitting_scores_used_in_prediction_choice": false,
+  "protocol_sha256": "1b62807033a020a4eea72c99d191cab814f108d9e1ef9d413963abbc7b058f27",
+  "split_relative_path": "../new60_20261014/cache_v1/split.json",
+  "split_sha256": "b80a797a22b03669c852ce4d7969b6c2d435b6e7330ee67cd3ae737a0fcd6ce3",
+  "selection": "Best validation within each quantity; pureNN vector rotor and best kernel cloud alongside independent neural controls. No new test values used.",
+  "models": [
+    {
+      "id": "prediction_rotor_magnitude",
+      "branch": "prediction",
+      "region": "rotor",
+      "quantity": "planar_magnitude",
+      "role": "primary",
+      "model_relative_path": "kernel_route/rotor_cycle_refined/model.npz",
+      "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+      "inference_module_relative_path": "kernel_route/kernel_magnitude.py",
+      "inference_module_sha256": "fcd0ab0d5fd8b11aad28c3e43a882e8c64caaaf170f235f38ed86e0d3811cccd",
+      "inference_function": "predict",
+      "predict_kwargs": {},
+      "cache_sha256": "45e82da3d8e21b563d7c1379356f2c0318597f47a72cf8ac0a062e5e37df41e0",
+      "split_sha256": "b80a797a22b03669c852ce4d7969b6c2d435b6e7330ee67cd3ae737a0fcd6ce3",
+      "train_case_ids": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59
+      ],
+      "validation_case_ids": [
+        1,
+        9,
+        14,
+        15,
+        24,
+        27,
+        35,
+        40,
+        51
+      ],
+      "previous_test_already_seen": true,
+      "test_labels_used_for_training_or_selection": false,
+      "source_quantity": "Br,Bt",
+      "output_transform": "hypot(Br,Bt)",
+      "provenance_files": [
+        {
+          "relative_path": "protocol.json",
+          "sha256": "1b62807033a020a4eea72c99d191cab814f108d9e1ef9d413963abbc7b058f27"
+        },
+        {
+          "relative_path": "kernel_route/route_choices.json",
+          "sha256": "9045ff44b0b9a1083ee4d1f4d840f1810fc80d4e5111b3934c25ecbd574fd1e5"
+        },
+        {
+          "relative_path": "kernel_route/rotor_cycle_refined/provenance.json",
+          "sha256": "7f7b8838aa95ce66fc36dc60603406574ba591fef826f535542fe6d7a09eb6c4"
+        }
+      ],
+      "validation_selection_metrics": {
+        "rmse_T": 0.0312762428191272,
+        "relative_L2_pct": 2.632302901723209,
+        "mae_T": 0.008053405213378545,
+        "max_abs_T": 0.8620019617941934,
+        "worst_case_rmse_T": 0.03783842810245798,
+        "per_case": {
+          "1": {
+            "rmse_T": 0.027945957364319873,
+            "relative_L2_pct": 2.437545646882419,
+            "max_abs_T": 0.6477824717537918
+          },
+          "9": {
+            "rmse_T": 0.028487649895728984,
+            "relative_L2_pct": 2.3158740407338083,
+            "max_abs_T": 0.4089046249910182
+          },
+          "14": {
+            "rmse_T": 0.032526340446033315,
+            "relative_L2_pct": 3.285409384542268,
+            "max_abs_T": 0.46116468959691015
+          },
+          "15": {
+            "rmse_T": 0.035357027726767236,
+            "relative_L2_pct": 3.219985401331998,
+            "max_abs_T": 0.4452170953431096
+          },
+          "24": {
+            "rmse_T": 0.03700690726398168,
+            "relative_L2_pct": 2.8191593562598065,
+            "max_abs_T": 0.6958294146234192
+          },
+          "27": {
+            "rmse_T": 0.029851700270815233,
+            "relative_L2_pct": 2.5085106113652076,
+            "max_abs_T": 0.3804459131773319
+          },
+          "35": {
+            "rmse_T": 0.02854692401176725,
+            "relative_L2_pct": 2.311525877365938,
+            "max_abs_T": 0.6125488556431284
+          },
+          "40": {
+            "rmse_T": 0.01989765352382951,
+            "relative_L2_pct": 1.4594951294267327,
+            "max_abs_T": 0.5266034716072077
+          },
+          "51": {
+            "rmse_T": 0.03783842810245798,
+            "relative_L2_pct": 3.499400836044129,
+            "max_abs_T": 0.8620019617941934
+          }
+        }
+      },
+      "method": "condition_kernel_POD",
+      "model_source_module_relative_path": "kernel_route/kernel_model.py",
+      "model_source_module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd"
+    },
+    {
+      "id": "prediction_stator_vector",
+      "branch": "prediction",
+      "region": "stator",
+      "quantity": "Br,Bt",
+      "role": "primary",
+      "model_relative_path": "kernel_route/stator_cycle_coarse/model.npz",
+      "model_sha256": "ea03488c0050c32d3afb9fe19b98b4450f255024a59dab469e7dc36d9a134558",
+      "inference_module_relative_path": "kernel_route/kernel_model.py",
+      "inference_module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+      "inference_function": "predict",
+      "predict_kwargs": {},
+      "cache_sha256": "53f96519f96f9769d3d40a90ea465a592a35ed2c0fce7bd81ab2d99f28b13452",
+      "split_sha256": "b80a797a22b03669c852ce4d7969b6c2d435b6e7330ee67cd3ae737a0fcd6ce3",
+      "train_case_ids": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59
+      ],
+      "validation_case_ids": [
+        1,
+        9,
+        14,
+        15,
+        24,
+        27,
+        35,
+        40,
+        51
+      ],
+      "previous_test_already_seen": true,
+      "test_labels_used_for_training_or_selection": false,
+      "source_quantity": "Br,Bt",
+      "output_transform": "identity",
+      "provenance_files": [
+        {
+          "relative_path": "protocol.json",
+          "sha256": "1b62807033a020a4eea72c99d191cab814f108d9e1ef9d413963abbc7b058f27"
+        },
+        {
+          "relative_path": "kernel_route/route_choices.json",
+          "sha256": "9045ff44b0b9a1083ee4d1f4d840f1810fc80d4e5111b3934c25ecbd574fd1e5"
+        },
+        {
+          "relative_path": "kernel_route/stator_cycle_coarse/provenance.json",
+          "sha256": "3e647ad81d990184ddda7b1b120de5b96c104fe433b660c4bc36ca05551dcc11"
+        }
+      ],
+      "validation_selection_metrics": {
+        "rmse_T": 0.007289856493155485,
+        "relative_L2_pct": 1.0269378255439527,
+        "mae_T": 0.0029562954107370657,
+        "max_abs_T": 0.3736306273738461,
+        "worst_case_rmse_T": 0.013756200719275276,
+        "per_case": {
+          "1": {
+            "rmse_T": 0.0029590119183123854,
+            "relative_L2_pct": 0.4494837080384001,
+            "max_abs_T": 0.08559806600010922
+          },
+          "9": {
+            "rmse_T": 0.005396359912799079,
+            "relative_L2_pct": 0.695686996905658,
+            "max_abs_T": 0.3076247691002585
+          },
+          "14": {
+            "rmse_T": 0.002134976112156212,
+            "relative_L2_pct": 0.41249119502199943,
+            "max_abs_T": 0.04560131462233952
+          },
+          "15": {
+            "rmse_T": 0.013756200719275276,
+            "relative_L2_pct": 2.0538043827080488,
+            "max_abs_T": 0.3736306273738461
+          },
+          "24": {
+            "rmse_T": 0.005877070513408374,
+            "relative_L2_pct": 0.6843881067818899,
+            "max_abs_T": 0.1531681345802811
+          },
+          "27": {
+            "rmse_T": 0.009951574022708184,
+            "relative_L2_pct": 1.5776641078348335,
+            "max_abs_T": 0.3111292424740275
+          },
+          "35": {
+            "rmse_T": 0.004706225805824427,
+            "relative_L2_pct": 0.6734734952258808,
+            "max_abs_T": 0.15253080104800576
+          },
+          "40": {
+            "rmse_T": 0.0031025118491038797,
+            "relative_L2_pct": 0.32061866690744545,
+            "max_abs_T": 0.1315346450638737
+          },
+          "51": {
+            "rmse_T": 0.009014572185595468,
+            "relative_L2_pct": 1.9064760870747677,
+            "max_abs_T": 0.16396258316629508
+          }
+        }
+      },
+      "method": "condition_kernel_POD",
+      "model_source_module_relative_path": "kernel_route/kernel_model.py",
+      "model_source_module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd"
+    },
+    {
+      "id": "prediction_stator_magnitude",
+      "branch": "prediction",
+      "region": "stator",
+      "quantity": "planar_magnitude",
+      "role": "primary",
+      "model_relative_path": "kernel_route/stator_cycle_coarse/model.npz",
+      "model_sha256": "ea03488c0050c32d3afb9fe19b98b4450f255024a59dab469e7dc36d9a134558",
+      "inference_module_relative_path": "kernel_route/kernel_magnitude.py",
+      "inference_module_sha256": "fcd0ab0d5fd8b11aad28c3e43a882e8c64caaaf170f235f38ed86e0d3811cccd",
+      "inference_function": "predict",
+      "predict_kwargs": {},
+      "cache_sha256": "53f96519f96f9769d3d40a90ea465a592a35ed2c0fce7bd81ab2d99f28b13452",
+      "split_sha256": "b80a797a22b03669c852ce4d7969b6c2d435b6e7330ee67cd3ae737a0fcd6ce3",
+      "train_case_ids": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59
+      ],
+      "validation_case_ids": [
+        1,
+        9,
+        14,
+        15,
+        24,
+        27,
+        35,
+        40,
+        51
+      ],
+      "previous_test_already_seen": true,
+      "test_labels_used_for_training_or_selection": false,
+      "source_quantity": "Br,Bt",
+      "output_transform": "hypot(Br,Bt)",
+      "provenance_files": [
+        {
+          "relative_path": "protocol.json",
+          "sha256": "1b62807033a020a4eea72c99d191cab814f108d9e1ef9d413963abbc7b058f27"
+        },
+        {
+          "relative_path": "kernel_route/route_choices.json",
+          "sha256": "9045ff44b0b9a1083ee4d1f4d840f1810fc80d4e5111b3934c25ecbd574fd1e5"
+        },
+        {
+          "relative_path": "kernel_route/stator_cycle_coarse/provenance.json",
+          "sha256": "3e647ad81d990184ddda7b1b120de5b96c104fe433b660c4bc36ca05551dcc11"
+        }
+      ],
+      "validation_selection_metrics": {
+        "rmse_T": 0.007959758962067189,
+        "relative_L2_pct": 0.7928847967007118,
+        "mae_T": 0.003537994060127088,
+        "max_abs_T": 0.21932075466762502,
+        "worst_case_rmse_T": 0.01554630271634425,
+        "per_case": {
+          "1": {
+            "rmse_T": 0.0030217687342706957,
+            "relative_L2_pct": 0.3245738044030921,
+            "max_abs_T": 0.09687033896821307
+          },
+          "9": {
+            "rmse_T": 0.0054899790228932445,
+            "relative_L2_pct": 0.50045918666853,
+            "max_abs_T": 0.15847166509833288
+          },
+          "14": {
+            "rmse_T": 0.0024605270643934854,
+            "relative_L2_pct": 0.33615131227568884,
+            "max_abs_T": 0.03985801527371004
+          },
+          "15": {
+            "rmse_T": 0.01554630271634425,
+            "relative_L2_pct": 1.6412422728001907,
+            "max_abs_T": 0.21932075466762502
+          },
+          "24": {
+            "rmse_T": 0.006141501495320427,
+            "relative_L2_pct": 0.5057095050426558,
+            "max_abs_T": 0.13049162740406595
+          },
+          "27": {
+            "rmse_T": 0.010654211787832544,
+            "relative_L2_pct": 1.1943430737910326,
+            "max_abs_T": 0.2045533396004091
+          },
+          "35": {
+            "rmse_T": 0.004734682899157169,
+            "relative_L2_pct": 0.47909721656665066,
+            "max_abs_T": 0.10624665803660926
+          },
+          "40": {
+            "rmse_T": 0.0030496608068126276,
+            "relative_L2_pct": 0.22284961892123156,
+            "max_abs_T": 0.1246826881020926
+          },
+          "51": {
+            "rmse_T": 0.010012954830650032,
+            "relative_L2_pct": 1.4973850773729396,
+            "max_abs_T": 0.143771096911406
+          }
+        }
+      },
+      "method": "condition_kernel_POD",
+      "model_source_module_relative_path": "kernel_route/kernel_model.py",
+      "model_source_module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd"
+    },
+    {
+      "id": "prediction_airgap_Br",
+      "branch": "prediction",
+      "region": "airgap",
+      "quantity": "Br",
+      "role": "primary",
+      "model_relative_path": "kernel_route/airgap_cycle_coarse/model.npz",
+      "model_sha256": "4bdee9454f27a7795683e5a6c225b39290da7ba6714063f12864cdf31da02f66",
+      "inference_module_relative_path": "kernel_route/kernel_model.py",
+      "inference_module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+      "inference_function": "predict",
+      "predict_kwargs": {},
+      "cache_sha256": "5a33ac13f963fa8ef337699e7e001c27b9be13b769f372e368a3b976696ba88c",
+      "split_sha256": "b80a797a22b03669c852ce4d7969b6c2d435b6e7330ee67cd3ae737a0fcd6ce3",
+      "train_case_ids": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59
+      ],
+      "validation_case_ids": [
+        1,
+        9,
+        14,
+        15,
+        24,
+        27,
+        35,
+        40,
+        51
+      ],
+      "previous_test_already_seen": true,
+      "test_labels_used_for_training_or_selection": false,
+      "source_quantity": "Br",
+      "output_transform": "identity",
+      "provenance_files": [
+        {
+          "relative_path": "protocol.json",
+          "sha256": "1b62807033a020a4eea72c99d191cab814f108d9e1ef9d413963abbc7b058f27"
+        },
+        {
+          "relative_path": "kernel_route/route_choices.json",
+          "sha256": "9045ff44b0b9a1083ee4d1f4d840f1810fc80d4e5111b3934c25ecbd574fd1e5"
+        },
+        {
+          "relative_path": "kernel_route/airgap_cycle_coarse/provenance.json",
+          "sha256": "e00d98deb7a81b2eb925e11d15c37ca5b65faf1b2126cd6a64464f1022eecf51"
+        }
+      ],
+      "validation_selection_metrics": {
+        "rmse_T": 0.0020739204017909633,
+        "relative_L2_pct": 0.3111970303624082,
+        "mae_T": 0.0009516987409705677,
+        "max_abs_T": 0.03834457202529229,
+        "worst_case_rmse_T": 0.005179682811815442,
+        "per_case": {
+          "1": {
+            "rmse_T": 0.0005643123732787535,
+            "relative_L2_pct": 0.09065479942833808,
+            "max_abs_T": 0.004475146329950941
+          },
+          "9": {
+            "rmse_T": 0.0014689527028655233,
+            "relative_L2_pct": 0.20131644994163622,
+            "max_abs_T": 0.007142870059024142
+          },
+          "14": {
+            "rmse_T": 0.00040161660023043397,
+            "relative_L2_pct": 0.08270582110473869,
+            "max_abs_T": 0.0027496578488801493
+          },
+          "15": {
+            "rmse_T": 0.005179682811815442,
+            "relative_L2_pct": 0.8279486198665568,
+            "max_abs_T": 0.03834457202529229
+          },
+          "24": {
+            "rmse_T": 0.0013674923182861115,
+            "relative_L2_pct": 0.17010064696721325,
+            "max_abs_T": 0.007840956861314918
+          },
+          "27": {
+            "rmse_T": 0.0022040912923056498,
+            "relative_L2_pct": 0.3692261566507954,
+            "max_abs_T": 0.015570310332172488
+          },
+          "35": {
+            "rmse_T": 0.000691477536473154,
+            "relative_L2_pct": 0.10518044156789097,
+            "max_abs_T": 0.005230585445490377
+          },
+          "40": {
+            "rmse_T": 0.00046400257810676556,
+            "relative_L2_pct": 0.0517094676221191,
+            "max_abs_T": 0.002812800927079362
+          },
+          "51": {
+            "rmse_T": 0.0013498662277680999,
+            "relative_L2_pct": 0.2945267076431079,
+            "max_abs_T": 0.007383112492726662
+          }
+        }
+      },
+      "method": "condition_kernel_POD",
+      "model_source_module_relative_path": "kernel_route/kernel_model.py",
+      "model_source_module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd"
+    },
+    {
+      "id": "prediction_rotor_vector",
+      "branch": "prediction",
+      "region": "rotor",
+      "quantity": "Br,Bt",
+      "role": "primary",
+      "model_relative_path": "neural_route/rotor/selected_model.npz",
+      "model_sha256": "068b80634eaaa8d21c663e28a92dbfb38ddb32a0990e111f1dbbe38e3f6db609",
+      "inference_module_relative_path": "neural_route/cycle_neural.py",
+      "inference_module_sha256": "c0c9cc1c6f672f1053523ca62e7bff4da0d4f29f96259a184a5bdbba227fd53b",
+      "inference_function": "predict",
+      "predict_kwargs": {},
+      "cache_sha256": "45e82da3d8e21b563d7c1379356f2c0318597f47a72cf8ac0a062e5e37df41e0",
+      "split_sha256": "b80a797a22b03669c852ce4d7969b6c2d435b6e7330ee67cd3ae737a0fcd6ce3",
+      "train_case_ids": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59
+      ],
+      "validation_case_ids": [
+        1,
+        9,
+        14,
+        15,
+        24,
+        27,
+        35,
+        40,
+        51
+      ],
+      "previous_test_already_seen": true,
+      "test_labels_used_for_training_or_selection": false,
+      "source_quantity": "Br,Bt",
+      "output_transform": "identity",
+      "provenance_files": [
+        {
+          "relative_path": "protocol.json",
+          "sha256": "1b62807033a020a4eea72c99d191cab814f108d9e1ef9d413963abbc7b058f27"
+        },
+        {
+          "relative_path": "neural_route/prediction_choice_frozen.json",
+          "sha256": "1ae2adc310a3bf79521e8b58ca94a96ba8b760e64fc4c075799287df8724b69f"
+        }
+      ],
+      "validation_selection_metrics": {
+        "rmse_T": 0.03926212424857099,
+        "mae_T": 0.010486238805377602,
+        "max_abs_T": 1.722199841126675,
+        "relative_L2_pct": 4.673153829475133
+      },
+      "method": "pure_neural_condition_POD"
+    },
+    {
+      "id": "prediction_rotor_magnitude_nn",
+      "branch": "prediction",
+      "region": "rotor",
+      "quantity": "planar_magnitude",
+      "role": "neural_control",
+      "model_relative_path": "neural_route/rotor/selected_model.npz",
+      "model_sha256": "068b80634eaaa8d21c663e28a92dbfb38ddb32a0990e111f1dbbe38e3f6db609",
+      "inference_module_relative_path": "neural_route/neural_magnitude_from_vector.py",
+      "inference_module_sha256": "d0c5185a9677c2ecde8a12886cbb5e860b502a8e3719010356f58727b4f6e3b3",
+      "inference_function": "predict",
+      "predict_kwargs": {},
+      "cache_sha256": "45e82da3d8e21b563d7c1379356f2c0318597f47a72cf8ac0a062e5e37df41e0",
+      "split_sha256": "b80a797a22b03669c852ce4d7969b6c2d435b6e7330ee67cd3ae737a0fcd6ce3",
+      "train_case_ids": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59
+      ],
+      "validation_case_ids": [
+        1,
+        9,
+        14,
+        15,
+        24,
+        27,
+        35,
+        40,
+        51
+      ],
+      "previous_test_already_seen": true,
+      "test_labels_used_for_training_or_selection": false,
+      "source_quantity": "Br,Bt",
+      "output_transform": "hypot(Br,Bt)",
+      "provenance_files": [
+        {
+          "relative_path": "protocol.json",
+          "sha256": "1b62807033a020a4eea72c99d191cab814f108d9e1ef9d413963abbc7b058f27"
+        },
+        {
+          "relative_path": "neural_route/prediction_choice_frozen.json",
+          "sha256": "1ae2adc310a3bf79521e8b58ca94a96ba8b760e64fc4c075799287df8724b69f"
+        }
+      ],
+      "method": "pure_neural_condition_POD_derived_magnitude",
+      "model_source_module_relative_path": "neural_route/cycle_neural.py",
+      "model_source_module_sha256": "c0c9cc1c6f672f1053523ca62e7bff4da0d4f29f96259a184a5bdbba227fd53b"
+    },
+    {
+      "id": "prediction_rotor_magnitude_direct_nn",
+      "branch": "prediction",
+      "region": "rotor",
+      "quantity": "planar_magnitude",
+      "role": "neural_control",
+      "model_relative_path": "neural_route/rotor_magnitude/selected_model.npz",
+      "model_sha256": "cda9bdf44c33758e4f6f9e77709cbc893a91fbc2ec781508eda30e176a7b4cf2",
+      "inference_module_relative_path": "neural_route/magnitude_cycle_neural.py",
+      "inference_module_sha256": "603c653e2b5bfc69d674f3810c4c1bea37f55bb4400208dbf15c68958256f6ed",
+      "inference_function": "predict",
+      "predict_kwargs": {
+        "nonnegative": false
+      },
+      "cache_sha256": "45e82da3d8e21b563d7c1379356f2c0318597f47a72cf8ac0a062e5e37df41e0",
+      "split_sha256": "b80a797a22b03669c852ce4d7969b6c2d435b6e7330ee67cd3ae737a0fcd6ce3",
+      "train_case_ids": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59
+      ],
+      "validation_case_ids": [
+        1,
+        9,
+        14,
+        15,
+        24,
+        27,
+        35,
+        40,
+        51
+      ],
+      "previous_test_already_seen": true,
+      "test_labels_used_for_training_or_selection": false,
+      "source_quantity": "planar_magnitude",
+      "output_transform": "identity",
+      "provenance_files": [
+        {
+          "relative_path": "protocol.json",
+          "sha256": "1b62807033a020a4eea72c99d191cab814f108d9e1ef9d413963abbc7b058f27"
+        },
+        {
+          "relative_path": "neural_route/prediction_choice_frozen.json",
+          "sha256": "1ae2adc310a3bf79521e8b58ca94a96ba8b760e64fc4c075799287df8724b69f"
+        }
+      ],
+      "validation_selection_metrics": {
+        "rmse_T": 0.032684991799921244,
+        "mae_T": 0.009308019160544268,
+        "max_abs_T": 0.8313665043269882,
+        "relative_L2_pct": 2.75086746369406
+      },
+      "method": "pure_neural_condition_POD_direct_magnitude"
+    },
+    {
+      "id": "prediction_rotor_magnitude_neural_kernel",
+      "branch": "prediction",
+      "region": "rotor",
+      "quantity": "planar_magnitude",
+      "role": "neural_control",
+      "model_relative_path": "neural_kernel_route/rotor_magnitude/frame_kernel_03/model.npz",
+      "model_sha256": "155077f538f1f4cab1716d933c643a2b16a98ddf599d67fc064aaf40cd1c1848",
+      "inference_module_relative_path": "neural_frame_kernel.py",
+      "inference_module_sha256": "4b84986e31e9683e3a6dc4d61bbb13e5735f8b5c074f5082a4447a4e87d5d3e4",
+      "inference_function": "predict",
+      "predict_kwargs": {},
+      "cache_sha256": "45e82da3d8e21b563d7c1379356f2c0318597f47a72cf8ac0a062e5e37df41e0",
+      "split_sha256": "b80a797a22b03669c852ce4d7969b6c2d435b6e7330ee67cd3ae737a0fcd6ce3",
+      "train_case_ids": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59
+      ],
+      "validation_case_ids": [
+        1,
+        9,
+        14,
+        15,
+        24,
+        27,
+        35,
+        40,
+        51
+      ],
+      "previous_test_already_seen": true,
+      "test_labels_used_for_training_or_selection": false,
+      "source_quantity": "planar_magnitude",
+      "output_transform": "identity",
+      "provenance_files": [
+        {
+          "relative_path": "protocol.json",
+          "sha256": "1b62807033a020a4eea72c99d191cab814f108d9e1ef9d413963abbc7b058f27"
+        },
+        {
+          "relative_path": "neural_kernel_route/rotor_magnitude/protocol.json",
+          "sha256": "8540aae551a107309fc9289d2add9018609e034b817cf8749552724f84304987"
+        },
+        {
+          "relative_path": "neural_kernel_route/rotor_magnitude/representation.npz",
+          "sha256": "87572e8cc21b690f1bd6cde5d74dfa62f6641a7018d52984cc5b669b88205780"
+        }
+      ],
+      "validation_selection_metrics": {
+        "rmse_T": 0.03210913402115638,
+        "mae_T": 0.008752276577763618,
+        "max_abs_T": 0.899373559807057,
+        "relative_L2_pct": 2.70240153667115
+      },
+      "method": "learned_neural_coordinate_embedding_kernel"
+    }
+  ]
+}

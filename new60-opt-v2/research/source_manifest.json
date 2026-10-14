@@ -1,0 +1,180 @@
+{
+  "created_utc": "2026-10-14T14:17:27.114747+00:00",
+  "files": [
+    {
+      "path": "protocol.json",
+      "bytes": 3502,
+      "sha256": "1b62807033a020a4eea72c99d191cab814f108d9e1ef9d413963abbc7b058f27"
+    },
+    {
+      "path": "both_versions_choices_frozen.json",
+      "bytes": 36918,
+      "sha256": "c26dcdb4213e5afe09d78cf301e08e34234be2c1bf78a7aa32eab5673c4174c0"
+    },
+    {
+      "path": "both_versions_choices_frozen.sha256",
+      "bytes": 66,
+      "sha256": "fb2dea051aed33468bac65a58f6f0148cb40bbd56af7cca704778111ebd25580"
+    },
+    {
+      "path": "prediction_choices_frozen.json",
+      "bytes": 27833,
+      "sha256": "2e48445d085f07df328c678e4fe7c309213c19d7b67a003a0ed981bf0e6208bb"
+    },
+    {
+      "path": "prediction_choices_frozen.sha256",
+      "bytes": 66,
+      "sha256": "88a0409e5fd791ce33ff11895c5f3d55b82d85f16e8090e34de1d8abed8a59b4"
+    },
+    {
+      "path": "final_summary.json",
+      "bytes": 115522,
+      "sha256": "77693f39eed4251b324730bbf313f5879e2183271a9002bcc5d8c4ef842ef558"
+    },
+    {
+      "path": "final_summary.csv",
+      "bytes": 5339,
+      "sha256": "f504ce25ae08ad75330a656b20b204e4b95b09027580929a9948749c71ca7b6a"
+    },
+    {
+      "path": "freeze_both_versions.py",
+      "bytes": 2600,
+      "sha256": "16320fc8fe703d7486678e55f36d5b1574e8a60ae6aebe31adaa090357e44afa"
+    },
+    {
+      "path": "make_choices_v2.py",
+      "bytes": 5309,
+      "sha256": "5a02f8f9d893cfe2ff5bc44989dc80afa62d1e3acb87374da6b31598cae62396"
+    },
+    {
+      "path": "neural_frame_kernel.py",
+      "bytes": 9017,
+      "sha256": "4b84986e31e9683e3a6dc4d61bbb13e5735f8b5c074f5082a4447a4e87d5d3e4"
+    },
+    {
+      "path": "adaptive_spectral.py",
+      "bytes": 10055,
+      "sha256": "0ba714833079918a1b3dc67d977d18b056ba962c56926a3a4b168c5a0db5208f"
+    },
+    {
+      "path": "power_magnitude.py",
+      "bytes": 5565,
+      "sha256": "4267d445f7223702d22c63fd6e4c02c76d7b25f114907684e3c08ae1ddab9039"
+    },
+    {
+      "path": "baseline_validation.py",
+      "bytes": 1683,
+      "sha256": "abfbe04239af4114e5bf7ff7da5ec03e8b326b6b2f6302c83bbed29c0decc4a8"
+    },
+    {
+      "path": "code/inference_numpy_v2.py",
+      "bytes": 6181,
+      "sha256": "1d3d2def16412de0b1911af3283e8f0d22abd9fa605032af38bcd04948de26c7"
+    },
+    {
+      "path": "code/predict_v2.py",
+      "bytes": 6611,
+      "sha256": "20426e108db74112dcf571196386e768eae28137810dc0b872a2d92ca9a162b8"
+    },
+    {
+      "path": "code/PREDICT_V2.md",
+      "bytes": 3631,
+      "sha256": "9621c90b657960232f6e02556905d3c2c08c5d87510c4d69ebcb59ac562e841c"
+    },
+    {
+      "path": "code/requirements-inference.txt",
+      "bytes": 13,
+      "sha256": "a23aaf94250a9f53031a592980142245a848e2372b6c6c3093e8260b129265b8"
+    },
+    {
+      "path": "code/requirements-training.txt",
+      "bytes": 101,
+      "sha256": "3aae55fe31e9d6d74473226d78a84dcb76db8f082c70f98fc86af7ab088934f0"
+    },
+    {
+      "path": "code/serve_website_v2.py",
+      "bytes": 1192,
+      "sha256": "2435fd558fc341d9c03eb213c31ddec2e2108c3cceeaddaa2e7b18f3d94fadd8"
+    },
+    {
+      "path": "neural_route/cycle_neural.py",
+      "bytes": 21587,
+      "sha256": "c0c9cc1c6f672f1053523ca62e7bff4da0d4f29f96259a184a5bdbba227fd53b"
+    },
+    {
+      "path": "neural_route/finalize_prediction.py",
+      "bytes": 5751,
+      "sha256": "f949a78fa6d9a69edd3132796b28edd653d7736f45a5fb4d9533d93a5f96e7cb"
+    },
+    {
+      "path": "neural_route/fitting_full60.py",
+      "bytes": 12276,
+      "sha256": "c8261ce88d34f9ebd8e75156b872112ebe2d9fe2f40ebe82f4ef35f14f2f2727"
+    },
+    {
+      "path": "neural_route/magnitude_blocks.py",
+      "bytes": 16633,
+      "sha256": "72f23ca8658e8973c59776762766dcfdace0dff56d1a8497df06c56b61e83af5"
+    },
+    {
+      "path": "neural_route/magnitude_cycle_neural.py",
+      "bytes": 22781,
+      "sha256": "603c653e2b5bfc69d674f3810c4c1bea37f55bb4400208dbf15c68958256f6ed"
+    },
+    {
+      "path": "neural_route/neural_magnitude_from_vector.py",
+      "bytes": 300,
+      "sha256": "d0c5185a9677c2ecde8a12886cbb5e860b502a8e3719010356f58727b4f6e3b3"
+    },
+    {
+      "path": "neural_route/spatial_extension.py",
+      "bytes": 3254,
+      "sha256": "b77a94bb3b2e057ec9c1a7d00ac163dd24d45ea89793a0832059d81fa3757ec7"
+    },
+    {
+      "path": "neural_route/spatial_magnitude_neural.py",
+      "bytes": 16518,
+      "sha256": "8ee8578dcdf51eb90f685df61714e329533934447c6f7c399d2b33b36195c791"
+    },
+    {
+      "path": "neural_route/summarize_fitting.py",
+      "bytes": 7389,
+      "sha256": "cacc9f366f7dd4e7ad04c468e53ec6df85462ecd4fdab8931fefd5acd9d91da9"
+    },
+    {
+      "path": "kernel_route/finalize_route.py",
+      "bytes": 7930,
+      "sha256": "6dd73e9949537ea29ea33fd66663a520d14e0e9c67437942ab20e123e8b39ad1"
+    },
+    {
+      "path": "kernel_route/kernel_magnitude.py",
+      "bytes": 832,
+      "sha256": "fcd0ab0d5fd8b11aad28c3e43a882e8c64caaaf170f235f38ed86e0d3811cccd"
+    },
+    {
+      "path": "kernel_route/kernel_model.py",
+      "bytes": 4662,
+      "sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd"
+    },
+    {
+      "path": "kernel_route/prepare_cycles.py",
+      "bytes": 5586,
+      "sha256": "e4ce6a7349068c20f7a16d8f3e5c5ddb8eea450885bed49e699e5d252b669e0a"
+    },
+    {
+      "path": "kernel_route/run_remaining.py",
+      "bytes": 805,
+      "sha256": "fa00141c2a8098aaa67d2ad367b86837c4095b67e831dbb4bad3f95be3733adc"
+    },
+    {
+      "path": "kernel_route/search_blocks.py",
+      "bytes": 8667,
+      "sha256": "14d35c061473ee201f9d30db822df4889f7ab9b425f73a07b347670bd2e42956"
+    },
+    {
+      "path": "kernel_route/search_cycles.py",
+      "bytes": 12470,
+      "sha256": "10ab7045327079592c326fc20df183ea0e1d6415038f1c28ff883401e9e41537"
+    }
+  ]
+}

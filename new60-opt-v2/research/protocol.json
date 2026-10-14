@@ -1,0 +1,23 @@
+{
+  "version": "NEW60_OPT_V2_20261014",
+  "objective": "Substantially reduce unseen-condition signed-field error, especially rotor; aim validation relative L2 <=1 percent without promising attainability",
+  "source_study": "../new60_20261014",
+  "source_split": "unchanged train42/validation9/test9",
+  "previous_test_already_seen": true,
+  "evaluation_limit": "The old nine test cases have already been evaluated in V1. V2 freezes all choices before re-evaluating them, but this is a reused-test comparison, not a fresh blind test. New independent Maxwell cases would be required for fresh confirmation.",
+  "training_selection_data": "Prediction branch: 42 training and nine validation labels only. Test labels excluded from prediction optimization runners. Separate full60 fitting branch expressly authorized by the user; its scores and labels must not influence prediction selection.",
+  "user_selected_deliverables": "Both versions requested: unseen-condition prediction and full60 known-condition fitting, with errors separately labelled.",
+  "primary_cloud_quantity": "Direct planar magnitude sqrt(Br^2+Bt^2) for stator/rotor, signed Br for airgap; retain vector Br/Bt controls and never compare magnitude L2 as if it were vector L2. Missing Bz means this is not certified 3D vector magnitude.",
+  "fitting_full60": "All60 source conditions and fixed60 frames may be trained; aim training-in-sample planar magnitude relative L2 <0.1 percent. Training error is never represented as held-out prediction accuracy. No information from this branch is fed back to prediction choices.",
+  "routes": [
+    "whole-cycle condition representation with broad mathematical-coordinate kernel/RBF/polynomial controls",
+    "train-only whole-cycle low-rank neural regression with Adam/LBFGS and physically useful mathematical current features",
+    "neural coordinate embedding with differentiable kernel interpolation trained by leave-one-training-condition-out errors"
+  ],
+  "representation": "Fixed original60 time frames and sampled spatial points; no time/space interpolation claim. Train-only compression, scalers and output means. Native Thet may be mathematically transformed by sin/cos but is not claimed to be dq beta.",
+  "metrics": "float64 signed-component RMSE/MAE/max_abs and relative L2; point samples equally weighted, no FEM area weights",
+  "selection": "Within each route rank by validation global full-field RMSE; report worst-condition, hotspot/ordinary, component and maximum-absolute errors. Cross-route selection based on validation accuracy and robustness, with all choices saved and hashed before test reuse. Do not replace final choices using test scores.",
+  "final_cross_route_rule": "Per quantity, take minimum validation full-field RMSE among finite candidates; candidates within0.2 percent of this minimum prefer smaller worst-condition RMSE then lower max-absolute error. Report localized worsening against V1 even when average error improves. Never drop difficult cases, frames or spatial points.",
+  "safeguards": "No synthetic label replacement; no validation/test targets used in bases or training; no full60 fit presented as unseen-condition accuracy; training optimization statistics and validation statistics remain separate.",
+  "packaging": "Keep V1 immutable; create a separate optimized complete delivery with source, data, weights, logs, inference, graphics, web viewer, precision metrics and Chinese explanation; independently verify manifest and ZIP members."
+}

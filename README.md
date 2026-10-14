@@ -1,5 +1,7 @@
 # Maxwell 转子磁密 · 2D / 3D 神经网络可视化
 
+**2026-10-14 新60双版本优化：** [双模式2D/3D网站](https://xin02350-eng.github.io/maxwell-rotor-field-viewer/new60-opt-v2/) · [两种误差及使用说明](https://xin02350-eng.github.io/maxwell-rotor-field-viewer/new60-opt-v2/guide.html) · [优化源码](new60-opt-v2/research/README.md)。全部60工况纯神经网络拟合的转子/定子二维磁密大小、气隙Br训练内相对L2为0.0448%/0.0433%/0.0474%；冻结预测主云图的9工况复用测试分别3.158%/1.535%/0.514%。拟合误差不能替代未见工况预测误差，原测试在V1已看，不是新盲测。预测主云图采用解析核对照，同时保留纯NN转子大小3.316%与有符号Br/Bt。51次神经网络训练和解析参数搜索分别记录。模型、大数组及完整科学交付通过本地ZIP提供，本仓库保留交互页面与源代码。
+
 **2026-10-14 新60工况实验已加入：**[新60的2D/3D网站](https://xin02350-eng.github.io/maxwell-rotor-field-viewer/new60/) · [实验结果与使用说明](https://xin02350-eng.github.io/maxwell-rotor-field-viewer/new60/guide.html) · [代码](new60/research)。新实验采用新的42/9/9整工况划分，52次正式NN训练；最终转子POD+MLP、定子/气隙NN+条件RBF残差。九工况测试相对L2分别7.97%/5.42%/2.10%。纯RBF在定子、转子测试上更好，已保留负结果；不声称复现原Round4。下文描述旧12数据，勿混用版本。
 
 [打开网站](https://xin02350-eng.github.io/maxwell-rotor-field-viewer/) · [使用与方法说明](https://xin02350-eng.github.io/maxwell-rotor-field-viewer/guide.html)

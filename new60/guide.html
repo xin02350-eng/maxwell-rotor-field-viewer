@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>新60工况实验结果与使用说明</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="data:,"><style>article{max-width:900px;margin:auto;background:white;padding:24px;border:1px solid #dce5e9;border-radius:14px}h2{font-size:20px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:10px 6px;border-bottom:1px solid #dce5e9;text-align:left}a{color:#215a70}code{overflow-wrap:anywhere}@media(max-width:620px){article{padding:16px}table{font-size:12px}}</style></head>
 <body><main><article><p><a href="index.html">← 返回2D/3D可视化</a></p><h1>真实新60工况：模型、结果与读图方法</h1>
+<p><strong>本页是V1历史结果。</strong>新的两版模型与分别标注的误差请打开 <a href="../new60-opt-v2/">新60双版本优化网站</a>。</p>
 <p>本轮使用2026-10-10整合的简化电机数据：60个原生RMS电流与Thet控制角组合，各60步，5500rpm。定子、转子各1800个测点，均有有符号Br/Bt；气隙900点，仅Br。输入电流不额外除以2，Thet不直接解释为dq的β角。</p>
 <h2>本轮九个完整留出工况的测试结果</h2><table><thead><tr><th>区域</th><th>冻结模型</th><th>RMSE / T</th><th>相对L2</th></tr></thead><tbody><tr><td>转子</td><td>POD＋三层128节点神经网络</td><td>0.063530</td><td>7.97%</td></tr><tr><td>定子</td><td>POD神经网络＋条件RBF残差</td><td>0.031892</td><td>5.42%</td></tr><tr><td>气隙</td><td>POD神经网络＋条件RBF残差</td><td>0.011562</td><td>2.10%</td></tr></tbody></table>
 <p>三个区域的有符号标量分量等权合并，RMSE为0.047546T，相对L2为6.94%。未提供有限元面积权重，该结果是测点分量误差，不是面积积分或磁密大小误差。</p>

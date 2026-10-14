@@ -1,0 +1,2864 @@
+{
+  "version": "NEW60_OPT_V2",
+  "created_utc": "2026-10-14T14:17:26.508468+00:00",
+  "choices_sha256": "c26dcdb4213e5afe09d78cf301e08e34234be2c1bf78a7aa32eab5673c4174c0",
+  "source_sha256": "e456656a2aefb718de541ae3169c79e3950a6d7ada0ac980e4a22fdc097b1e96",
+  "independent_numerical_checks": 832,
+  "all_numerical_checks_pass": true,
+  "cli_replay": {
+    "passed": true,
+    "model_count": 11,
+    "models": [
+      {
+        "id": "prediction_rotor_magnitude",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "fcd0ab0d5fd8b11aad28c3e43a882e8c64caaaf170f235f38ed86e0d3811cccd",
+        "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb"
+      },
+      {
+        "id": "prediction_stator_vector",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+        "model_sha256": "ea03488c0050c32d3afb9fe19b98b4450f255024a59dab469e7dc36d9a134558"
+      },
+      {
+        "id": "prediction_stator_magnitude",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "fcd0ab0d5fd8b11aad28c3e43a882e8c64caaaf170f235f38ed86e0d3811cccd",
+        "model_sha256": "ea03488c0050c32d3afb9fe19b98b4450f255024a59dab469e7dc36d9a134558"
+      },
+      {
+        "id": "prediction_airgap_Br",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+        "model_sha256": "4bdee9454f27a7795683e5a6c225b39290da7ba6714063f12864cdf31da02f66"
+      },
+      {
+        "id": "prediction_rotor_vector",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "c0c9cc1c6f672f1053523ca62e7bff4da0d4f29f96259a184a5bdbba227fd53b",
+        "model_sha256": "068b80634eaaa8d21c663e28a92dbfb38ddb32a0990e111f1dbbe38e3f6db609"
+      },
+      {
+        "id": "prediction_rotor_magnitude_nn",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "d0c5185a9677c2ecde8a12886cbb5e860b502a8e3719010356f58727b4f6e3b3",
+        "model_sha256": "068b80634eaaa8d21c663e28a92dbfb38ddb32a0990e111f1dbbe38e3f6db609"
+      },
+      {
+        "id": "prediction_rotor_magnitude_direct_nn",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "603c653e2b5bfc69d674f3810c4c1bea37f55bb4400208dbf15c68958256f6ed",
+        "model_sha256": "cda9bdf44c33758e4f6f9e77709cbc893a91fbc2ec781508eda30e176a7b4cf2"
+      },
+      {
+        "id": "prediction_rotor_magnitude_neural_kernel",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "4b84986e31e9683e3a6dc4d61bbb13e5735f8b5c074f5082a4447a4e87d5d3e4",
+        "model_sha256": "155077f538f1f4cab1716d933c643a2b16a98ddf599d67fc064aaf40cd1c1848"
+      },
+      {
+        "id": "fitting_rotor",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "c8261ce88d34f9ebd8e75156b872112ebe2d9fe2f40ebe82f4ef35f14f2f2727",
+        "model_sha256": "bca4a01424f4e9d0afae47649cb9d7595bb97eb650214433740002964c3892fa"
+      },
+      {
+        "id": "fitting_stator",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "c8261ce88d34f9ebd8e75156b872112ebe2d9fe2f40ebe82f4ef35f14f2f2727",
+        "model_sha256": "420295981e6eb771f421e3f414ea4a505133ce7bf8af187bd231cc36c78f8619"
+      },
+      {
+        "id": "fitting_airgap",
+        "passed": true,
+        "max_forward_difference_T": 0.0,
+        "source_sha256": "c8261ce88d34f9ebd8e75156b872112ebe2d9fe2f40ebe82f4ef35f14f2f2727",
+        "model_sha256": "cc63731d227613ff14ec66e9a35cc7a0522729877b8348ebf2a5a47b37b60a60"
+      }
+    ],
+    "actual_cli_exports": [
+      {
+        "branch": "fitting_full60",
+        "region": "rotor",
+        "frame": 44,
+        "bytes": 73093,
+        "sha256": "d9cc077479a674e99527dfb7fa43528d280d8f8b9d8f17243483f0d7f9cbb834",
+        "passed": true,
+        "scope": "training_fit, not heldout accuracy"
+      },
+      {
+        "branch": "prediction",
+        "region": "stator",
+        "frame": 0,
+        "bytes": 163771,
+        "sha256": "33f06038a46d174d5c480eea460a9ff218c37dfb530b429421e3d7e6cc2311ec",
+        "passed": true,
+        "scope": "reused_test, not fresh blind test"
+      },
+      {
+        "branch": "prediction",
+        "region": "airgap",
+        "frame": 59,
+        "bytes": 37277,
+        "sha256": "a7081f698d3a00a19d0274dfc0143cc0e821e23421bfcc9af807651560e7fce0",
+        "passed": true,
+        "scope": "reused_test, not fresh blind test"
+      }
+    ],
+    "max_forward_difference_T": 0.0,
+    "numpy_only_forward_equations": true,
+    "field_labels_loaded": false,
+    "code_sha256": {
+      "inference_numpy_v2.py": "1d3d2def16412de0b1911af3283e8f0d22abd9fa605032af38bcd04948de26c7",
+      "predict_v2.py": "20426e108db74112dcf571196386e768eae28137810dc0b872a2d92ca9a162b8"
+    }
+  },
+  "prediction_scope": "42 training / 9 validation / 9 reused test; V1 test already seen; no fresh blind test",
+  "fitting_scope": "All60 training; scores are in-sample fitting errors only",
+  "physical_quantity": "Rotor/stator sqrt(Br^2+Bt^2), planar, missing Bz; airgap signed Br",
+  "metric_weighting": "Equal original point/component weights, not FEM area weights",
+  "metric_definition": {
+    "RMSE": "sqrt(mean((prediction-truth)^2)) / T",
+    "MAE": "mean(abs(prediction-truth)) / T",
+    "max_abs": "max(abs(prediction-truth)) / T",
+    "relative_L2_pct": "100*sqrt(sum((prediction-truth)^2)/sum(truth^2))"
+  },
+  "limitations": [
+    "Known fixed60 measured rotor positions and original sample points only.",
+    "No claim of arbitrary new angles, new spatial points, other speeds or range-external accuracy.",
+    "Large local errors remain in prediction; inspect maximum error and worst-case plots.",
+    "Fitting error cannot be used as prediction error on untrained conditions.",
+    "3D plots are field-height maps, not volumetric magnetic-field reconstructions.",
+    "Prediction choices were frozen before V2 reused-test evaluation and were not changed using its results."
+  ],
+  "models": [
+    {
+      "id": "prediction_rotor_magnitude",
+      "branch": "prediction",
+      "region": "rotor",
+      "quantity": "planar_magnitude",
+      "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+      "role": "primary",
+      "method": "condition_kernel_POD",
+      "metrics": {
+        "train": {
+          "rmse_T": 0.017773424620570032,
+          "mae_T": 0.004850637889794308,
+          "max_abs_T": 0.5031205543757606,
+          "relative_L2_pct": 1.4473844582710222,
+          "truth_L2_T": 2615.3133737479775,
+          "truth_rms_T": 1.2279684584841635,
+          "squared_error_T2": 1432.8980087626337,
+          "truth_squared_norm_T2": 6839864.042905029,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 54,
+          "worst_case_rmse_T": 0.030806561175967802,
+          "worst_case_relative_L2_pct": 2.231366147432335
+        },
+        "validation": {
+          "rmse_T": 0.0312762428191272,
+          "mae_T": 0.008053405213378545,
+          "max_abs_T": 0.8620019617941934,
+          "relative_L2_pct": 2.632302901723209,
+          "truth_L2_T": 1171.4178733266185,
+          "truth_rms_T": 1.1881703583068857,
+          "squared_error_T2": 950.8136706643377,
+          "truth_squared_norm_T2": 1372219.8339490579,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 51,
+          "worst_case_rmse_T": 0.03783842810245798,
+          "worst_case_relative_L2_pct": 3.499400836044132
+        },
+        "reused_test": {
+          "rmse_T": 0.03558222635265937,
+          "mae_T": 0.010819836440555767,
+          "max_abs_T": 0.9138122204459072,
+          "relative_L2_pct": 3.1580073628064307,
+          "truth_L2_T": 1110.8440989864027,
+          "truth_rms_T": 1.1267303164562117,
+          "squared_error_T2": 1230.644176909954,
+          "truth_squared_norm_T2": 1233974.6122529127,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 38,
+          "worst_case_rmse_T": 0.06389355786673806,
+          "worst_case_relative_L2_pct": 5.403846536956699
+        }
+      }
+    },
+    {
+      "id": "prediction_stator_vector",
+      "branch": "prediction",
+      "region": "stator",
+      "quantity": "Br,Bt",
+      "model_sha256": "ea03488c0050c32d3afb9fe19b98b4450f255024a59dab469e7dc36d9a134558",
+      "role": "primary",
+      "method": "condition_kernel_POD",
+      "metrics": {
+        "train": {
+          "rmse_T": 0.001010322715628797,
+          "mae_T": 0.0003489842531868083,
+          "max_abs_T": 0.10291137077089463,
+          "relative_L2_pct": 0.13329827221065432,
+          "truth_L2_T": 2282.901209273333,
+          "truth_rms_T": 0.7579413437798809,
+          "squared_error_T2": 9.260262050699444,
+          "truth_squared_norm_T2": 5211637.931301646,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 45,
+          "worst_case_rmse_T": 0.0020186566016913744,
+          "worst_case_relative_L2_pct": 0.29900341320485013
+        },
+        "validation": {
+          "rmse_T": 0.007289856493155485,
+          "mae_T": 0.0029562954107370657,
+          "max_abs_T": 0.3736306273738461,
+          "relative_L2_pct": 1.0269378255439527,
+          "truth_L2_T": 989.7441844193644,
+          "truth_rms_T": 0.7098634709744149,
+          "squared_error_T2": 103.3080629509175,
+          "truth_squared_norm_T2": 979593.5505919527,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 15,
+          "worst_case_rmse_T": 0.013756200719275276,
+          "worst_case_relative_L2_pct": 2.0538043827080545
+        },
+        "reused_test": {
+          "rmse_T": 0.011172654725530803,
+          "mae_T": 0.0052803922974041006,
+          "max_abs_T": 0.47364943370962753,
+          "relative_L2_pct": 1.8999219354673376,
+          "truth_L2_T": 819.9148478558163,
+          "truth_rms_T": 0.5880586205655121,
+          "squared_error_T2": 242.66604726935967,
+          "truth_squared_norm_T2": 672260.3577344265,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 38,
+          "worst_case_rmse_T": 0.017008774215505378,
+          "worst_case_relative_L2_pct": 3.0500064208869366
+        }
+      }
+    },
+    {
+      "id": "prediction_stator_magnitude",
+      "branch": "prediction",
+      "region": "stator",
+      "quantity": "planar_magnitude",
+      "model_sha256": "ea03488c0050c32d3afb9fe19b98b4450f255024a59dab469e7dc36d9a134558",
+      "role": "primary",
+      "method": "condition_kernel_POD",
+      "metrics": {
+        "train": {
+          "rmse_T": 0.0010395299040629907,
+          "mae_T": 0.0003851175595039938,
+          "max_abs_T": 0.0872032238979985,
+          "relative_L2_pct": 0.09698094060199665,
+          "truth_L2_T": 2282.901209273334,
+          "truth_rms_T": 1.0718909278567967,
+          "squared_error_T2": 4.901703303657332,
+          "truth_squared_norm_T2": 5211637.9313016515,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 39,
+          "worst_case_rmse_T": 0.002106917886959713,
+          "worst_case_relative_L2_pct": 0.30399141832626225
+        },
+        "validation": {
+          "rmse_T": 0.007959758962067189,
+          "mae_T": 0.003537994060127088,
+          "max_abs_T": 0.21932075466762502,
+          "relative_L2_pct": 0.7928847967007118,
+          "truth_L2_T": 989.7441844193642,
+          "truth_rms_T": 1.0038985480852574,
+          "squared_error_T2": 61.58374537765108,
+          "truth_squared_norm_T2": 979593.5505919524,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 15,
+          "worst_case_rmse_T": 0.01554630271634425,
+          "worst_case_relative_L2_pct": 1.6412422728001914
+        },
+        "reused_test": {
+          "rmse_T": 0.012763300999947,
+          "mae_T": 0.006492097289547611,
+          "max_abs_T": 0.3035346850063818,
+          "relative_L2_pct": 1.5347137805255835,
+          "truth_L2_T": 819.9148478558166,
+          "truth_rms_T": 0.8316404766741611,
+          "squared_error_T2": 158.34060054762116,
+          "truth_squared_norm_T2": 672260.3577344267,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 38,
+          "worst_case_rmse_T": 0.01987134513942692,
+          "worst_case_relative_L2_pct": 2.5196487719256635
+        }
+      }
+    },
+    {
+      "id": "prediction_airgap_Br",
+      "branch": "prediction",
+      "region": "airgap",
+      "quantity": "Br",
+      "model_sha256": "4bdee9454f27a7795683e5a6c225b39290da7ba6714063f12864cdf31da02f66",
+      "role": "primary",
+      "method": "condition_kernel_POD",
+      "metrics": {
+        "train": {
+          "rmse_T": 0.00012493319052303935,
+          "mae_T": 7.235022863111199e-05,
+          "max_abs_T": 0.0018369959934371183,
+          "relative_L2_pct": 0.017706074653971213,
+          "truth_L2_T": 1062.6177477128633,
+          "truth_rms_T": 0.7055950738071618,
+          "squared_error_T2": 0.0353996291497954,
+          "truth_squared_norm_T2": 1129156.4777543584,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 33,
+          "worst_case_rmse_T": 0.00031536283875200423,
+          "worst_case_relative_L2_pct": 0.03613850205125234
+        },
+        "validation": {
+          "rmse_T": 0.0020739204017909633,
+          "mae_T": 0.0009516987409705677,
+          "max_abs_T": 0.03834457202529229,
+          "relative_L2_pct": 0.3111970303624082,
+          "truth_L2_T": 464.59525987943516,
+          "truth_rms_T": 0.6664332237925775,
+          "squared_error_T2": 2.090356874820888,
+          "truth_squared_norm_T2": 215848.75550243992,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 15,
+          "worst_case_rmse_T": 0.005179682811815442,
+          "worst_case_relative_L2_pct": 0.8279486198665573
+        },
+        "reused_test": {
+          "rmse_T": 0.0028309263158909008,
+          "mae_T": 0.0015276087919039272,
+          "max_abs_T": 0.034106275352705495,
+          "relative_L2_pct": 0.5135330668543442,
+          "truth_L2_T": 384.3069926792474,
+          "truth_rms_T": 0.5512646601769559,
+          "squared_error_T2": 3.894873889717763,
+          "truth_squared_norm_T2": 147691.86462216714,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 12,
+          "worst_case_rmse_T": 0.004367498110841908,
+          "worst_case_relative_L2_pct": 0.7363916654404443
+        }
+      }
+    },
+    {
+      "id": "prediction_rotor_vector",
+      "branch": "prediction",
+      "region": "rotor",
+      "quantity": "Br,Bt",
+      "model_sha256": "068b80634eaaa8d21c663e28a92dbfb38ddb32a0990e111f1dbbe38e3f6db609",
+      "role": "primary",
+      "method": "pure_neural_condition_POD",
+      "metrics": {
+        "train": {
+          "rmse_T": 0.0263378248970284,
+          "mae_T": 0.008081229410530999,
+          "max_abs_T": 0.883790712799972,
+          "relative_L2_pct": 3.0332464091760443,
+          "truth_L2_T": 2615.3133737479784,
+          "truth_rms_T": 0.8683048240773438,
+          "squared_error_T2": 6293.074216220831,
+          "truth_squared_norm_T2": 6839864.042905034,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 31,
+          "worst_case_rmse_T": 0.042266296244355746,
+          "worst_case_relative_L2_pct": 5.178261430833422
+        },
+        "validation": {
+          "rmse_T": 0.03926212424857099,
+          "mae_T": 0.010486238805377602,
+          "max_abs_T": 1.722199841126675,
+          "relative_L2_pct": 4.673153829475133,
+          "truth_L2_T": 1171.4178733266192,
+          "truth_rms_T": 0.8401633175636491,
+          "squared_error_T2": 2996.70399459188,
+          "truth_squared_norm_T2": 1372219.833949059,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 24,
+          "worst_case_rmse_T": 0.05266269426130589,
+          "worst_case_relative_L2_pct": 5.673550250342135
+        },
+        "reused_test": {
+          "rmse_T": 0.04059343602411544,
+          "mae_T": 0.013490043851485516,
+          "max_abs_T": 1.2901343136810173,
+          "relative_L2_pct": 5.0950779374773045,
+          "truth_L2_T": 1110.844098986402,
+          "truth_rms_T": 0.7967186473346516,
+          "squared_error_T2": 3203.3757817862456,
+          "truth_squared_norm_T2": 1233974.6122529113,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 38,
+          "worst_case_rmse_T": 0.07118254771940165,
+          "worst_case_relative_L2_pct": 8.514015973551622
+        }
+      }
+    },
+    {
+      "id": "prediction_rotor_magnitude_nn",
+      "branch": "prediction",
+      "region": "rotor",
+      "quantity": "planar_magnitude",
+      "model_sha256": "068b80634eaaa8d21c663e28a92dbfb38ddb32a0990e111f1dbbe38e3f6db609",
+      "role": "neural_control",
+      "method": "pure_neural_condition_POD_derived_magnitude",
+      "metrics": {
+        "train": {
+          "rmse_T": 0.02299454612237204,
+          "mae_T": 0.00851042426876908,
+          "max_abs_T": 0.5421471886889496,
+          "relative_L2_pct": 1.872568139963229,
+          "truth_L2_T": 2615.3133737479775,
+          "truth_rms_T": 1.2279684584841635,
+          "squared_error_T2": 2398.4061506319877,
+          "truth_squared_norm_T2": 6839864.042905029,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 59,
+          "worst_case_rmse_T": 0.03273328058453845,
+          "worst_case_relative_L2_pct": 3.034306349978092
+        },
+        "validation": {
+          "rmse_T": 0.031404879262821546,
+          "mae_T": 0.010561156856213434,
+          "max_abs_T": 0.7859681108862597,
+          "relative_L2_pct": 2.6431293326971015,
+          "truth_L2_T": 1171.4178733266185,
+          "truth_rms_T": 1.1881703583068857,
+          "squared_error_T2": 958.6509811500517,
+          "truth_squared_norm_T2": 1372219.8339490579,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 24,
+          "worst_case_rmse_T": 0.03797422362876956,
+          "worst_case_relative_L2_pct": 2.892848815387056
+        },
+        "reused_test": {
+          "rmse_T": 0.03735858412656161,
+          "mae_T": 0.014916341645014406,
+          "max_abs_T": 0.8339009372265747,
+          "relative_L2_pct": 3.315663347380383,
+          "truth_L2_T": 1110.8440989864027,
+          "truth_rms_T": 1.1267303164562117,
+          "squared_error_T2": 1356.5852213190221,
+          "truth_squared_norm_T2": 1233974.6122529127,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 38,
+          "worst_case_rmse_T": 0.05810789316830761,
+          "worst_case_relative_L2_pct": 4.914519518889953
+        }
+      }
+    },
+    {
+      "id": "prediction_rotor_magnitude_direct_nn",
+      "branch": "prediction",
+      "region": "rotor",
+      "quantity": "planar_magnitude",
+      "model_sha256": "cda9bdf44c33758e4f6f9e77709cbc893a91fbc2ec781508eda30e176a7b4cf2",
+      "role": "neural_control",
+      "method": "pure_neural_condition_POD_direct_magnitude",
+      "metrics": {
+        "train": {
+          "rmse_T": 0.019355661082796197,
+          "mae_T": 0.006130314212736348,
+          "max_abs_T": 0.4977885494603629,
+          "relative_L2_pct": 1.5762343852617624,
+          "truth_L2_T": 2615.3133737479775,
+          "truth_rms_T": 1.2279684584841635,
+          "squared_error_T2": 1699.3743699585953,
+          "truth_squared_norm_T2": 6839864.042905029,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 57,
+          "worst_case_rmse_T": 0.03551029343884332,
+          "worst_case_relative_L2_pct": 3.572761630080872
+        },
+        "validation": {
+          "rmse_T": 0.032684991799921244,
+          "mae_T": 0.009308019160544268,
+          "max_abs_T": 0.8313665043269882,
+          "relative_L2_pct": 2.75086746369406,
+          "truth_L2_T": 1171.4178733266185,
+          "truth_rms_T": 1.1881703583068857,
+          "squared_error_T2": 1038.3960456700133,
+          "truth_squared_norm_T2": 1372219.8339490579,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 51,
+          "worst_case_rmse_T": 0.039966062546200914,
+          "worst_case_relative_L2_pct": 3.6961702613244247
+        },
+        "reused_test": {
+          "rmse_T": 0.04261147203296047,
+          "mae_T": 0.014240264308473404,
+          "max_abs_T": 1.0357608403882503,
+          "relative_L2_pct": 3.7818696639832963,
+          "truth_L2_T": 1110.8440989864027,
+          "truth_rms_T": 1.1267303164562117,
+          "squared_error_T2": 1764.8968974489308,
+          "truth_squared_norm_T2": 1233974.6122529127,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 38,
+          "worst_case_rmse_T": 0.07482358837749928,
+          "worst_case_relative_L2_pct": 6.3282622291865405
+        }
+      }
+    },
+    {
+      "id": "prediction_rotor_magnitude_neural_kernel",
+      "branch": "prediction",
+      "region": "rotor",
+      "quantity": "planar_magnitude",
+      "model_sha256": "155077f538f1f4cab1716d933c643a2b16a98ddf599d67fc064aaf40cd1c1848",
+      "role": "neural_control",
+      "method": "learned_neural_coordinate_embedding_kernel",
+      "metrics": {
+        "train": {
+          "rmse_T": 0.014601615172474788,
+          "mae_T": 0.004709023786096996,
+          "max_abs_T": 0.47898201476722657,
+          "relative_L2_pct": 1.1890871521650812,
+          "truth_L2_T": 2615.3133737479775,
+          "truth_rms_T": 1.2279684584841635,
+          "squared_error_T2": 967.1077033659284,
+          "truth_squared_norm_T2": 6839864.042905029,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 53,
+          "worst_case_rmse_T": 0.025855298074416555,
+          "worst_case_relative_L2_pct": 1.8786895586170311
+        },
+        "validation": {
+          "rmse_T": 0.03210913402115638,
+          "mae_T": 0.008752276577763618,
+          "max_abs_T": 0.899373559807057,
+          "relative_L2_pct": 2.70240153667115,
+          "truth_L2_T": 1171.4178733266185,
+          "truth_rms_T": 1.1881703583068857,
+          "squared_error_T2": 1002.1285859361018,
+          "truth_squared_norm_T2": 1372219.8339490579,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 24,
+          "worst_case_rmse_T": 0.04504479072034743,
+          "worst_case_relative_L2_pct": 3.4314794885231774
+        },
+        "reused_test": {
+          "rmse_T": 0.04017664988016821,
+          "mae_T": 0.01377172445036077,
+          "max_abs_T": 1.1240508821095816,
+          "relative_L2_pct": 3.565773397003434,
+          "truth_L2_T": 1110.8440989864027,
+          "truth_rms_T": 1.1267303164562117,
+          "squared_error_T2": 1568.9666261169987,
+          "truth_squared_norm_T2": 1233974.6122529127,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 38,
+          "worst_case_rmse_T": 0.0706587175698674,
+          "worst_case_relative_L2_pct": 5.976015094387211
+        }
+      }
+    },
+    {
+      "id": "fitting_rotor",
+      "branch": "fitting_full60",
+      "region": "rotor",
+      "quantity": "planar_magnitude",
+      "model_sha256": "bca4a01424f4e9d0afae47649cb9d7595bb97eb650214433740002964c3892fa",
+      "role": "primary",
+      "method": "pure_neural_all60_condition_POD",
+      "metrics": {
+        "training_fit": {
+          "rmse_T": 0.0005405918675191029,
+          "mae_T": 0.00017326037554993902,
+          "max_abs_T": 0.040806460662032806,
+          "relative_L2_pct": 0.04477459804928583,
+          "truth_L2_T": 3073.4440761313685,
+          "truth_rms_T": 1.207362859905619,
+          "squared_error_T2": 1.8937123956360875,
+          "truth_squared_norm_T2": 9446058.489107002,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 48,
+          "worst_case_rmse_T": 0.0018730565535938649,
+          "worst_case_relative_L2_pct": 0.1465475117119361
+        }
+      }
+    },
+    {
+      "id": "fitting_stator",
+      "branch": "fitting_full60",
+      "region": "stator",
+      "quantity": "planar_magnitude",
+      "model_sha256": "420295981e6eb771f421e3f414ea4a505133ce7bf8af187bd231cc36c78f8619",
+      "role": "primary",
+      "method": "pure_neural_all60_condition_POD",
+      "metrics": {
+        "training_fit": {
+          "rmse_T": 0.00044545106295304884,
+          "mae_T": 0.00029118864959009586,
+          "max_abs_T": 0.030578706725880922,
+          "relative_L2_pct": 0.04328275952038853,
+          "truth_L2_T": 2619.8266812192032,
+          "truth_rms_T": 1.0291651176797478,
+          "squared_error_T2": 1.285804688669287,
+          "truth_squared_norm_T2": 6863491.839628026,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 5,
+          "worst_case_rmse_T": 0.0009720080119419138,
+          "worst_case_relative_L2_pct": 0.07809624572857982
+        }
+      }
+    },
+    {
+      "id": "fitting_airgap",
+      "branch": "fitting_full60",
+      "region": "airgap",
+      "quantity": "Br",
+      "model_sha256": "cc63731d227613ff14ec66e9a35cc7a0522729877b8348ebf2a5a47b37b60a60",
+      "role": "primary",
+      "method": "pure_neural_all60_condition_POD",
+      "metrics": {
+        "training_fit": {
+          "rmse_T": 0.0003214813996440605,
+          "mae_T": 0.00021325014297729388,
+          "max_abs_T": 0.0038859948945760836,
+          "relative_L2_pct": 0.04736336079412032,
+          "truth_L2_T": 1221.759836415883,
+          "truth_rms_T": 0.6787554646754905,
+          "squared_error_T2": 0.33485494062741744,
+          "truth_squared_norm_T2": 1492697.0978789653,
+          "near_zero_truth_rms": false,
+          "worst_case_id": 58,
+          "worst_case_rmse_T": 0.0005481261268463077,
+          "worst_case_relative_L2_pct": 0.08482523356890347
+        }
+      }
+    }
+  ],
+  "same_quantity_v1_v2": {
+    "scope": "same nine previously exposed test cases, not fresh blind",
+    "rows": [
+      {
+        "model_id": "prediction_rotor_magnitude",
+        "region": "rotor",
+        "quantity": "|B|",
+        "v1_rmse_T": 0.06827818393442892,
+        "v1_mae_T": 0.03370721238662685,
+        "v1_max_abs_T": 0.838118425933216,
+        "v1_relative_L2_pct": 6.059851495713475,
+        "v2_rmse_T": 0.03558222635265937,
+        "v2_mae_T": 0.010819836440555767,
+        "v2_max_abs_T": 0.9138122204459072,
+        "v2_relative_L2_pct": 3.1580073628064307
+      },
+      {
+        "model_id": "prediction_rotor_vector",
+        "region": "rotor",
+        "quantity": "Br,Bt",
+        "v1_rmse_T": 0.06352951600393208,
+        "v1_mae_T": 0.03009584371297489,
+        "v1_max_abs_T": 1.0403446133428336,
+        "v1_relative_L2_pct": 7.97389595642881,
+        "v2_rmse_T": 0.04059343602411544,
+        "v2_mae_T": 0.013490043851485516,
+        "v2_max_abs_T": 1.2901343136810173,
+        "v2_relative_L2_pct": 5.0950779374773045
+      },
+      {
+        "model_id": "prediction_stator_magnitude",
+        "region": "stator",
+        "quantity": "|B|",
+        "v1_rmse_T": 0.03698163669811373,
+        "v1_mae_T": 0.02246762587986517,
+        "v1_max_abs_T": 0.62644585857632,
+        "v1_relative_L2_pct": 4.4468298183378625,
+        "v2_rmse_T": 0.012763300999947,
+        "v2_mae_T": 0.006492097289547611,
+        "v2_max_abs_T": 0.3035346850063818,
+        "v2_relative_L2_pct": 1.5347137805255835
+      },
+      {
+        "model_id": "prediction_stator_vector",
+        "region": "stator",
+        "quantity": "Br,Bt",
+        "v1_rmse_T": 0.03189167195586618,
+        "v1_mae_T": 0.017622095189103182,
+        "v1_max_abs_T": 0.6667621423805579,
+        "v1_relative_L2_pct": 5.423213067635546,
+        "v2_rmse_T": 0.011172654725530803,
+        "v2_mae_T": 0.0052803922974041006,
+        "v2_max_abs_T": 0.47364943370962753,
+        "v2_relative_L2_pct": 1.8999219354673376
+      },
+      {
+        "model_id": "prediction_airgap_Br",
+        "region": "airgap",
+        "quantity": "Br",
+        "v1_rmse_T": 0.011562381984926812,
+        "v1_mae_T": 0.0078096141971554615,
+        "v1_max_abs_T": 0.10186810014903916,
+        "v1_relative_L2_pct": 2.0974284803991043,
+        "v2_rmse_T": 0.0028309263158909008,
+        "v2_mae_T": 0.0015276087919039272,
+        "v2_max_abs_T": 0.034106275352705495,
+        "v2_relative_L2_pct": 0.5135330668543442
+      }
+    ],
+    "choices_sha256": "c26dcdb4213e5afe09d78cf301e08e34234be2c1bf78a7aa32eab5673c4174c0"
+  },
+  "additional_audits": {
+    "saved_scientific_arrays": {
+      "path": "qa/scientific_npz_spotchecks.json",
+      "passed": true,
+      "check_count": 355
+    },
+    "optimization_inventory": {
+      "path": "qa/optimization_inventory.json",
+      "passed": true,
+      "check_count": 177
+    },
+    "website_payloads": {
+      "path": "qa/website_payload_check.json",
+      "passed": true,
+      "check_count": 10586
+    },
+    "browser_interaction": {
+      "path": "qa/browser_v2/browser_v2_check.json",
+      "passed": true,
+      "check_count": 69
+    }
+  },
+  "optimization_inventory": {
+    "all_pass": true,
+    "counts": {
+      "prediction_MLP_training_runs": 40,
+      "prediction_neural_frame_kernel_training_runs": 8,
+      "prediction_neural_training_runs": 48,
+      "full60_fitting_NN_training_runs": 3,
+      "all_completed_neural_training_runs": 51,
+      "kernel_search_directories": 18,
+      "kernel_completed_unique_configuration_solves": 110538,
+      "kernel_configuration_rank_validation_rows": 552690,
+      "kernel_failed_configurations": 0,
+      "adaptive_completed_validation_variants": 32,
+      "power_completed_validation_configurations": 1728
+    },
+    "neural_families": {
+      "rotor": 12,
+      "rotor_magnitude": 12,
+      "rotor_magnitude_blocks": 12,
+      "rotor_spatial_magnitude": 4
+    },
+    "neural_prediction_runs": [
+      {
+        "family": "rotor",
+        "run": "direct_cart2_seed42",
+        "result_relative_path": "neural_route\\rotor\\runs\\direct_cart2_seed42\\result.json",
+        "result_sha256": "21237135a2211bd37ead22b2bb540676be98038edfe899f6fb5b97f51b2432f0",
+        "model_sha256": "87a346b96b79498514f28ab059e0736eb290d10b5edd8d663590963ab22185ae",
+        "history_sha256": "ca65e32361a82be5da7fa72f7092759f058ec30279fb617ce7d3cc8bfe8ff6bd",
+        "checkpoint_rows": 246,
+        "seed": 42,
+        "parameter_count": 22569,
+        "recorded_best_step": 425,
+        "recorded_adam_final_step": 1025,
+        "recorded_lbfgs_closures": 461,
+        "elapsed_seconds": 4.278912099998706
+      },
+      {
+        "family": "rotor",
+        "run": "direct_cart_seed17",
+        "result_relative_path": "neural_route\\rotor\\runs\\direct_cart_seed17\\result.json",
+        "result_sha256": "1a6b5c1e6af67edcb43aab6cfc066a83ee1dd6ec7cd2517258a0bd7fe954cac7",
+        "model_sha256": "95ca5f0eaf2df3090c28ca131d7cff40d79b42fbe24adf6cab1cdc2a1eb1229a",
+        "history_sha256": "4c1d9c365e139c2d33676af51fc8ba1fca01e093fd3be95e338a6bc6ccce85a4",
+        "checkpoint_rows": 275,
+        "seed": 17,
+        "parameter_count": 7017,
+        "recorded_best_step": 1180,
+        "recorded_adam_final_step": 1170,
+        "recorded_lbfgs_closures": 460,
+        "elapsed_seconds": 3.5434432000001834
+      },
+      {
+        "family": "rotor",
+        "run": "direct_cart_seed42",
+        "result_relative_path": "neural_route\\rotor\\runs\\direct_cart_seed42\\result.json",
+        "result_sha256": "6d004f6bbd8f7d6669e65e6a77b7bc46dee3f612b77685d1fd36af402bb734e7",
+        "model_sha256": "72ad80545dff35a40c6269ce3d834fb6c71aaacde9eaae48a8a1812ebeb94fac",
+        "history_sha256": "604a5f27e488e3bf270578c47f55ca18c0aeb0a86bd35caffeef76b88771748a",
+        "checkpoint_rows": 288,
+        "seed": 42,
+        "parameter_count": 7017,
+        "recorded_best_step": 635,
+        "recorded_adam_final_step": 1235,
+        "recorded_lbfgs_closures": 465,
+        "elapsed_seconds": 6.954393200001505
+      },
+      {
+        "family": "rotor",
+        "run": "direct_cart_seed73",
+        "result_relative_path": "neural_route\\rotor\\runs\\direct_cart_seed73\\result.json",
+        "result_sha256": "8f2a8d5359931551fb72de3486e83c21022f92b35092f19569d2c018d3711272",
+        "model_sha256": "9d0facebe1b89e324939a7275b091af71ea524e7bb6dffc85f2457fe500e5b34",
+        "history_sha256": "20cfc536604ae6e25ee25bef560ac804470f48e9937270879bc886be7bdcc66b",
+        "checkpoint_rows": 241,
+        "seed": 73,
+        "parameter_count": 7017,
+        "recorded_best_step": 1020,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 462,
+        "elapsed_seconds": 3.476494400001684
+      },
+      {
+        "family": "rotor",
+        "run": "direct_mixed_seed17",
+        "result_relative_path": "neural_route\\rotor\\runs\\direct_mixed_seed17\\result.json",
+        "result_sha256": "d11a2db89245e6f65e920985bc5e8b1698009fd8aa2e2c159312cdbb6ec275a6",
+        "model_sha256": "6518ff6c5bbab09cdcf83c7d3c8e90193e77c2d14ddc79a0a0c7ce577d6bcd90",
+        "history_sha256": "eb1984d1189dea5289dca24afb829ff8083abb5a70f547dae7cff130ac3e2541",
+        "checkpoint_rows": 241,
+        "seed": 17,
+        "parameter_count": 11497,
+        "recorded_best_step": 1010,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 459,
+        "elapsed_seconds": 3.9094537000019045
+      },
+      {
+        "family": "rotor",
+        "run": "direct_mixed_seed42",
+        "result_relative_path": "neural_route\\rotor\\runs\\direct_mixed_seed42\\result.json",
+        "result_sha256": "d928b2f7f5b5ba60bee1e52fb59d396feea3ab03620e43d88aa192c05e2a4e4a",
+        "model_sha256": "2f64097a5006dc0a00e91ac38bdcdea09150685d15268aab9264225adcbed545",
+        "history_sha256": "88080bd642680279170eee00b2a662d71c37c24a6effec6674cff46692af87e0",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 11497,
+        "recorded_best_step": 1010,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 461,
+        "elapsed_seconds": 3.8593819000016083
+      },
+      {
+        "family": "rotor",
+        "run": "direct_mixed_seed73",
+        "result_relative_path": "neural_route\\rotor\\runs\\direct_mixed_seed73\\result.json",
+        "result_sha256": "b92dc6f5c8de7fbf6b7d0a69beb33b042408ae26929d569aa50157340e153e68",
+        "model_sha256": "8d852f117193ead9c9ce8762c9825a1e3dd0a89d99d700dedeb18032ff39dd08",
+        "history_sha256": "5821a04525b48bd83878574ba8dc877a3843f7d974865bebc1ede990d103e8e2",
+        "checkpoint_rows": 241,
+        "seed": 73,
+        "parameter_count": 11497,
+        "recorded_best_step": 1020,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 453,
+        "elapsed_seconds": 3.8598554999989574
+      },
+      {
+        "family": "rotor",
+        "run": "poly2_deep_seed42",
+        "result_relative_path": "neural_route\\rotor\\runs\\poly2_deep_seed42\\result.json",
+        "result_sha256": "e21e14587ccb68131a0f8d2965c9e252f66b506ca5fff078e2e77c46a9424ef1",
+        "model_sha256": "0dc5ddb32f0eba3164f68c40def84a7c1001944bd68924b52d2d0348dc824c68",
+        "history_sha256": "b6c1419c3cb9024e7b441b763f81dcfbb77fa5ae05af8f1bd751091eedc05883",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 11369,
+        "recorded_best_step": 90,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 454,
+        "elapsed_seconds": 3.771687500000553
+      },
+      {
+        "family": "rotor",
+        "run": "poly2_mixed_seed42",
+        "result_relative_path": "neural_route\\rotor\\runs\\poly2_mixed_seed42\\result.json",
+        "result_sha256": "92242944c707ca224ffe5f1c75c1b157db5bf9bce640273befcd867cb5bde69e",
+        "model_sha256": "d766745a70746718e44a319c3995b53cc9f0faf5ba137b94457e5a2228c73584",
+        "history_sha256": "ecff1976564b9c36701b35692b9c486f44e2e3f5628060f37c6335f9ffb6b1f0",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 7337,
+        "recorded_best_step": 70,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 454,
+        "elapsed_seconds": 3.3417253000006895
+      },
+      {
+        "family": "rotor",
+        "run": "poly2_small_seed42",
+        "result_relative_path": "neural_route\\rotor\\runs\\poly2_small_seed42\\result.json",
+        "result_sha256": "557de454ecd3904bdc3daee0817987adb41798a7359aa37d7e52e2e4a5672eac",
+        "model_sha256": "4a7b2c8f66c0605b03801f570edd560f9f3431744d837474028abe4390bc70cc",
+        "history_sha256": "a8c6925d595950eb04aeba43cdcea582252991a5c00813e560b0ec356d4746e3",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 7209,
+        "recorded_best_step": 85,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 454,
+        "elapsed_seconds": 3.3351763999999093
+      },
+      {
+        "family": "rotor",
+        "run": "poly2_wide_seed42",
+        "result_relative_path": "neural_route\\rotor\\runs\\poly2_wide_seed42\\result.json",
+        "result_sha256": "11d37c8f7aaea17ad904ebe094231bea3f7a712562ecc7c6f416f1dc0d35ac5a",
+        "model_sha256": "e832b012c69a69acc25e59b4790cbdeb6babce1be4ff56907192b89ace03a296",
+        "history_sha256": "66b91bebe9efd86ccfcd0cc63122444fd2381217408654f11b8cee4dfae15691",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 22569,
+        "recorded_best_step": 85,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 456,
+        "elapsed_seconds": 4.240528800000902
+      },
+      {
+        "family": "rotor",
+        "run": "poly3_small_seed42",
+        "result_relative_path": "neural_route\\rotor\\runs\\poly3_small_seed42\\result.json",
+        "result_sha256": "b75d3bb3bc3ae4f2b8894bee26d729fd9cefb6b04756676e5e496440a1ca5a36",
+        "model_sha256": "3f7181bc3f37d00017e95c99dea4acaf647bc2c32456879047ea2a750ef9bfe6",
+        "history_sha256": "6f7a601eb6f4d75afde734e60bb10c6e07f2f7034d8f738ff742cebdbd9ea785",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 7017,
+        "recorded_best_step": 110,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 453,
+        "elapsed_seconds": 3.33411150000029
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "direct_cart2_seed17",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed17\\result.json",
+        "result_sha256": "bad8786f8b6c0578e4dd7c7737a9f33245918f71a5a707b85afd625a49e9a2d7",
+        "model_sha256": "bb1420bab123727ff0be7f347918830d455b2efac32d94eae02e02720e36631e",
+        "history_sha256": "1c3f4ba241c397ed6dc13f88483e6dbd038e997a4e354459cc8a3cee890f276c",
+        "checkpoint_rows": 242,
+        "seed": 17,
+        "parameter_count": 22569,
+        "recorded_best_step": 405,
+        "recorded_adam_final_step": 1005,
+        "recorded_lbfgs_closures": 461,
+        "elapsed_seconds": 5.301289500002895
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "direct_cart2_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed42\\result.json",
+        "result_sha256": "9e0fd5fdd599bb2e9e577ba7625af08979f97da148c43cd927ed5ef1ed8fcf44",
+        "model_sha256": "3ccdbe6a8e97600301a1325d089d6577fe45a9b64f1bda8cf4a728e206283e9a",
+        "history_sha256": "3b34eabd2867e35e91539a5a9ae6c8d5e78cd3f7ef54062aa50ea3b0e7ff0bf3",
+        "checkpoint_rows": 246,
+        "seed": 42,
+        "parameter_count": 22569,
+        "recorded_best_step": 1035,
+        "recorded_adam_final_step": 1025,
+        "recorded_lbfgs_closures": 458,
+        "elapsed_seconds": 5.2411860000029264
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "direct_cart2_seed73",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed73\\result.json",
+        "result_sha256": "9ccc5efd773d9789b17d4a602283961ec37777329266f26bd21d6bd6b58949a5",
+        "model_sha256": "75959379eb84082fda19ce9eef00ce3cac1274122f47bac93cddae66db09be9e",
+        "history_sha256": "253cdd88e918503fde417aa259b55b5c46550e68d9bcb06335fbf140302661cc",
+        "checkpoint_rows": 243,
+        "seed": 73,
+        "parameter_count": 22569,
+        "recorded_best_step": 1020,
+        "recorded_adam_final_step": 1010,
+        "recorded_lbfgs_closures": 460,
+        "elapsed_seconds": 5.387503699999797
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "direct_cart_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\direct_cart_seed42\\result.json",
+        "result_sha256": "1cde4820d09ba4fbb8c0b09269404446e27cf59893a343f3fc718cf958e8ad94",
+        "model_sha256": "daae2bd75ec209beb5094c950ab21ed613e4abcb2c68e62aac07e0c7a47a3455",
+        "history_sha256": "14eb6573eff2b777d99ba48565c1fbc2097fa66a2a5311009cd9fdf32a19b083",
+        "checkpoint_rows": 272,
+        "seed": 42,
+        "parameter_count": 7017,
+        "recorded_best_step": 555,
+        "recorded_adam_final_step": 1155,
+        "recorded_lbfgs_closures": 466,
+        "elapsed_seconds": 7.209206099996663
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "direct_mixed_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\direct_mixed_seed42\\result.json",
+        "result_sha256": "f138cd1f61a6ef4bac7d6f2fa52f8dfc196b5faf46468e97c32aa6e5e66cbecd",
+        "model_sha256": "38a7b822206c1cbcb8da93e14b9fcc86860db2b24be9ce19f0bd86f565cac76d",
+        "history_sha256": "d1e31477c46d10714450f137fc88a7d9ea11868a8391202cda032e2b8c820002",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 11497,
+        "recorded_best_step": 205,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 455,
+        "elapsed_seconds": 4.427861899999698
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "poly2_deep_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\poly2_deep_seed42\\result.json",
+        "result_sha256": "00f81bd467f648f612ade23877c0f17b9b25fe6e4f090aa0d359e265021e0d05",
+        "model_sha256": "2e3f7690a9ce8abff85913084b82196e9f3d74bf8a05ae1b020017765606610a",
+        "history_sha256": "16778d291f0b845d4addf411c8d17725f29eae4fba2d6476c08d13a94cda52d8",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 11369,
+        "recorded_best_step": 135,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 461,
+        "elapsed_seconds": 4.401074299999891
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "poly2_mixed_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\poly2_mixed_seed42\\result.json",
+        "result_sha256": "82844f3c9dbdbbdf44ed30638b0ec0230b68b0c506aa9110b7247c36a32a4182",
+        "model_sha256": "3e22c57f04580620bc6b4d4460af658ad41b3df39466b254db2099a94c463cf5",
+        "history_sha256": "21ab8f5d255c9a4a460e5d731cac40e24a97c0a06ecbaff18c8f220026b767e0",
+        "checkpoint_rows": 641,
+        "seed": 42,
+        "parameter_count": 7337,
+        "recorded_best_step": 3400,
+        "recorded_adam_final_step": 3000,
+        "recorded_lbfgs_closures": 453,
+        "elapsed_seconds": 6.723755099999835
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "poly2_small_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\poly2_small_seed42\\result.json",
+        "result_sha256": "bd4f87fb18a7e6bc16ba58af03db3caa18f4b255b0f6a2f9c4ec8832e702037f",
+        "model_sha256": "cdc7ee51a25bbbc3816ac8b28d16006a8b6e02ead455e9403f4efe3a39392af5",
+        "history_sha256": "b0134bf232a9395dc1758aa3c1ada2ed9bd39c8517676984eb53bb094ece9d46",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 7209,
+        "recorded_best_step": 185,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 457,
+        "elapsed_seconds": 4.00065320000067
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "poly2_wide_seed17",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed17\\result.json",
+        "result_sha256": "8063ba22d5076fb7db85684024a877896f6f845e0954e78a9d5a2e71f2c6f6a2",
+        "model_sha256": "d0604bdb5f349361d33b422880d397cf40a6dc141f606fb375ceeb49a197b159",
+        "history_sha256": "0d0bccc822db722254c46468439009dc1d369704211fd75f39e17bfdb41d7f31",
+        "checkpoint_rows": 241,
+        "seed": 17,
+        "parameter_count": 22569,
+        "recorded_best_step": 120,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 463,
+        "elapsed_seconds": 4.896342100000766
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "poly2_wide_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed42\\result.json",
+        "result_sha256": "1556cbdd3140a16b762baddf2d6bbb0f9b88afa479bba08a45c69c2cd4c349d4",
+        "model_sha256": "b065d07193f5f093d2d9465756a1edaeb874886b7e21cefe58c86a887362dd35",
+        "history_sha256": "90db196bd880c1a2863bd950c09bbdeb3a924a1955dd5fbbc22524814a7e5a07",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 22569,
+        "recorded_best_step": 120,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 458,
+        "elapsed_seconds": 5.027756699997553
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "poly2_wide_seed73",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed73\\result.json",
+        "result_sha256": "7c614e894defe0779a5bb083979b92197438498f6970f59a0edb8e56fef1a1cc",
+        "model_sha256": "864d9cb6b7a4a24300eb6bc39050e16b11675e11a05102f4411dde3deb88f73b",
+        "history_sha256": "da2e8f6d38d387efa334aca8df3decd343413c793799c59d6327a31243f3e789",
+        "checkpoint_rows": 241,
+        "seed": 73,
+        "parameter_count": 22569,
+        "recorded_best_step": 115,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 463,
+        "elapsed_seconds": 4.902360199997929
+      },
+      {
+        "family": "rotor_magnitude",
+        "run": "poly3_small_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude\\runs\\poly3_small_seed42\\result.json",
+        "result_sha256": "fe44aedff8e0c164386e036f8e473baf95542fb8db6ba612647ef37e0607fcb5",
+        "model_sha256": "7560851cca2a1d75cc96ef8f36a5894d9d708a434a04984461bd6e35b023a782",
+        "history_sha256": "02d5cf3f888166b2abd7874a7579aad76fd84fd89190a27ef5501d02450f80b2",
+        "checkpoint_rows": 241,
+        "seed": 42,
+        "parameter_count": 7017,
+        "recorded_best_step": 135,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": 459,
+        "elapsed_seconds": 3.9469787999987602
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b1_direct_small_seed17",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed17\\result.json",
+        "result_sha256": "245a27a9558d2e2ea71cf3b42e7abcf3f0db0d6201f468e8c99d5b78054edd22",
+        "model_sha256": "7f6c726c11b97246604a68b3cee450e2d1916ad7e795e025494a7484981cf911",
+        "history_sha256": "67a1cc9527ba37a31c62dc702b9d88ed59b3f2627009264a315c92bde820453f",
+        "checkpoint_rows": 160,
+        "seed": 17,
+        "parameter_count": 156060,
+        "recorded_best_step": 1310,
+        "recorded_adam_final_step": 1290,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 11.308992000002036
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b1_direct_small_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed42\\result.json",
+        "result_sha256": "06ccd571b163227aab111c4648771a96e4902c621daad719600f0888e53ab308",
+        "model_sha256": "824b0d375c1b9995c6ca300ef679aaa002cea18dd5651bb863a27bc1bdd29994",
+        "history_sha256": "4f870302825de0b0fa27a4d78236e714b122d32004280f08bfe9efcc2db36c1a",
+        "checkpoint_rows": 158,
+        "seed": 42,
+        "parameter_count": 156060,
+        "recorded_best_step": 1290,
+        "recorded_adam_final_step": 1270,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 14.241801700001815
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b1_direct_small_seed73",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed73\\result.json",
+        "result_sha256": "58baa3d47fa2bdea01cb58fcc7ff8d7ae92931c4b3b8812efe29148f5e56d62c",
+        "model_sha256": "491c046b1d5853003f64837be071e43f9069dbb4d5e8cd77a9d4f9b05be3bc81",
+        "history_sha256": "3d7f181e218e1fb4b17cad3b92b89d5cd3b7c1c95599db6518371352ecba0075",
+        "checkpoint_rows": 160,
+        "seed": 73,
+        "parameter_count": 156060,
+        "recorded_best_step": 1310,
+        "recorded_adam_final_step": 1290,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 11.213983599998755
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b1_direct_wide_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_wide_seed42\\result.json",
+        "result_sha256": "8d873111b44e09ae857b3ca07acf03773b5ce1800dd1f250d168299c9b70309f",
+        "model_sha256": "cb59a6ffad8b338177390a0d84c237e38db50b6e51683ea19eb6ef1565202e7a",
+        "history_sha256": "dd04e7466f300e517458b185e67100f81c40cedb53857f0ebc7d2d16e9f1e7f5",
+        "checkpoint_rows": 131,
+        "seed": 42,
+        "parameter_count": 440220,
+        "recorded_best_step": 1040,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 19.81722660000014
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b1_poly2_reg_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b1_poly2_reg_seed42\\result.json",
+        "result_sha256": "bb7d71ba2961385c30a7e18bdf4a2f37cca53b972721cbfba0b2386629c1718b",
+        "model_sha256": "c8bdfd6d77ed44cca898032cb43666fca365239b98d2ee55ad76793be241808e",
+        "history_sha256": "b108c399641f9660e5390f3a14af0da2307775618c697b1e20f0a710fce61d8a",
+        "checkpoint_rows": 131,
+        "seed": 42,
+        "parameter_count": 421020,
+        "recorded_best_step": 230,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 19.36663050000061
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b1_poly2_small_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b1_poly2_small_seed42\\result.json",
+        "result_sha256": "53bf4441badd4fa57bcde32cc7bf8878e34c7c38195fd3ad7d6f30e8ec6a6129",
+        "model_sha256": "03108266fc59d12c1c329ec6e0df3535186bba6dc079d82e19619931cc673b45",
+        "history_sha256": "70106de798a50e911735ddadd1c267c7c8b3a28152c8522c48b58a95bf1c06ef",
+        "checkpoint_rows": 131,
+        "seed": 42,
+        "parameter_count": 156060,
+        "recorded_best_step": 230,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 9.970863300000929
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b3_direct_small_seed17",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed17\\result.json",
+        "result_sha256": "8bad1df710b6d65bec2947ec40739d4dfd45af659e46f63bf9b38c4c6383d143",
+        "model_sha256": "8f7fb2f116889e104a508c419aa24fef891b125966d1ac1a41633907e25d12a4",
+        "history_sha256": "85356ab3239c8fd6e7f9292791a335ad92cd4ed90c44352912fc3f273471c245",
+        "checkpoint_rows": 152,
+        "seed": 17,
+        "parameter_count": 52020,
+        "recorded_best_step": 1230,
+        "recorded_adam_final_step": 1210,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 5.873539399999572
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b3_direct_small_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed42\\result.json",
+        "result_sha256": "dc6d79e782a07feaf659b47fef2f2a93e2a49dcd7194c60201bc3c176834580f",
+        "model_sha256": "6b952bacf46383f3c65d8ad429cfeec80671641059119149f99dc630e6850145",
+        "history_sha256": "27d0c7e359bab3d180967e41d1c60246a28fe9b58145474527b387ccabcd91d9",
+        "checkpoint_rows": 151,
+        "seed": 42,
+        "parameter_count": 52020,
+        "recorded_best_step": 1220,
+        "recorded_adam_final_step": 1200,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 5.808691300000646
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b3_direct_small_seed73",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed73\\result.json",
+        "result_sha256": "bd6268d3a1041c36566d63e7bb56591539a07003a10b970a2374754ed99556c6",
+        "model_sha256": "3d8546f0bf1e5e1e08f4126dd57d9485dc625c12dd434e9a90b4a4b5d4fb0b5d",
+        "history_sha256": "9f165a31faadf5a4c34fe64b40996ab79f53cbc3e65cdb8c149aabcb10ac7124",
+        "checkpoint_rows": 157,
+        "seed": 73,
+        "parameter_count": 52020,
+        "recorded_best_step": 1280,
+        "recorded_adam_final_step": 1260,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 6.091100499997992
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b3_direct_wide_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_wide_seed42\\result.json",
+        "result_sha256": "49097be62326a50eebe634db4b40f32e7af328248ed705d58c476816658720a2",
+        "model_sha256": "2525424a142081a94cd980c75745d61a422500de1996086561651b968594d30f",
+        "history_sha256": "c8731d20cf004f4d29fb25e8f668595895729b299dcb5c47fe1f7c961cf2b0a7",
+        "checkpoint_rows": 131,
+        "seed": 42,
+        "parameter_count": 146740,
+        "recorded_best_step": 1030,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 7.968041100000846
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b3_poly2_reg_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b3_poly2_reg_seed42\\result.json",
+        "result_sha256": "b63be363adc1993745dd8b38b0d585c5650b6b1c87d167ba702c193fda232f3a",
+        "model_sha256": "5a6836f9a5d6ab69afd2405f077737f21940ad2ae0bb1f0665ae79c0b107cc1c",
+        "history_sha256": "f4a60f0cd2a64d857dc6c5e12e5e700252056ec19eef4e5fefd4466b354188e1",
+        "checkpoint_rows": 131,
+        "seed": 42,
+        "parameter_count": 140340,
+        "recorded_best_step": 190,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 7.810439300003054
+      },
+      {
+        "family": "rotor_magnitude_blocks",
+        "run": "b3_poly2_small_seed42",
+        "result_relative_path": "neural_route\\rotor_magnitude_blocks\\runs\\b3_poly2_small_seed42\\result.json",
+        "result_sha256": "a12c7696c727f4669bd1801dda71f04447908c0922a3222e31c4e5f7c0fc24c4",
+        "model_sha256": "5e053a7a3f03f63f240d7d652727a6f71f23f6504f4d5c89297b8eb01003558c",
+        "history_sha256": "35246187814f7b72b17f116483fbf5659124dc1b9d8c1a37e69cc30bc62ef63f",
+        "checkpoint_rows": 131,
+        "seed": 42,
+        "parameter_count": 52020,
+        "recorded_best_step": 200,
+        "recorded_adam_final_step": 1000,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 5.392142799999419
+      },
+      {
+        "family": "rotor_spatial_magnitude",
+        "run": "cart32_seed42",
+        "result_relative_path": "neural_route\\rotor_spatial_magnitude\\runs\\cart32_seed42\\result.json",
+        "result_sha256": "b8bda3ca3a855d46af0fe450f04bd690e42c65a75c16b53d752a091d0e8a9ca0",
+        "model_sha256": "d523b410927ecebe6fc1d4c8f4566cc50fb6b16b1c565ba2dd9263bd5287d267",
+        "history_sha256": "c33004ae1dc4ea7d76e56093c794a4f2b6a1d9890d5cc1fd88a43870d8b56c29",
+        "checkpoint_rows": 201,
+        "seed": 42,
+        "parameter_count": 835200,
+        "recorded_best_step": 3020,
+        "recorded_adam_final_step": null,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 200.06415879999986
+      },
+      {
+        "family": "rotor_spatial_magnitude",
+        "run": "native32_budget_seed42",
+        "result_relative_path": "neural_route\\rotor_spatial_magnitude\\runs\\native32_budget_seed42\\result.json",
+        "result_sha256": "cb9c34089a374dcabd565842e6060cd72c98128477d34a449147d8871de658f5",
+        "model_sha256": "f75eb79ef10e6dbcc1c21ca030d6c7ae2f4c40dcf4c733975b67103697bfbff3",
+        "history_sha256": "3396225521c2329ee26e37e1af37bda43e3f7554cbbd85a9d912585752cfa5e4",
+        "checkpoint_rows": 91,
+        "seed": 42,
+        "parameter_count": 829440,
+        "recorded_best_step": 1510,
+        "recorded_adam_final_step": null,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 51.73572960000092
+      },
+      {
+        "family": "rotor_spatial_magnitude",
+        "run": "sat150_32_seed42",
+        "result_relative_path": "neural_route\\rotor_spatial_magnitude\\runs\\sat150_32_seed42\\result.json",
+        "result_sha256": "14ea1c44bf18adfc4f6a1449d44fd189167f0d670fce7a7a36a68559febfb191",
+        "model_sha256": "f4e773856467aa1fede6737184e45ee77abaa950049f5d6a80a7c52eda064011",
+        "history_sha256": "fd4a5a12f90730d451100fea89fcc36305c64be897ec63d9c16d9706aac0c1e9",
+        "checkpoint_rows": 201,
+        "seed": 42,
+        "parameter_count": 835200,
+        "recorded_best_step": 800,
+        "recorded_adam_final_step": null,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 135.2562023999999
+      },
+      {
+        "family": "rotor_spatial_magnitude",
+        "run": "sat300_32_budget_seed42",
+        "result_relative_path": "neural_route\\rotor_spatial_magnitude\\runs\\sat300_32_budget_seed42\\result.json",
+        "result_sha256": "d899f98a009207d527b591aed3d0a228afa4ab5569e3eff531451fb6a5100419",
+        "model_sha256": "a75e6858984dbaf3f0ea7371754e8cd0e9a479c636df6c2091ad281ce9746691",
+        "history_sha256": "79cf204e22f38c6296194ee07f9bd7b8aeaf58441b55941eb95e61a8196a50fd",
+        "checkpoint_rows": 91,
+        "seed": 42,
+        "parameter_count": 835200,
+        "recorded_best_step": 725,
+        "recorded_adam_final_step": null,
+        "recorded_lbfgs_closures": null,
+        "elapsed_seconds": 49.44617599999765
+      }
+    ],
+    "neural_frame_kernel_runs": [
+      {
+        "run": "neural_kernel_route\\rotor_magnitude\\frame_kernel_00",
+        "model_sha256": "4aa9587888597d9e3261ff6854b8d1e7bbec09642531a5a805c759a8d840452f",
+        "history_sha256": "c7cae9e50beb6c64a07fc7b8c5296e1b689b3e9d3d99209f40822a2d12e8dcec",
+        "checkpoint_rows": 41,
+        "last_logged_step": 800,
+        "best_step": 220,
+        "seed": 42
+      },
+      {
+        "run": "neural_kernel_route\\rotor_magnitude\\frame_kernel_01",
+        "model_sha256": "19458c3e8780434c80399459f4950bb756c820d1845f8a1111012de75c358e30",
+        "history_sha256": "3282df5857c667363093ed60242782c921d24d7f581b4448633f51cde138ba7f",
+        "checkpoint_rows": 41,
+        "last_logged_step": 800,
+        "best_step": 180,
+        "seed": 42
+      },
+      {
+        "run": "neural_kernel_route\\rotor_magnitude\\frame_kernel_02",
+        "model_sha256": "2170678a25efbfa1c0082556fba456f29c59ab0f42957c2763282f0f47d6e09d",
+        "history_sha256": "038c5fc66e77f33f2be4eb673b531ff57d5e701ca60f12d3d28a0515c3247fa6",
+        "checkpoint_rows": 41,
+        "last_logged_step": 800,
+        "best_step": 100,
+        "seed": 42
+      },
+      {
+        "run": "neural_kernel_route\\rotor_magnitude\\frame_kernel_03",
+        "model_sha256": "155077f538f1f4cab1716d933c643a2b16a98ddf599d67fc064aaf40cd1c1848",
+        "history_sha256": "d60dd38e1bd0e693406e825804120602aac9ab1f746e7cc679b7441e8b2cdbdc",
+        "checkpoint_rows": 41,
+        "last_logged_step": 800,
+        "best_step": 140,
+        "seed": 42
+      },
+      {
+        "run": "neural_kernel_route\\rotor_magnitude\\frame_kernel_04",
+        "model_sha256": "bc01e2d04169694243e6d777755062bb8b2e3000cae89447d14972f7dadfb973",
+        "history_sha256": "d199410587e0e9aea53e53b45ed627bdc4c10419de340df17a2bc45efcd686fe",
+        "checkpoint_rows": 41,
+        "last_logged_step": 800,
+        "best_step": 40,
+        "seed": 42
+      },
+      {
+        "run": "neural_kernel_route\\rotor_magnitude\\frame_kernel_05",
+        "model_sha256": "7212b14d296a77fc318a889880feb2b712c5b1e8e61dc0779a9a49c16b513044",
+        "history_sha256": "f40e0d3f567a1b0eafb4759802a071b4fc7ddd96c42298c2945add1d56b91aa0",
+        "checkpoint_rows": 41,
+        "last_logged_step": 800,
+        "best_step": 40,
+        "seed": 42
+      },
+      {
+        "run": "neural_kernel_route\\rotor_magnitude\\frame_kernel_06",
+        "model_sha256": "c6c8b49c9cedad4eb7e0762f1030f6a6d6b3234f5358b056bc9733053013c633",
+        "history_sha256": "e50d59e3474f18e7afec56ccf5b561acf16b5ed898d45d1d99c59c4939d13ea0",
+        "checkpoint_rows": 41,
+        "last_logged_step": 800,
+        "best_step": 80,
+        "seed": 42
+      },
+      {
+        "run": "neural_kernel_route\\rotor_magnitude\\frame_kernel_07",
+        "model_sha256": "6c7b17693b0181d2bdd2fec7d76ab2ae2a1284b43742ff5e6014163471167c45",
+        "history_sha256": "01f24f0ef6dff8bc4818e0d902043d264dc0acc9ee63e3180dd695b3bcffbf2a",
+        "checkpoint_rows": 41,
+        "last_logged_step": 800,
+        "best_step": 220,
+        "seed": 42
+      }
+    ],
+    "full60_fitting_runs": [
+      {
+        "region": "airgap",
+        "result_relative_path": "neural_route\\fitting_full60\\airgap\\result.json",
+        "result_sha256": "e2b3560c80d5d839dae86270a1d57815d9ddd93419a538d218f2df013c854376",
+        "model_sha256": "cc63731d227613ff14ec66e9a35cc7a0522729877b8348ebf2a5a47b37b60a60",
+        "history_sha256": "a3261e23916f68e33bf36eacfc7476ae5a58088e22f7f73e37ff84ccfb7d7c5b",
+        "parameter_count": 148795,
+        "best_step": 4950,
+        "seed": 42,
+        "elapsed_seconds": 18.905043099999602
+      },
+      {
+        "region": "rotor",
+        "result_relative_path": "neural_route\\fitting_full60\\rotor\\result.json",
+        "result_sha256": "ee00da468ea507cd5011695c0b5f992209ed6602a93c54f15190e4d3217e0b49",
+        "model_sha256": "bca4a01424f4e9d0afae47649cb9d7595bb97eb650214433740002964c3892fa",
+        "history_sha256": "1090f36bef1d396f44e3e7e72bb12ec3e61739e434311e28f73673f710513568",
+        "parameter_count": 148795,
+        "best_step": 2275,
+        "seed": 42,
+        "elapsed_seconds": 15.952148899999884
+      },
+      {
+        "region": "stator",
+        "result_relative_path": "neural_route\\fitting_full60\\stator\\result.json",
+        "result_sha256": "ced3894a3cb01a5226d1600b0d0082c99315de3dd2bda96b80bcd8ca87ee2ee9",
+        "model_sha256": "420295981e6eb771f421e3f414ea4a505133ce7bf8af187bd231cc36c78f8619",
+        "history_sha256": "1d9523ba8584e9db8c478fd35a17a1472bb889f710d8ca108f285df169008b4d",
+        "parameter_count": 148795,
+        "best_step": 6575,
+        "seed": 42,
+        "elapsed_seconds": 25.879448600000615
+      }
+    ],
+    "kernel_searches": [
+      {
+        "directory": "kernel_route\\airgap_cycle_coarse",
+        "csv_sha256": "4dc03b07ca02278b1f9df06b765587f83f271ace3f6032b5643243c021c4547c",
+        "selection_sha256": "ffcbcc1ad04153436311b9ed57182094c4da5a67a813ce92f3e9d726bcb2411c",
+        "attempted_configurations": 13338,
+        "completed_unique_configurations": 13338,
+        "ranked_configuration_rank_rows": 66690,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 109,
+        "model_sha256": "4bdee9454f27a7795683e5a6c225b39290da7ba6714063f12864cdf31da02f66",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_cycle_coarse",
+        "csv_sha256": "32e355bf7d56b5ab8260f56dc238f6f355f9e276cdb5aac2906dfd9c7ecf665d",
+        "selection_sha256": "5cae7e74286a8606cd4f1b43d2ee1e8e5b8b01e02d63d66029cba0898ea955b1",
+        "attempted_configurations": 13338,
+        "completed_unique_configurations": 13338,
+        "ranked_configuration_rank_rows": 66690,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "32a1796289aee600bd5fe48055195fb6fbde61ee730d44fd31da38b995924cd7",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_cycle_refined",
+        "csv_sha256": "c89e2b69fa96ecdd953ad5ae205cc2e6429592f933381cd43836725c774ba0d5",
+        "selection_sha256": "4371141059d72eae19b8b0b4f602c00e312e4fb915a0b22648e164ecec99a3a0",
+        "attempted_configurations": 2700,
+        "completed_unique_configurations": 2700,
+        "ranked_configuration_rank_rows": 13500,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 40,
+        "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_magnitude_cycle_coarse",
+        "csv_sha256": "1b1d6f2a886a88aff2eeba7ae3192da400665044444366bd1c121a0ee85ac98e",
+        "selection_sha256": "651a4121bed584c58a71c4b605a795039b5c6348e3a129ec80415b0dd121d6c0",
+        "attempted_configurations": 13338,
+        "completed_unique_configurations": 13338,
+        "ranked_configuration_rank_rows": 66690,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 108,
+        "model_sha256": "b42a7e91dd3b9e2e502862b52540e18cecbce92b2822cba6ea0651732cf433bb",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block00",
+        "csv_sha256": "a7d3493b45d324253b825f4f4ad5f9dba0bffee8d21aaebaf5745ce749ae4515",
+        "selection_sha256": "81afdca57075e30397b80c3c3f89eb30dc4bef2078d5c927330307c19656c5e0",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "c5d515d2fd309716e140a22a3ef1f367a8348da73f521a9ec56a764c8fd58c72",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block01",
+        "csv_sha256": "10fed0366c0ac123ce1bd44e2a3d653aa1710ac0dfed467553d5f226621044f5",
+        "selection_sha256": "ae81e8e8dde42efecf0f71351da014b01d035620ad8191b7d5bfe87a96ed1278",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "f3bd247104fee43d857a633d2c1c631f47d6e76e6eb92d1aa6b384b2c3aa21eb",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block02",
+        "csv_sha256": "95ae9db74c70c67d4fce3488f518d651f49afa9f3861d198c6282ae437802a07",
+        "selection_sha256": "3b69b9b8dfdd5c79bddb403e59060c3d9c2131c5f90051173c98797a32315045",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "98b2fd371c620f0740d39306ddcccb256f87c09650e82079be85c10ee116a71e",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block03",
+        "csv_sha256": "422c686a4fbfc88fc7e4fdafa64323675738302560e9d6e81b38fbab24482ce4",
+        "selection_sha256": "7737c1f0fa5f2de2b81963bedc2f640b3e09d5c3f00be1d63bd0361df53b806d",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "fd111707a86154ddf2fdfcd4510b36eae8fda092c5ad4260b79662997927853f",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block04",
+        "csv_sha256": "2ee25f6d2114bda4e0a90cab1521f326ff4815102869ccc8227c033296458bfc",
+        "selection_sha256": "381a40a1f47bd04f165377c4c3e824c48f8b01690dbd508c9122d6b4f73515de",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "a7b4b1f9d44dbc38c4da029ccb35f68abd6f89131de37873408e1448f0ad3c12",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block05",
+        "csv_sha256": "e9f1dcefefca719ddc9ff26542b3f286d8d661692216a2ca167885d07e202eb5",
+        "selection_sha256": "c1205a07f2252d363820378821a191826cd53d3ed4281455e8571431334c30ea",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "0067411b8d1ebeacd63d54e7842e38edf13cba25c934c83bdcfd8f0ab417ef8a",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block06",
+        "csv_sha256": "f7fe34afbbe0d01df96279d0cdee456cc933cf031fe0ee149b03d013091b4b55",
+        "selection_sha256": "9c9d2e8e8e02a46d10b7cd4306022ca768b228e4e4a9c07bc019569b6b3de2a0",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "a5d0f135ca56ddf3801a72bd1b0fb774f368d64de2c090e42a6d8e85d44bd704",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block07",
+        "csv_sha256": "c87977f0bf5c0cdf68c6ea6e8f47728525f1cf954e94c31616a67c875ab5c133",
+        "selection_sha256": "323ba40d3a2adce56fde402ee313d339e43d02df402e1d74fad59fbd894244be",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "08aeb2ec6587ad628e974fd2a77209148aa2e8bba58bb10145af04b3fdca45df",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block08",
+        "csv_sha256": "f63fb81ad96217c412493d32f4eff76612653692a7eeed6f735a0d9bec6427cd",
+        "selection_sha256": "2ac093b31688540cdc3e5154d014ec1865c20e499af375d1a7569203d793540f",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "889f240f82161a7143c1b9ad7e039b5cf90d3e5a289462553fa6c5813d51c7a4",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block09",
+        "csv_sha256": "d66e1381d2bad26a6f86eb02751872ec1491b5fd77e6a5c88c331c6ad8b0bb99",
+        "selection_sha256": "cbd547fca00f44931153ef7b20aa10554082ab614c7b471f57a7645cda0623dd",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "ad9ae88b6f4766869e1f5d2dd76d8e55734bdd23464d65f8f5b04dd0b8e4b68d",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block10",
+        "csv_sha256": "dfcd650d4eb8df32b16e555398abe7f42bff6ff2da4ff290f2d5a79125b5a612",
+        "selection_sha256": "6af31ca7bb72ce8dc3122017384ab8bb102cbdcb2a52d4e79a6c13a710bd5756",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "60d896a6387e7c8ab4b78c840cfc018768ce322cdf5c959b9ec6d5c1eb785f8b",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\rotor_vector_blocks6\\block11",
+        "csv_sha256": "c72ae7651cb452807ecf32bc2701a1937b5f5d5858e4be518eefa746a08dd6fb",
+        "selection_sha256": "ea6c75bc951b7691151f5d4c2e2b709e399b4f0b5f069a808d23021afa996e02",
+        "attempted_configurations": 3429,
+        "completed_unique_configurations": 3429,
+        "ranked_configuration_rank_rows": 17145,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 107,
+        "model_sha256": "bf9d926178edab01570b94a8ccab43540573829a72bb82875aa777fe020ae4f4",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\stator_cycle_coarse",
+        "csv_sha256": "b21d63589bb9896ffbc645a7d750d7579eab75c808e90e6bb8c9b3940e663a00",
+        "selection_sha256": "48906ad7b62eb5dbb87bf9b646ec8c58ea0c6d1270a5dc682ff59bc7224a9ab9",
+        "attempted_configurations": 13338,
+        "completed_unique_configurations": 13338,
+        "ranked_configuration_rank_rows": 66690,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 106,
+        "model_sha256": "ea03488c0050c32d3afb9fe19b98b4450f255024a59dab469e7dc36d9a134558",
+        "optimization_epochs": 0
+      },
+      {
+        "directory": "kernel_route\\stator_magnitude_cycle_coarse",
+        "csv_sha256": "3e52f90bd2d74df7bd974d172166d0fc8a6821ab00797cba54afd8b33726898d",
+        "selection_sha256": "6728c36313941436b559750888bf754d9801290e0239501aac15b8fe95070ec2",
+        "attempted_configurations": 13338,
+        "completed_unique_configurations": 13338,
+        "ranked_configuration_rank_rows": 66690,
+        "ranks": [
+          8,
+          16,
+          24,
+          32,
+          41
+        ],
+        "failure_count": 0,
+        "fully_decoded_shortlist_count": 109,
+        "model_sha256": "137a2d616d44f3f63577829a616f3129c25fe3bfd76b00955a82f4f2c2fe5cc4",
+        "optimization_epochs": 0
+      }
+    ],
+    "adaptive_searches": [
+      {
+        "directory": "adaptive_pilot\\rotor",
+        "completed_validation_variants": 0,
+        "status": "protocol only; no completed summary/model counted",
+        "protocol_sha256": "74a827988937f5aa10452ba3961cd80cf54862634a887859d0cbfdf586983c18"
+      },
+      {
+        "directory": "adaptive_pilot2\\rotor",
+        "completed_validation_variants": 12,
+        "status": "completed",
+        "summary_sha256": "62677e7b2d6b4f025a33a36636c8cc63c1207b0586fbce690d6da25cb8b8eb4f",
+        "ranking_sha256": "6bf8f5962f85f962d75f01ea2e5dd3925a68b526604755178b21bd9f1dcfe240",
+        "model_sha256": "d9bb9edb7dc9af918c0a24ebea4abaa876499874d7aba8bfbb2851a57306a903",
+        "variant_names": [
+          "cartesian_none_time_mode",
+          "cartesian_none_spatial_mode",
+          "native_none_spatial_mode",
+          "native_none_time_mode",
+          "native_V1_train_only_uniform_NN_spatial_mode",
+          "native_V1_train_only_uniform_NN_time_mode",
+          "cartesian_V1_train_only_uniform_NN_time_mode",
+          "half_cartesian_none_spatial_mode",
+          "half_cartesian_V1_train_only_uniform_NN_time_mode",
+          "cartesian_V1_train_only_uniform_NN_spatial_mode",
+          "half_cartesian_none_time_mode",
+          "half_cartesian_V1_train_only_uniform_NN_spatial_mode"
+        ],
+        "optimization_epochs": 0,
+        "note": "Each row is a completed grouped analytic predictor, not an NN training run. Internal per-mode kernel trials are not added to this variant count."
+      },
+      {
+        "directory": "adaptive_interior\\rotor",
+        "completed_validation_variants": 20,
+        "status": "completed",
+        "summary_sha256": "9765f502fc1b669046c03fa8eeab806eeedc49193e5a71b9f30efda064e2d731",
+        "ranking_sha256": "e4d70b423b413eb72512eae0230f41b3a5b3e7271ee9dca683a955bab1a1fd98",
+        "model_sha256": "0259dfdb1ce5a2c4c6a722014772f094090939b590a1def95b53fedac5d2c7ad",
+        "variant_names": [
+          "saturated_228.974809417_none_spatial_mode",
+          "saturated_228.974809417_none_time_mode",
+          "saturated_457.949618833_V1_train_only_uniform_NN_spatial_mode",
+          "saturated_228.974809417_V1_train_only_uniform_NN_spatial_mode",
+          "saturated_114.487404708_V1_train_only_uniform_NN_spatial_mode",
+          "saturated_114.487404708_V1_train_only_uniform_NN_time_mode",
+          "saturated_228.974809417_V1_train_only_uniform_NN_time_mode",
+          "saturated_915.899237667_none_time_mode",
+          "saturated_114.487404708_none_spatial_mode",
+          "cartesian_none_time_mode",
+          "saturated_114.487404708_none_time_mode",
+          "saturated_915.899237667_none_spatial_mode",
+          "cartesian_none_spatial_mode",
+          "saturated_457.949618833_V1_train_only_uniform_NN_time_mode",
+          "saturated_915.899237667_V1_train_only_uniform_NN_time_mode",
+          "cartesian_V1_train_only_uniform_NN_spatial_mode",
+          "saturated_915.899237667_V1_train_only_uniform_NN_spatial_mode",
+          "cartesian_V1_train_only_uniform_NN_time_mode",
+          "saturated_457.949618833_none_spatial_mode",
+          "saturated_457.949618833_none_time_mode"
+        ],
+        "optimization_epochs": 0,
+        "note": "Each row is a completed grouped analytic predictor, not an NN training run. Internal per-mode kernel trials are not added to this variant count."
+      }
+    ],
+    "power_search": {
+      "completed_validation_configurations": 1728,
+      "by_power": {
+        "1.0": 432,
+        "2.0": 432,
+        "0.5": 432,
+        "3.0": 432
+      },
+      "ranking_sha256": "e3f47288b23d635781c1c34770851e844c9234b4a38dca9dc9e6b38cb86364d0",
+      "summary_sha256": "9e1d37d3d43dac75c71431113a27706f4b61e25436f665d099fddacb5ebd7831",
+      "model_sha256": "c246831b5697b361a198dc24315229b917f3d95f7f8f39e7db30a113e423ca74",
+      "optimization_epochs": 0
+    },
+    "checks": [
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart2_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart2_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart2_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart_seed17\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart_seed17\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart_seed17\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart_seed73\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart_seed73\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_cart_seed73\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_mixed_seed17\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_mixed_seed17\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_mixed_seed17\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_mixed_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_mixed_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_mixed_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_mixed_seed73\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_mixed_seed73\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\direct_mixed_seed73\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_deep_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_deep_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_deep_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_mixed_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_mixed_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_mixed_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_small_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_small_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_small_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_wide_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_wide_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly2_wide_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly3_small_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly3_small_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor\\runs\\poly3_small_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed17\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed17\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed17\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed73\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed73\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart2_seed73\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_cart_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_mixed_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_mixed_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\direct_mixed_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_deep_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_deep_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_deep_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_mixed_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_mixed_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_mixed_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_small_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_small_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_small_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed17\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed17\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed17\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed73\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed73\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly2_wide_seed73\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly3_small_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly3_small_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude\\runs\\poly3_small_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed17\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed17\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed17\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed73\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed73\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_small_seed73\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_wide_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_wide_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_direct_wide_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_poly2_reg_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_poly2_reg_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_poly2_reg_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_poly2_small_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_poly2_small_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b1_poly2_small_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed17\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed17\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed17\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed73\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed73\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_small_seed73\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_wide_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_wide_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_direct_wide_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_poly2_reg_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_poly2_reg_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_poly2_reg_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_poly2_small_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_poly2_small_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_magnitude_blocks\\runs\\b3_poly2_small_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\cart32_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\cart32_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\cart32_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\native32_budget_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\native32_budget_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\native32_budget_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\sat150_32_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\sat150_32_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\sat150_32_seed42\\result.json"
+      },
+      {
+        "name": "completed NN result/model/history present",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\sat300_32_budget_seed42\\result.json"
+      },
+      {
+        "name": "NN saved model SHA",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\sat300_32_budget_seed42\\model.npz"
+      },
+      {
+        "name": "NN selection excluded test labels",
+        "passed": true,
+        "details": "neural_route\\rotor_spatial_magnitude\\runs\\sat300_32_budget_seed42\\result.json"
+      },
+      {
+        "name": "neural frame selection excludes test",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "frame neural model and history SHA",
+        "passed": true,
+        "details": "frame_kernel_00"
+      },
+      {
+        "name": "frame neural model and history SHA",
+        "passed": true,
+        "details": "frame_kernel_01"
+      },
+      {
+        "name": "frame neural model and history SHA",
+        "passed": true,
+        "details": "frame_kernel_02"
+      },
+      {
+        "name": "frame neural model and history SHA",
+        "passed": true,
+        "details": "frame_kernel_03"
+      },
+      {
+        "name": "frame neural model and history SHA",
+        "passed": true,
+        "details": "frame_kernel_04"
+      },
+      {
+        "name": "frame neural model and history SHA",
+        "passed": true,
+        "details": "frame_kernel_05"
+      },
+      {
+        "name": "frame neural model and history SHA",
+        "passed": true,
+        "details": "frame_kernel_06"
+      },
+      {
+        "name": "frame neural model and history SHA",
+        "passed": true,
+        "details": "frame_kernel_07"
+      },
+      {
+        "name": "full60 NN model SHA",
+        "passed": true,
+        "details": "airgap"
+      },
+      {
+        "name": "full60 fitting does not claim holdout metrics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "full60 NN model SHA",
+        "passed": true,
+        "details": "rotor"
+      },
+      {
+        "name": "full60 fitting does not claim holdout metrics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "full60 NN model SHA",
+        "passed": true,
+        "details": "stator"
+      },
+      {
+        "name": "full60 fitting does not claim holdout metrics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\airgap_cycle_coarse",
+          "csv_rows": 66690,
+          "unique_solved_configs": 13338
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_cycle_coarse",
+          "csv_rows": 66690,
+          "unique_solved_configs": 13338
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_cycle_refined",
+          "csv_rows": 13500,
+          "unique_solved_configs": 2700
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_magnitude_cycle_coarse",
+          "csv_rows": 66690,
+          "unique_solved_configs": 13338
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block00",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block01",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block02",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block03",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block04",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block05",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block06",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block07",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block08",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block09",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block10",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\rotor_vector_blocks6\\block11",
+          "csv_rows": 17145,
+          "unique_solved_configs": 3429
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\stator_cycle_coarse",
+          "csv_rows": 66690,
+          "unique_solved_configs": 13338
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "kernel completed ranking matches summary",
+        "passed": true,
+        "details": {
+          "directory": "kernel_route\\stator_magnitude_cycle_coarse",
+          "csv_rows": 66690,
+          "unique_solved_configs": 13338
+        }
+      },
+      {
+        "name": "kernel final saved model SHA",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "adaptive complete ranking coverage",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "adaptive saved model sidecar",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "adaptive complete ranking coverage",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "adaptive saved model sidecar",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "power completed configurations unique and finite",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "power final model SHA",
+        "passed": true,
+        "details": null
+      }
+    ],
+    "checker_sha256": "9beb093d740cb2625a19b8e50ee82470bf6f41e8efaa0dcc3f9c3da55ea38643",
+    "prediction_freeze_sha256": "2e48445d085f07df328c678e4fe7c309213c19d7b67a003a0ed981bf0e6208bb",
+    "combined_freeze_sha256": "c26dcdb4213e5afe09d78cf301e08e34234be2c1bf78a7aa32eab5673c4174c0",
+    "counting_rules": [
+      "Count existing completed result/history/model records, never infer success from a protocol's requested budget.",
+      "Seed replicas count as separate NN optimization runs. Final selected_model copies do not count again.",
+      "Kernel configuration solves and multiple decoder ranks are different counts. Neither is an NN epoch/run.",
+      "Only completed adaptive summary rows count; adaptive_pilot with protocol only contributes zero.",
+      "V1, synthetic tests, fixed diagnostic oracle/LOOCV calculations and deterministic vector-to-magnitude wrappers are excluded.",
+      "This inventory checks artifacts and recorded counts, not another replay of every historical candidate."
+    ]
+  },
+  "freeze_timing_note": "Neural prediction route frozen before all60 fitting; all60 fitting independent and not fed back into prediction choice. Final global choices frozen before V2 old-test re-evaluation."
+}

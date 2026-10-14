@@ -1,5 +1,7 @@
 # Maxwell 转子磁密 · 2D / 3D 神经网络可视化
 
+**2026-10-14 新60工况实验已加入：**[新60的2D/3D网站](https://xin02350-eng.github.io/maxwell-rotor-field-viewer/new60/) · [实验结果与使用说明](https://xin02350-eng.github.io/maxwell-rotor-field-viewer/new60/guide.html) · [代码](new60/research)。新实验采用新的42/9/9整工况划分，52次正式NN训练；最终转子POD+MLP、定子/气隙NN+条件RBF残差。九工况测试相对L2分别7.97%/5.42%/2.10%。纯RBF在定子、转子测试上更好，已保留负结果；不声称复现原Round4。下文描述旧12数据，勿混用版本。
+
 [打开网站](https://xin02350-eng.github.io/maxwell-rotor-field-viewer/) · [使用与方法说明](https://xin02350-eng.github.io/maxwell-rotor-field-viewer/guide.html)
 
 输入工况与转子位置，比较 Maxwell 真值、神经网络预测和绝对误差。支持二维磁密云图、可旋转三维磁密高度图、工况切换、300帧播放、参考/世界坐标、原始点/局部曲面、CSV与PNG导出。

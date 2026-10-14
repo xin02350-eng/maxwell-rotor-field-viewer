@@ -1,0 +1,14 @@
+{
+  "python": "3.10.8 (tags/v3.10.8:aaaf517, Oct 11 2022, 16:50:30) [MSC v.1933 64 bit (AMD64)]",
+  "platform": "Windows CPU",
+  "packages": {
+    "numpy": "2.2.6",
+    "torch": "2.14.1+cpu",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "threadpoolctl": "3.6.0",
+    "matplotlib": "3.10.9"
+  },
+  "training": "PyTorch CPU; threads 4; seeds 42,17,73",
+  "inference": "NumPy only; no torch import verified"
+}

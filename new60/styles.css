@@ -1,0 +1,34 @@
+/* Mobile first; no external fonts, libraries, or assets. */
+:root{font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:#172935;background:#f3f6f8;line-height:1.55;font-size:16px}
+*{box-sizing:border-box}body{margin:0}main{width:100%;max-width:87.5rem;margin:auto;padding:1.25rem .875rem}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem;align-items:flex-start;margin-bottom:1.5rem}
+header>div{min-width:0;flex:1 1 18rem}.eyebrow{font-size:.875rem;color:#287f91;letter-spacing:.12em;font-weight:700;margin:0 0 .5rem}
+h1{font-size:clamp(1.5rem,3vw,2.1875rem);line-height:1.25;margin:0 0 .625rem;letter-spacing:-.03em}
+.intro{color:#566a77;margin:0;max-width:56.25rem}.badge{background:#dceaf0;color:#285466;white-space:nowrap;padding:.4375rem .8125rem;border-radius:1.25rem;font-size:.875rem}
+.controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.875rem .75rem;padding:.875rem;background:white;border:1px solid #dce5e9;border-radius:.875rem}
+.controls label{min-width:0;display:flex;flex-direction:column;gap:.375rem;color:#506675;font-size:.875rem;font-weight:600}
+select,button{font:inherit;color:inherit;border:1px solid #cbd9df;background:white;border-radius:.4375rem;padding:.5rem .625rem;min-height:2.75rem;min-width:2.75rem}
+select{width:100%;min-width:0;font-size:1rem;text-overflow:ellipsis}button{cursor:pointer;transition:background .15s;font-size:.875rem}
+button:hover:not(:disabled){background:#e8f2f6}button:disabled{opacity:.45;cursor:default}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #66b7d0;outline-offset:2px}
+.timeline{display:flex;align-items:center;gap:.5rem;margin:1.125rem 0;flex-wrap:wrap}.timeline input{flex:1;min-width:5rem;min-height:2.75rem;margin:0;accent-color:#216a83}
+.timeline output{font-variant-numeric:tabular-nums;font-size:.875rem;flex:1 0 100%;min-width:0;color:#45606f;overflow-wrap:anywhere}
+.viewbar{display:flex;align-items:flex-start;justify-content:space-between;gap:.75rem;flex-wrap:wrap}.segmented{display:flex;gap:.5rem;flex-wrap:wrap}
+.segmented [aria-pressed=true],.segmented [aria-pressed=true]:hover{background:#215a70;color:white;border-color:#215a70}.actions{display:flex;gap:.5rem;flex-wrap:wrap}
+#status{font-size:.875rem;color:#526c7b;min-height:1.25rem;margin:.75rem 0 .5rem;overflow-wrap:anywhere}
+.figure{position:relative;background:white;border:1px solid #dce5e9;border-radius:.875rem;overflow:hidden;height:28rem;min-width:0}
+canvas{width:100%;height:100%;display:block;touch-action:none}
+#empty{position:absolute;inset:0;display:grid;place-content:center;text-align:center;color:#607783;pointer-events:none;padding:1.5rem}
+#empty small{font-size:.875rem;margin-top:.5rem;color:#637d89}
+.legend{display:flex;align-items:flex-start;justify-content:center;gap:.5rem;font-variant-numeric:tabular-nums;font-size:.875rem;padding-top:.875rem}
+.legend>div{max-width:29.375rem;flex:1;min-width:0;text-align:center;overflow-wrap:anywhere}.legend>span{flex-shrink:0}
+#gradient{height:.75rem;border-radius:.1875rem;background:linear-gradient(90deg,#2166ac,#f7f7f7,#b2182b);margin:.1875rem 0 .3125rem}
+.readout{font-size:.875rem;min-height:2.375rem;background:#e8f0f4;border-radius:.5rem;padding:.625rem .875rem;color:#355363;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.notes{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;margin-top:1.375rem;color:#526975;font-size:.875rem;overflow-wrap:anywhere}
+.notes h2{font-size:1rem;color:#263f4d;margin:0 0 .4375rem}.notes p{margin:0 0 .5rem}
+footer{border-top:1px solid #d5e1e7;margin-top:1.25rem;padding-top:.875rem;font-size:.875rem;color:#607b89;overflow-wrap:anywhere}body.loading #status{color:#945d12}
+@media(min-width:640px){main{padding:1.75rem 1.25rem}.controls{grid-template-columns:repeat(3,minmax(0,1fr));gap:.875rem 1rem;padding:1.25rem}.figure{height:32rem}.timeline output{flex-basis:auto}}
+@media(min-width:768px){.notes{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.875rem}.viewbar{align-items:center}}
+@media(min-width:1024px){main{padding:2.125rem 1.75rem}.figure{height:35.625rem}.timeline output{flex:0 1 auto}.legend{gap:.75rem}}
+@media(min-width:1280px){.controls{grid-template-columns:1fr 1.15fr 1.6fr 1.35fr 1fr 1fr}}
+@media(prefers-reduced-motion:reduce){button{transition:none}}

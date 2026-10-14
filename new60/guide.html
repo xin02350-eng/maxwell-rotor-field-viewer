@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>新60工况实验结果与使用说明</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="data:,"><style>article{max-width:900px;margin:auto;background:white;padding:24px;border:1px solid #dce5e9;border-radius:14px}h2{font-size:20px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:10px 6px;border-bottom:1px solid #dce5e9;text-align:left}a{color:#215a70}code{overflow-wrap:anywhere}@media(max-width:620px){article{padding:16px}table{font-size:12px}}</style></head>
+<body><main><article><p><a href="index.html">← 返回2D/3D可视化</a></p><h1>真实新60工况：模型、结果与读图方法</h1>
+<p>本轮使用2026-10-10整合的简化电机数据：60个原生RMS电流与Thet控制角组合，各60步，5500rpm。定子、转子各1800个测点，均有有符号Br/Bt；气隙900点，仅Br。输入电流不额外除以2，Thet不直接解释为dq的β角。</p>
+<h2>本轮九个完整留出工况的测试结果</h2><table><thead><tr><th>区域</th><th>冻结模型</th><th>RMSE / T</th><th>相对L2</th></tr></thead><tbody><tr><td>转子</td><td>POD＋三层128节点神经网络</td><td>0.063530</td><td>7.97%</td></tr><tr><td>定子</td><td>POD神经网络＋条件RBF残差</td><td>0.031892</td><td>5.42%</td></tr><tr><td>气隙</td><td>POD神经网络＋条件RBF残差</td><td>0.011562</td><td>2.10%</td></tr></tbody></table>
+<p>三个区域的有符号标量分量等权合并，RMSE为0.047546T，相对L2为6.94%。未提供有限元面积权重，该结果是测点分量误差，不是面积积分或磁密大小误差。</p>
+<p>52次正式神经网络训练比较了四种结构、损失、热点权重、困难帧重采样、神经残差和学习率；另做3次小样本诊断。模型按验证集和三种子检查冻结后才评价测试。新划分为42/9/9完整工况；POD、缩放和误差热点只由训练工况确定。</p>
+<p>定子及转子的独立纯RBF测试RMSE分别为0.027786T和0.062421T，低于本轮冻结模型；气隙纯RBF为0.012830T，较差。这些负结果保留在报告中，没有据测试集重新选型。定子验证最大单点分量误差也有所增大；整体改善不代表所有局部点都改善。</p>
+<p><a href="results.json">下载原精度结果汇总JSON</a>。原Round4权重、原42/9/9工况ID未提供，本轮不是此前PPT的2.32%/4.37%/0.84%复现。</p>
+<h2>如何操作</h2><ol><li>选择区域、工况与模型。默认case02是本轮留出测试工况；全部60工况都明确标注训练、验证或测试。均匀损失对照与POD诊断只提供九个测试工况。</li><li>通过滑块或播放浏览60帧，绝对机械角从9°到97.5°。切换真值、预测或误差；Br/Bt保留正负，转子/定子的平面范数由两分量计算。气隙只有Br。</li><li>2D拖动平移，3D拖动旋转，滚轮缩放。转子世界坐标按绝对机械角旋转参考点。3D高度表示磁密数值，不是实体三维体积场。</li><li>导出当前帧CSV或带色标PNG。网页使用q16显示数据，最大单值量化误差小于0.000046T；导出CSV带显示精度标记。科学图、报告和模型评估均用原精度数组。</li></ol>
+<h2>适用范围</h2><p>只绘实际45°扇区的测点，不镜像补成全圆，也不跨孔洞补面。POD真值投影使用已知真值，仅作子空间重构诊断，不能当作预测成绩。该实验评估新工况插值，时间与空间采样点固定；没有验证未见时间、未见空间、外推工况或稳态收敛。</p>
+<p>完整交付包另含训练权重、源码、日志、逐实验交接卡、原始合并数据及300dpi PNG和可编辑PDF/SVG。网站按需加载预先计算的冻结模型结果，浏览器不在线训练。</p>
+</article></main></body></html>

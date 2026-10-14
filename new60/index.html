@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>新 60 工况 · 磁场可视化</title><link rel="icon" href="data:,"><link rel="stylesheet" href="styles.css"></head>
+<body><main>
+<header><div><p class="eyebrow">MAXWELL · NEW60 · 5500 rpm</p><h1>磁场随工况与转子位置变化</h1><p class="intro">实际采样的 45° 扇区。Br/Bt 保留正负方向；三维视图以高度表达磁密，非实体体积场。</p></div><span id="splitBadge" class="badge">等待数据</span></header>
+<section class="controls" aria-label="显示选择">
+<label>区域<select id="region" disabled><option value="stator">定子</option><option value="rotor" selected>转子</option><option value="airgap">气隙</option></select></label>
+<label>工况<select id="case" disabled><option>等待清单</option></select></label>
+<label>模型来源<select id="model" disabled><option>等待冻结模型</option></select></label>
+<label>显示分量<select id="component" disabled><option value="Br">Br · 有符号径向</option><option value="Bt">Bt · 有符号切向</option><option value="magnitude">二维分量范数（衍生）</option><option value="vector_error">误差向量范数</option></select></label>
+<label>显示内容<select id="mode" disabled><option value="truth">Maxwell 真值</option><option value="prediction" selected>模型预测</option><option value="error">绝对误差</option></select></label>
+<label>坐标<select id="coordinates" disabled><option value="world">世界坐标</option><option value="reference">参考坐标</option></select></label>
+</section>
+<section class="timeline" aria-label="转子位置"><button id="prev" disabled aria-label="上一帧">←</button><button id="play" disabled>播放</button><input id="frame" type="range" min="0" max="59" value="0" disabled aria-label="时间帧"><button id="next" disabled aria-label="下一帧">→</button><output id="frameLabel">等待真实帧序列</output></section>
+<section class="viewbar"><div class="segmented" role="group" aria-label="视图"><button id="view2d" aria-pressed="true">2D 云图</button><button id="view3d" aria-pressed="false">3D 高度</button></div><div class="actions"><button id="reset">重置视角</button><button id="csv" disabled>导出本帧 CSV</button><button id="png" disabled>导出 PNG</button></div></section>
+<p id="status" role="status" aria-live="polite">正在读取本地 manifest.json；尚未载入任何测试结果。</p>
+<div class="figure"><canvas id="field" aria-label="磁场采样点云图，可拖动和缩放"></canvas><div id="empty">等待冻结结果导出。<br><small>页面模板不包含虚构磁密数据。</small></div></div>
+<div class="legend"><span id="low">—</span><div><div id="gradient"></div><span id="quantityLabel">磁密 / T</span></div><span id="high">—</span></div>
+<p id="hover" class="readout">移动指针可查看原始点编号及对应数值。2D 拖动平移；3D 拖动旋转；滚轮缩放。</p>
+<section class="notes"><div><h2>当前数据与模型</h2><p id="modelInfo">尚未集成冻结模型。模型类型与版本将在清单中明确给出，POD 真值投影会单独标为诊断。</p><p id="precision">科学指标及科学图使用原精度 NPZ。网页显示若经过量化，网页 CSV 会明确标注，不用于替代原精度评估。</p></div><div><h2>读图边界</h2><p>仅有初始单电周期的 60 帧，无 t=0；不是已认证的稳态或时间步收敛结果。转子世界坐标由随体参考点旋转绝对机械角得到，包含初始 7.5°。</p><p>气隙只提供 Br；|Br| 不是完整磁密大小。几何加密点与训练误差热点是两个独立标签。未采区域保持空白。</p></div></section>
+<footer><a href="guide.html">实验结果与使用说明</a> · <a href="https://github.com/xin02350-eng/maxwell-rotor-field-viewer/tree/main/new60">GitHub 源码</a><br>本页面离线可用：在本目录启动小型静态服务器后打开。全部脚本和数据从本地路径加载，无外部 CDN。</footer>
+</main><script src="app.js"></script></body></html>

@@ -1,0 +1,96 @@
+{
+  "version": "v5-extra1-final51-magnitude-finetune-frozen",
+  "final_manifest_sha256": "96d62a01298a672ad223e032cf16e1564c6e8afdf3cfb87376cae3fa5c8bee12",
+  "files": [
+    {
+      "path": "candidate_protocol.json",
+      "sha256": "2335aef6117615c334fdb98e4c59673f8b4c4c1a3d62403883a14af859bcf13f",
+      "bytes": 4371
+    },
+    {
+      "path": "candidate_protocol.sha256",
+      "sha256": "cd9b8494321d961cd6975cd2d503184cf8d28eac19168acd3fb011ab7f048a89",
+      "bytes": 66
+    },
+    {
+      "path": "final51_magnitude_ft_gate2_lambda0p02_seed42_config.json",
+      "sha256": "567b194717001afc819852ead43e7a5f6a3ef666766f13c578861e85a093f66b",
+      "bytes": 611
+    },
+    {
+      "path": "final51_magnitude_ft_gate2_lambda0p02_seed42_stdout.log",
+      "sha256": "e543d1cc9d64bc1379887638ce6951baf6628c5742115981f106a590493912fd",
+      "bytes": 11949
+    },
+    {
+      "path": "final_manifest.json",
+      "sha256": "96d62a01298a672ad223e032cf16e1564c6e8afdf3cfb87376cae3fa5c8bee12",
+      "bytes": 15586
+    },
+    {
+      "path": "final_manifest.sha256",
+      "sha256": "564e4221a21a38619165502defc36f9aaeb585a1c045e2d19288b217944e33f7",
+      "bytes": 66
+    },
+    {
+      "path": "fine_tune_train51.py",
+      "sha256": "7c0e18ea9fb2d70eebedaa1f3a2da722774db1dd5b2283998f9fe8747cc4900a",
+      "bytes": 12991
+    },
+    {
+      "path": "independent_numpy_replay_report.json",
+      "sha256": "9561b4fbf1236b7621bceea53273fa90732cbdd345e0b9cb20c8041f28b0ef98",
+      "bytes": 51563
+    },
+    {
+      "path": "magnitude_final51.py",
+      "sha256": "d1871b1df27c6818195435bc2f9c5a127f0f1d6301f712bbc3e94b6dc732c46c",
+      "bytes": 6176
+    },
+    {
+      "path": "prepare_protocol_and_run.py",
+      "sha256": "9e715df34ab5fe7fff44d4cc9cdfe43e9e3493ccab8463e8c013034926510cd4",
+      "bytes": 5722
+    },
+    {
+      "path": "progress.json",
+      "sha256": "05f21afc3c80425eeee7b37118d8a8933b04c7c72df67683ff859ae1200dfcab",
+      "bytes": 168
+    },
+    {
+      "path": "qa_primitives.py",
+      "sha256": "37959db16635e6db03ad27c0fcd548fbf261fecff9f3d6a7bc25ffd581bf43f0",
+      "bytes": 3864
+    },
+    {
+      "path": "runs/final51_magnitude_ft_gate2_lambda0p02_seed42/history.csv",
+      "sha256": "f2eae102f88a61d5cd51f2df4a818c985c4f78f545d614197011b0f10edccbc5",
+      "bytes": 10873
+    },
+    {
+      "path": "runs/final51_magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+      "sha256": "80cbd2355102787d73dff5b6fea06bdcd7871ff80e11f0e31d6e7266a6c9856c",
+      "bytes": 6857767
+    },
+    {
+      "path": "runs/final51_magnitude_ft_gate2_lambda0p02_seed42/model.npz.sha256",
+      "sha256": "adae36e270ad8ff06f3b91d8918d3ed1e4389e794f71032e68ca36f2557eff00",
+      "bytes": 66
+    },
+    {
+      "path": "runs/final51_magnitude_ft_gate2_lambda0p02_seed42/result.json",
+      "sha256": "cc0675cb41eb4885ee57b0437e404ff70ba3f0dea5e418d2277f10b45c8751a9",
+      "bytes": 11333
+    },
+    {
+      "path": "verify_final51.py",
+      "sha256": "b05198527a924b1ea44f8473bfdcddcd06354f9568cb6d310e7d42eb1221508b",
+      "bytes": 16365
+    },
+    {
+      "path": "路线完成说明.md",
+      "sha256": "6e9f66259922fabc0dc2bf77ec1b6ccb23d7b752a6e6d89f70fdfeb064cf05e0",
+      "bytes": 3464
+    }
+  ]
+}

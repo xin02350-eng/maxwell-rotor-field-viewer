@@ -1,0 +1,191 @@
+{
+  "version": "v5-four-magnitude-objective-finetunes-frozen",
+  "final_manifest_sha256": "27d7742b9a88c2b58300afa2cc53038e57ea80c2942691311030a2036f215dc6",
+  "files": [
+    {
+      "path": "all_results.json",
+      "sha256": "c235495942ab7f23ff053b129ac0663841cd4cd64144baad9fec7281df44bbee",
+      "bytes": 52526
+    },
+    {
+      "path": "best_average_validation_replay.npz",
+      "sha256": "2dcb02093bff0f2e784fe7888dc0247cfacb311e85cb88ad017ca5a37649acbf",
+      "bytes": 7390576
+    },
+    {
+      "path": "best_maximum_validation_replay.npz",
+      "sha256": "2dcb02093bff0f2e784fe7888dc0247cfacb311e85cb88ad017ca5a37649acbf",
+      "bytes": 7390576
+    },
+    {
+      "path": "candidate_protocol.json",
+      "sha256": "c9e2a9747f13d705a6a6d7457fb3c42d68e2d1739d1c1679240376d582b795ba",
+      "bytes": 6388
+    },
+    {
+      "path": "candidate_protocol.sha256",
+      "sha256": "a7234ac66aa24d23bd7f049f351fc3e899dc8dcb3b5e9098eb9c021648fc5c07",
+      "bytes": 66
+    },
+    {
+      "path": "final_manifest.json",
+      "sha256": "27d7742b9a88c2b58300afa2cc53038e57ea80c2942691311030a2036f215dc6",
+      "bytes": 53649
+    },
+    {
+      "path": "final_manifest.sha256",
+      "sha256": "c286dd1317c01b9470637be1e0d76f639600fc4187bf075b1cb432cfeebf8fc1",
+      "bytes": 66
+    },
+    {
+      "path": "independent_numpy_replay_report.json",
+      "sha256": "4a0f1fb2b1333ed0db822f6b8252c96e4460f0c00e9c70fd7451e8c854a7f4b5",
+      "bytes": 228279
+    },
+    {
+      "path": "magnitude_ft_gate2_lambda0p02_seed42_config.json",
+      "sha256": "2e1fa96f2bd653c0a9e5383dfd6f0d629e5c7c6f1f092099a618e6c49dfd6031",
+      "bytes": 610
+    },
+    {
+      "path": "magnitude_ft_gate2_lambda0p02_seed42_stdout.log",
+      "sha256": "58370aba698596adb1797be6a5f8cfdb300e148ce7512f9312ffcab73646e0ee",
+      "bytes": 13547
+    },
+    {
+      "path": "magnitude_ft_gate2_lambda0p2_seed42_config.json",
+      "sha256": "9aac0ad42090f648fbfc0eba4f738d3ce781c251d5185d487ea7421b11d0c5c3",
+      "bytes": 608
+    },
+    {
+      "path": "magnitude_ft_gate2_lambda0p2_seed42_stdout.log",
+      "sha256": "467323ff0e805bcefd4ea784f486097a3571359d5f0e415cdfbe60ce774617d4",
+      "bytes": 13536
+    },
+    {
+      "path": "magnitude_ft_gate3_lambda0p02_seed42_config.json",
+      "sha256": "bd5e8d1693994e92cd8c5c2df610bb80eee0f5d4837c8d3174e892f561fd5179",
+      "bytes": 603
+    },
+    {
+      "path": "magnitude_ft_gate3_lambda0p02_seed42_stdout.log",
+      "sha256": "82e730a0176fa18ed45a183bc38f39c0d659e1905dcf7edbe4f5af866ac85a73",
+      "bytes": 13522
+    },
+    {
+      "path": "magnitude_ft_gate3_lambda0p2_seed42_config.json",
+      "sha256": "edaa6c0f093a1de18be4144cffabd72e66a07b5731dface571112c1619fa209d",
+      "bytes": 601
+    },
+    {
+      "path": "magnitude_ft_gate3_lambda0p2_seed42_stdout.log",
+      "sha256": "b0bca140d7c9f32f241ee301a7bb58b2337aea0bccc31537f7c2e28dbd354c3e",
+      "bytes": 13518
+    },
+    {
+      "path": "magnitude_point_nn.py",
+      "sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+      "bytes": 19215
+    },
+    {
+      "path": "prepare_protocol_and_run.py",
+      "sha256": "f02a32b02849f50ccbaa5b36a8426baf79a20ed8c2ea3a924ee45ad89995d4b9",
+      "bytes": 6499
+    },
+    {
+      "path": "progress.json",
+      "sha256": "c383b8878f5ca3ed504cb5175555931d3fee7f2befe917b4d66c6448cfd5d515",
+      "bytes": 278
+    },
+    {
+      "path": "runs/magnitude_ft_gate2_lambda0p02_seed42/history.csv",
+      "sha256": "9620efd4a65269f5a5f44ac4d3546cbab49d42eb7af3a7de0cd7c7615073f5c7",
+      "bytes": 13966
+    },
+    {
+      "path": "runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+      "sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+      "bytes": 6857293
+    },
+    {
+      "path": "runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz.sha256",
+      "sha256": "dcf786860a0522f1685a73b4c0c5dd33764f7c8397c36d196d7ac75375aa475a",
+      "bytes": 66
+    },
+    {
+      "path": "runs/magnitude_ft_gate2_lambda0p02_seed42/result.json",
+      "sha256": "b6080d163cd0dd8372f44562fcd269fc04411b90cab6aecff731bb86c6ca7dc6",
+      "bytes": 12286
+    },
+    {
+      "path": "runs/magnitude_ft_gate2_lambda0p2_seed42/history.csv",
+      "sha256": "84e87f51b8641f3bfa8d789918bd00b77bf10d4e0ed6bf0232e28e1004087d29",
+      "bytes": 13891
+    },
+    {
+      "path": "runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+      "sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+      "bytes": 6857297
+    },
+    {
+      "path": "runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz.sha256",
+      "sha256": "4bbe83ed5a794154d4d6d0b0ba090a0262ff597fad5e21dcafa0fea95d36a05e",
+      "bytes": 66
+    },
+    {
+      "path": "runs/magnitude_ft_gate2_lambda0p2_seed42/result.json",
+      "sha256": "88a24880f2b5110fde2a675f1fbb3e77c11b8fc82e9ef68fd2a22ee918db54d8",
+      "bytes": 12288
+    },
+    {
+      "path": "runs/magnitude_ft_gate3_lambda0p02_seed42/history.csv",
+      "sha256": "147f646c09e88bd564f1fb105e10665c6ca0479536a7292136c003ec0321708d",
+      "bytes": 13930
+    },
+    {
+      "path": "runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+      "sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+      "bytes": 6786148
+    },
+    {
+      "path": "runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz.sha256",
+      "sha256": "51cc9b4e831bdf97edf3654ecb21fe2b2688b369b86c08f79f8b80b56288a0cb",
+      "bytes": 66
+    },
+    {
+      "path": "runs/magnitude_ft_gate3_lambda0p02_seed42/result.json",
+      "sha256": "1522c6ac3380d09e8f3c113b92e5dc4f35fba42614f0930a5f4426aa9ca8f970",
+      "bytes": 12278
+    },
+    {
+      "path": "runs/magnitude_ft_gate3_lambda0p2_seed42/history.csv",
+      "sha256": "49e31187c8d8dbb4f49fedf8c684db5c274b0be8a1fa0b444bcfa69dbebcdfd8",
+      "bytes": 13915
+    },
+    {
+      "path": "runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+      "sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+      "bytes": 6981679
+    },
+    {
+      "path": "runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz.sha256",
+      "sha256": "6409c872df9cbc7bf44b807a20b449b2111e7ef3c158d6f42da369263a5f98a7",
+      "bytes": 66
+    },
+    {
+      "path": "runs/magnitude_ft_gate3_lambda0p2_seed42/result.json",
+      "sha256": "4f1a6aa7d1e9a1bf60ac6823468a63efd2ea5314abcfd019ebc9ba007f635664",
+      "bytes": 12273
+    },
+    {
+      "path": "verify_magnitude.py",
+      "sha256": "14f857b743130f38ea49148f82d63edffcbd0f61c35ab3985debc70eccbde1e9",
+      "bytes": 19396
+    },
+    {
+      "path": "路线完成说明.md",
+      "sha256": "049f5b787a7a1dabc5f410f68e379c7c087cb3b151568a64e996ccc3651e499a",
+      "bytes": 4756
+    }
+  ]
+}

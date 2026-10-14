@@ -1,0 +1,2113 @@
+{
+  "new_recipe_count": 60,
+  "existing_controls": 2,
+  "rows": [
+    {
+      "index": 0,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 1
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "kernel",
+      "validation": {
+        "relative_L2_pct": 2.632302901723209,
+        "rmse_T": 0.0312762428191272,
+        "mae_T": 0.008053405213378545,
+        "max_abs_T": 0.8620019617941934,
+        "worst_case_rmse_T": 0.03783842810245798
+      }
+    },
+    {
+      "index": 1,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "kernel",
+      "validation": {
+        "relative_L2_pct": 2.632302901723209,
+        "rmse_T": 0.0312762428191272,
+        "mae_T": 0.008053405213378545,
+        "max_abs_T": 0.8620019617941934,
+        "worst_case_rmse_T": 0.03783842810245798
+      }
+    },
+    {
+      "index": 2,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.493247404069675,
+        "rmse_T": 0.02962402661441178,
+        "mae_T": 0.0077317288092796305,
+        "max_abs_T": 0.8248090132567811,
+        "worst_case_rmse_T": 0.03825990012455164
+      }
+    },
+    {
+      "index": 3,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.482024254934609,
+        "rmse_T": 0.029490676483120353,
+        "mae_T": 0.007732262205855271,
+        "max_abs_T": 0.8258265761259569,
+        "worst_case_rmse_T": 0.03703477257710453
+      }
+    },
+    {
+      "index": 4,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.4365588940270113,
+        "rmse_T": 0.02895047054151903,
+        "mae_T": 0.008016366479588921,
+        "max_abs_T": 0.7882794014865455,
+        "worst_case_rmse_T": 0.03902607550068794
+      }
+    },
+    {
+      "index": 5,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.411732344381326,
+        "rmse_T": 0.028655488837638656,
+        "mae_T": 0.00802111821557434,
+        "max_abs_T": 0.7896599230057593,
+        "worst_case_rmse_T": 0.03692266736935629
+      }
+    },
+    {
+      "index": 6,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.4498336306115895,
+        "rmse_T": 0.02910819702676031,
+        "mae_T": 0.008794100146165745,
+        "max_abs_T": 0.7524758806130278,
+        "worst_case_rmse_T": 0.03914875456454232
+      }
+    },
+    {
+      "index": 7,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.4283830140598646,
+        "rmse_T": 0.028853327159218643,
+        "mae_T": 0.008777810884821963,
+        "max_abs_T": 0.7535346793004889,
+        "worst_case_rmse_T": 0.037508313728501615
+      }
+    },
+    {
+      "index": 8,
+      "components": [
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.5302604388090124,
+        "rmse_T": 0.030063804521894423,
+        "mae_T": 0.009892045048697685,
+        "max_abs_T": 0.7174709306762592,
+        "worst_case_rmse_T": 0.03876009647950555
+      }
+    },
+    {
+      "index": 9,
+      "components": [
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.5302604388090124,
+        "rmse_T": 0.030063804521894423,
+        "mae_T": 0.009892045048697685,
+        "max_abs_T": 0.7174709306762592,
+        "worst_case_rmse_T": 0.03876009647950555
+      }
+    },
+    {
+      "index": 10,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.630885063766099,
+        "rmse_T": 0.031259396488791995,
+        "mae_T": 0.01141182941087783,
+        "max_abs_T": 0.6545487457068528,
+        "worst_case_rmse_T": 0.03823216605813088
+      }
+    },
+    {
+      "index": 11,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.5603752644911206,
+        "rmse_T": 0.030421619954105018,
+        "mae_T": 0.010726877486503566,
+        "max_abs_T": 0.6702792919492042,
+        "worst_case_rmse_T": 0.03745520488844863
+      }
+    },
+    {
+      "index": 12,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.519316084181814,
+        "rmse_T": 0.029933766944306058,
+        "mae_T": 0.010212453449073398,
+        "max_abs_T": 0.686009838191556,
+        "worst_case_rmse_T": 0.03728357212074424
+      }
+    },
+    {
+      "index": 13,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.509153707875464,
+        "rmse_T": 0.029813020601334405,
+        "mae_T": 0.009918701726194187,
+        "max_abs_T": 0.7017403844339078,
+        "worst_case_rmse_T": 0.03772553050704136
+      }
+    },
+    {
+      "index": 14,
+      "components": [
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.5302604388090124,
+        "rmse_T": 0.030063804521894423,
+        "mae_T": 0.009892045048697685,
+        "max_abs_T": 0.7174709306762592,
+        "worst_case_rmse_T": 0.03876009647950555
+      }
+    },
+    {
+      "index": 15,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 1
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "kernel",
+      "validation": {
+        "relative_L2_pct": 2.632302901723209,
+        "rmse_T": 0.0312762428191272,
+        "mae_T": 0.008053405213378545,
+        "max_abs_T": 0.8620019617941934,
+        "worst_case_rmse_T": 0.03783842810245798
+      }
+    },
+    {
+      "index": 16,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "kernel",
+      "validation": {
+        "relative_L2_pct": 2.632302901723209,
+        "rmse_T": 0.0312762428191272,
+        "mae_T": 0.008053405213378545,
+        "max_abs_T": 0.8620019617941934,
+        "worst_case_rmse_T": 0.03783842810245798
+      }
+    },
+    {
+      "index": 17,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.489008316035801,
+        "rmse_T": 0.029573659026930762,
+        "mae_T": 0.007768550233428904,
+        "max_abs_T": 0.8191789128436398,
+        "worst_case_rmse_T": 0.037814206382052205
+      }
+    },
+    {
+      "index": 18,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.4868732541721,
+        "rmse_T": 0.029548290854734746,
+        "mae_T": 0.007770593272086287,
+        "max_abs_T": 0.8207521447305268,
+        "worst_case_rmse_T": 0.037393969459312275
+      }
+    },
+    {
+      "index": 19,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.432246078173427,
+        "rmse_T": 0.028899226941938385,
+        "mae_T": 0.008118946317130157,
+        "max_abs_T": 0.7773712179145784,
+        "worst_case_rmse_T": 0.03866066266576486
+      }
+    },
+    {
+      "index": 20,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.423553348318615,
+        "rmse_T": 0.02879594250247581,
+        "mae_T": 0.008126654845983078,
+        "max_abs_T": 0.7795110602148991,
+        "worst_case_rmse_T": 0.03781547006244779
+      }
+    },
+    {
+      "index": 21,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.4605921381024745,
+        "rmse_T": 0.029236026423763224,
+        "mae_T": 0.008955021819715055,
+        "max_abs_T": 0.8427150913381256,
+        "worst_case_rmse_T": 0.04001261244347344
+      }
+    },
+    {
+      "index": 22,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.4487211592808875,
+        "rmse_T": 0.029094978972164242,
+        "mae_T": 0.008951962519763297,
+        "max_abs_T": 0.7605849664825884,
+        "worst_case_rmse_T": 0.03907491668096808
+      }
+    },
+    {
+      "index": 23,
+      "components": [
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.559767964798221,
+        "rmse_T": 0.030414404199167897,
+        "mae_T": 0.010126100034842296,
+        "max_abs_T": 0.8737076311188963,
+        "worst_case_rmse_T": 0.041095339938563825
+      }
+    },
+    {
+      "index": 24,
+      "components": [
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.559767964798221,
+        "rmse_T": 0.030414404199167897,
+        "mae_T": 0.010126100034842296,
+        "max_abs_T": 0.8737076311188963,
+        "worst_case_rmse_T": 0.041095339938563825
+      }
+    },
+    {
+      "index": 25,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.630885063766099,
+        "rmse_T": 0.031259396488791995,
+        "mae_T": 0.01141182941087783,
+        "max_abs_T": 0.6545487457068528,
+        "worst_case_rmse_T": 0.03823216605813088
+      }
+    },
+    {
+      "index": 26,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.5709877324635375,
+        "rmse_T": 0.030547714152838093,
+        "mae_T": 0.010798528778032588,
+        "max_abs_T": 0.6782679680294263,
+        "worst_case_rmse_T": 0.03812011731517696
+      }
+    },
+    {
+      "index": 27,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.5386205815097225,
+        "rmse_T": 0.030163137259376412,
+        "mae_T": 0.010351859109976455,
+        "max_abs_T": 0.7430681331776366,
+        "worst_case_rmse_T": 0.038576500085672774
+      }
+    },
+    {
+      "index": 28,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.5348384224458647,
+        "rmse_T": 0.03011819876647564,
+        "mae_T": 0.010112653098804941,
+        "max_abs_T": 0.8080660685454998,
+        "worst_case_rmse_T": 0.03958165693484378
+      }
+    },
+    {
+      "index": 29,
+      "components": [
+        {
+          "name": "magnitude_ft_gate2_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "64e339bcf15251debe876dc38c9bf7df1afe2ab3684c823184560f99927e4976",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.559767964798221,
+        "rmse_T": 0.030414404199167897,
+        "mae_T": 0.010126100034842296,
+        "max_abs_T": 0.8737076311188963,
+        "worst_case_rmse_T": 0.041095339938563825
+      }
+    },
+    {
+      "index": 30,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 1
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "kernel",
+      "validation": {
+        "relative_L2_pct": 2.632302901723209,
+        "rmse_T": 0.0312762428191272,
+        "mae_T": 0.008053405213378545,
+        "max_abs_T": 0.8620019617941934,
+        "worst_case_rmse_T": 0.03783842810245798
+      }
+    },
+    {
+      "index": 31,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "kernel",
+      "validation": {
+        "relative_L2_pct": 2.632302901723209,
+        "rmse_T": 0.0312762428191272,
+        "mae_T": 0.008053405213378545,
+        "max_abs_T": 0.8620019617941934,
+        "worst_case_rmse_T": 0.03783842810245798
+      }
+    },
+    {
+      "index": 32,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.5232422948363302,
+        "rmse_T": 0.02998041701550771,
+        "mae_T": 0.00796691361721088,
+        "max_abs_T": 0.8311939583835262,
+        "worst_case_rmse_T": 0.03706160745432763
+      }
+    },
+    {
+      "index": 33,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.522305417035657,
+        "rmse_T": 0.02996928531118655,
+        "mae_T": 0.007956671898718366,
+        "max_abs_T": 0.8361046150003566,
+        "worst_case_rmse_T": 0.03712552831307499
+      }
+    },
+    {
+      "index": 34,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.4898529992036136,
+        "rmse_T": 0.029583695301952314,
+        "mae_T": 0.008496593654439446,
+        "max_abs_T": 0.8035847610558093,
+        "worst_case_rmse_T": 0.037051254146505605
+      }
+    },
+    {
+      "index": 35,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.489205933069951,
+        "rmse_T": 0.029576007053953496,
+        "mae_T": 0.008499656178699378,
+        "max_abs_T": 0.8102160007545587,
+        "worst_case_rmse_T": 0.037196230390888825
+      }
+    },
+    {
+      "index": 36,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.5357448055676164,
+        "rmse_T": 0.030128968142060987,
+        "mae_T": 0.009451603296867884,
+        "max_abs_T": 0.7793179740150622,
+        "worst_case_rmse_T": 0.03789746521794337
+      }
+    },
+    {
+      "index": 37,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.5360172017733063,
+        "rmse_T": 0.03013220467303415,
+        "mae_T": 0.00944666455244339,
+        "max_abs_T": 0.7843623388648662,
+        "worst_case_rmse_T": 0.038046166029789746
+      }
+    },
+    {
+      "index": 38,
+      "components": [
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.6585213612430905,
+        "rmse_T": 0.03158776278354712,
+        "mae_T": 0.01067753627276128,
+        "max_abs_T": 0.7585744767620954,
+        "worst_case_rmse_T": 0.039625224735610906
+      }
+    },
+    {
+      "index": 39,
+      "components": [
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.6585213612430905,
+        "rmse_T": 0.03158776278354712,
+        "mae_T": 0.01067753627276128,
+        "max_abs_T": 0.7585744767620954,
+        "worst_case_rmse_T": 0.039625224735610906
+      }
+    },
+    {
+      "index": 40,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.630885063766099,
+        "rmse_T": 0.031259396488791995,
+        "mae_T": 0.01141182941087783,
+        "max_abs_T": 0.6545487457068528,
+        "worst_case_rmse_T": 0.03823216605813088
+      }
+    },
+    {
+      "index": 41,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.6189708621430543,
+        "rmse_T": 0.031117835476678058,
+        "mae_T": 0.01111911151253886,
+        "max_abs_T": 0.6805551784706634,
+        "worst_case_rmse_T": 0.038266763113777545
+      }
+    },
+    {
+      "index": 42,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.6196416480751017,
+        "rmse_T": 0.031125805556290343,
+        "mae_T": 0.01089460280927729,
+        "max_abs_T": 0.7065616112344741,
+        "worst_case_rmse_T": 0.03851368619185028
+      }
+    },
+    {
+      "index": 43,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.6328878026747473,
+        "rmse_T": 0.03128319243885883,
+        "mae_T": 0.010745216415804178,
+        "max_abs_T": 0.7325680439982847,
+        "worst_case_rmse_T": 0.038968899344625496
+      }
+    },
+    {
+      "index": 44,
+      "components": [
+        {
+          "name": "magnitude_ft_gate3_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "814fbe3e7cd31cb75129da13709aaa0ffe13076d511f1fc9bc0d847e28c09ba0",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.6585213612430905,
+        "rmse_T": 0.03158776278354712,
+        "mae_T": 0.01067753627276128,
+        "max_abs_T": 0.7585744767620954,
+        "worst_case_rmse_T": 0.039625224735610906
+      }
+    },
+    {
+      "index": 45,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 1
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "kernel",
+      "validation": {
+        "relative_L2_pct": 2.632302901723209,
+        "rmse_T": 0.0312762428191272,
+        "mae_T": 0.008053405213378545,
+        "max_abs_T": 0.8620019617941934,
+        "worst_case_rmse_T": 0.03783842810245798
+      }
+    },
+    {
+      "index": 46,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "kernel",
+      "validation": {
+        "relative_L2_pct": 2.632302901723209,
+        "rmse_T": 0.0312762428191272,
+        "mae_T": 0.008053405213378545,
+        "max_abs_T": 0.8620019617941934,
+        "worst_case_rmse_T": 0.03783842810245798
+      }
+    },
+    {
+      "index": 47,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.518997739917135,
+        "rmse_T": 0.02992998447211577,
+        "mae_T": 0.007992666419256705,
+        "max_abs_T": 0.8307093307845377,
+        "worst_case_rmse_T": 0.03693830663976799
+      }
+    },
+    {
+      "index": 48,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.5232047928575563,
+        "rmse_T": 0.029979971428112137,
+        "mae_T": 0.007997694192913149,
+        "max_abs_T": 0.8329426750652109,
+        "worst_case_rmse_T": 0.03695413248776868
+      }
+    },
+    {
+      "index": 49,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.4878247390931665,
+        "rmse_T": 0.02955959611653062,
+        "mae_T": 0.00858314874058289,
+        "max_abs_T": 0.8008723376274203,
+        "worst_case_rmse_T": 0.03687575785599705
+      }
+    },
+    {
+      "index": 50,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.49309168991781,
+        "rmse_T": 0.029622176465015637,
+        "mae_T": 0.008600623922150198,
+        "max_abs_T": 0.8038921208842673,
+        "worst_case_rmse_T": 0.037022290064454365
+      }
+    },
+    {
+      "index": 51,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.54077657068127,
+        "rmse_T": 0.030188754083641044,
+        "mae_T": 0.009597755187789143,
+        "max_abs_T": 0.7725767293647525,
+        "worst_case_rmse_T": 0.037850512953150416
+      }
+    },
+    {
+      "index": 52,
+      "components": [
+        {
+          "name": "gp42",
+          "model_relative_path": "../../new60_opt_v2/kernel_route/rotor_cycle_refined/model.npz",
+          "module_relative_path": "../../new60_opt_v2/kernel_route/kernel_model.py",
+          "quantity": "Br,Bt",
+          "kwargs": {},
+          "family": "kernel",
+          "model_sha256": "5007caf947daf1cb9a5f708a4e130b07578f5d4613271ce06692bbbc4f6e45eb",
+          "module_sha256": "aeb8d96958cca632c7c4480def9bd9381df981748c52f5e1256aaf79a17310fd",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.5447691072736123,
+        "rmse_T": 0.03023619221997581,
+        "mae_T": 0.00960561199812513,
+        "max_abs_T": 0.7748805275354527,
+        "worst_case_rmse_T": 0.03803778124896334
+      }
+    },
+    {
+      "index": 53,
+      "components": [
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "signed_vector",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.673498332090376,
+        "rmse_T": 0.03176571471172683,
+        "mae_T": 0.010899631898641241,
+        "max_abs_T": 0.7459320616562111,
+        "worst_case_rmse_T": 0.03992839127870961
+      }
+    },
+    {
+      "index": 54,
+      "components": [
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.673498332090376,
+        "rmse_T": 0.03176571471172683,
+        "mae_T": 0.010899631898641241,
+        "max_abs_T": 0.7459320616562111,
+        "worst_case_rmse_T": 0.03992839127870961
+      }
+    },
+    {
+      "index": 55,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.630885063766099,
+        "rmse_T": 0.031259396488791995,
+        "mae_T": 0.01141182941087783,
+        "max_abs_T": 0.6545487457068528,
+        "worst_case_rmse_T": 0.03823216605813088
+      }
+    },
+    {
+      "index": 56,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.75
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.25
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.626571439418222,
+        "rmse_T": 0.031208143282921815,
+        "mae_T": 0.01120491071351657,
+        "max_abs_T": 0.6773945746941923,
+        "worst_case_rmse_T": 0.03838411033149867
+      }
+    },
+    {
+      "index": 57,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.5
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.5
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.6322976302838383,
+        "rmse_T": 0.031276180185447144,
+        "mae_T": 0.011047636856459023,
+        "max_abs_T": 0.700240403681532,
+        "worst_case_rmse_T": 0.038721011249582035
+      }
+    },
+    {
+      "index": 58,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.647998505067317,
+        "rmse_T": 0.03146273332561932,
+        "mae_T": 0.010944763201193086,
+        "max_abs_T": 0.7230862326688716,
+        "worst_case_rmse_T": 0.039238104952269065
+      }
+    },
+    {
+      "index": 59,
+      "components": [
+        {
+          "name": "magnitude_ft_gate3_lambda0p2_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate3_lambda0p2_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "5f97f1c8073b099f2357901135cff54888abd23b54fe8feb160a7b55eb4886b5",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.673498332090376,
+        "rmse_T": 0.03176571471172683,
+        "mae_T": 0.010899631898641241,
+        "max_abs_T": 0.7459320616562111,
+        "worst_case_rmse_T": 0.03992839127870961
+      }
+    },
+    {
+      "index": 60,
+      "components": [
+        {
+          "name": "V4mixed42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/primary_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "mixed",
+          "model_sha256": "a24e01ccba9d54c34f4b58191d961b7a0be4882bfa3893e54543e923d6920588",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.442056493166266,
+        "rmse_T": 0.02901579138491019,
+        "mae_T": 0.008400276164074221,
+        "max_abs_T": 0.7402307693313133,
+        "worst_case_rmse_T": 0.0371321040262804
+      }
+    },
+    {
+      "index": 61,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.630885063766099,
+        "rmse_T": 0.031259396488791995,
+        "mae_T": 0.01141182941087783,
+        "max_abs_T": 0.6545487457068528,
+        "worst_case_rmse_T": 0.03823216605813088
+      }
+    }
+  ],
+  "selected": {
+    "primary": {
+      "index": 60,
+      "components": [
+        {
+          "name": "V4mixed42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/primary_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "mixed",
+          "model_sha256": "a24e01ccba9d54c34f4b58191d961b7a0be4882bfa3893e54543e923d6920588",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 1
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "mixed",
+      "validation": {
+        "relative_L2_pct": 2.442056493166266,
+        "rmse_T": 0.02901579138491019,
+        "mae_T": 0.008400276164074221,
+        "max_abs_T": 0.7402307693313133,
+        "worst_case_rmse_T": 0.0371321040262804
+      }
+    },
+    "pure_nn": {
+      "index": 13,
+      "components": [
+        {
+          "name": "V4pure42",
+          "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+          "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+          "quantity": "|B|",
+          "kwargs": {},
+          "family": "neural",
+          "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+          "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+          "weight": 0.25
+        },
+        {
+          "name": "magnitude_ft_gate2_lambda0p02_seed42",
+          "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+          "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+          "quantity": "Br,Bt",
+          "kwargs": {
+            "return_signed": true
+          },
+          "family": "neural",
+          "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+          "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+          "weight": 0.75
+        }
+      ],
+      "blend_route": "scalar_magnitude",
+      "family": "neural",
+      "validation": {
+        "relative_L2_pct": 2.509153707875464,
+        "rmse_T": 0.029813020601334405,
+        "mae_T": 0.009918701726194187,
+        "max_abs_T": 0.7017403844339078,
+        "worst_case_rmse_T": 0.03772553050704136
+      }
+    }
+  }
+}

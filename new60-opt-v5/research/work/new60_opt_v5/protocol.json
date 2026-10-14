@@ -1,0 +1,14 @@
+{
+  "version": "NEW60_OPT_V5_DIRECT_MAGNITUDE_OBJECTIVE_20261015",
+  "reason": "The requested target is planar magnetic magnitude, while the small selected V4 response networks optimized signed static component losses. Test a different training objective rather than arbitrarily increasing model capacity.",
+  "target": "Seek much lower complete-field original-T error; <1% relativeL2 is an aspiration, never a claim without actual held-condition evidence.",
+  "existing_V4_freeze_sha256": "8779511c7d36061b1266ca949e37bd721eb87c9f47703c25d08f3cd4673feba3",
+  "labels": "Only originaltrain42 train weights orscalers; validation9 chooses finite recipes/checkpoints. No originaltest9 or full60-fit labels train or select prediction. Additional final51 refit, ifselected, is independently labelled and includes originalval9 in training without independent validation.",
+  "new_route": "Four gradient fine-tuning runs from existing actual train42 2gate/3gate networks; directly minimize originalTesla fullframe planar magnitude MSE throughhypot with fixed signedmean regularization .02/.2. Frozen training-only neural temporal fluctuation; six saved trainingframes perstep cyclically cover all60, fullvalidation60frames forcheckpoint.",
+  "recipe_selection": "Predeclare finite global output blends before candidate validation evaluation. Allpoints/allframes equal sampleweights; select wholevalidation RMSE subject to peak<=.75T, retain fixed V4 baseline. No pointwisevalidation routing, no deleting higherrorpoints.",
+  "geometry_and_units": "Same60conditions/60frames/1800rotorpoints; RMS current withnativeThet, no extra branch divisor, noBz, xy mm, fieldT, actual45degree sector, firstsuppliedperiod, absolute rotor angles for worldcoords.",
+  "test_status": "Original9testconditions already seen inV1–V4; anyV5 evaluation is reused retrospective evaluation, notfresh blind test. Repeated validation selection may be optimistic.",
+  "full60_fitting": "Reuse immutable V3 full60-trainedMLP+supervisedlinearhead calibration. Training-fit numerical residual is not unseen-condition accuracy and does not feedprediction choice.",
+  "artifact": "One final website and streaming complete runnableZIP, preserving prediction and full60fitting as different modes. Retain actual unsuccessful new objective experiments andtiming/counts transparently. No duplicate previous giant archives.",
+  "freeze": "Finalize SHA-bound sources/weights/recipes before anyV5 reused-test numeric replay; no test-based reselection. V4 models/sources/registries remain immutable."
+}

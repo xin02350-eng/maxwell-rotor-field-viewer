@@ -1,0 +1,206 @@
+{
+  "version": "NEW60_OPT_V5_FINAL",
+  "choices_sha256": "b4b1189c1907cbadb3ccde2b417166266337e44e7153da680c785282113b80fd",
+  "v5_experiment_counts": [
+    {
+      "label": "原42工况直接磁密损失梯度微调",
+      "count": 4
+    },
+    {
+      "label": "固定配方51工况追加梯度微调",
+      "count": 1
+    },
+    {
+      "label": "本轮从头训练神经网络",
+      "count": 0
+    },
+    {
+      "label": "本轮失败微调",
+      "count": 0
+    },
+    {
+      "label": "预先限定的全场组合比较",
+      "count": 60
+    },
+    {
+      "label": "继承全60最后线性层校准模型",
+      "count": 3,
+      "unit": "个",
+      "note": "属于V3既有结果，本轮没有重新训练。"
+    }
+  ],
+  "scope_results": [
+    {
+      "model_id": "prediction_rotor_magnitude",
+      "label": "转子42训练工况混合模型",
+      "training_scope": "original42",
+      "evaluation_role": "reused_test",
+      "metrics": {
+        "rmse_T": 0.03274513744369471,
+        "mae_T": 0.010896688109070905,
+        "max_abs_T": 0.8373166092573688,
+        "relative_L2_pct": 2.9062089628230297,
+        "point_sample_count": 1800,
+        "frame_count": 60,
+        "scalar_count": 972000
+      },
+      "below_1pct": false
+    },
+    {
+      "model_id": "prediction_rotor_pure_nn",
+      "label": "转子42训练工况纯神经网络",
+      "training_scope": "original42",
+      "evaluation_role": "reused_test",
+      "metrics": {
+        "rmse_T": 0.0330423842426119,
+        "mae_T": 0.012263479455837627,
+        "max_abs_T": 0.7394403374637624,
+        "relative_L2_pct": 2.9325903244120286,
+        "point_sample_count": 1800,
+        "frame_count": 60,
+        "scalar_count": 972000
+      },
+      "below_1pct": false,
+      "baseline_metrics": {
+        "rmse_T": 0.036181599606626674,
+        "mae_T": 0.014124747787801388,
+        "max_abs_T": 1.1030640393168498,
+        "relative_L2_pct": 3.2112031670919188,
+        "point_sample_count": 1800,
+        "frame_count": 60,
+        "scalar_count": 972000
+      },
+      "baseline_label": "V4相同训练范围的纯神经网络"
+    },
+    {
+      "model_id": "prediction_rotor_final51_magnitude",
+      "label": "转子51训练工况混合模型",
+      "training_scope": "final51",
+      "evaluation_role": "reused_test",
+      "metrics": {
+        "rmse_T": 0.03217888551446281,
+        "mae_T": 0.010258299149874526,
+        "max_abs_T": 0.68341825964241,
+        "relative_L2_pct": 2.8559527550187633,
+        "point_sample_count": 1800,
+        "frame_count": 60,
+        "scalar_count": 972000
+      },
+      "below_1pct": false
+    },
+    {
+      "model_id": "prediction_rotor_final51_pure_nn",
+      "label": "转子51训练工况纯神经网络",
+      "training_scope": "final51",
+      "evaluation_role": "reused_test",
+      "metrics": {
+        "rmse_T": 0.032536642254094424,
+        "mae_T": 0.011577440400534334,
+        "max_abs_T": 0.698082760987071,
+        "relative_L2_pct": 2.8877045180100023,
+        "point_sample_count": 1800,
+        "frame_count": 60,
+        "scalar_count": 972000
+      },
+      "below_1pct": false,
+      "baseline_metrics": {
+        "rmse_T": 0.03741605337321312,
+        "mae_T": 0.011866371081702952,
+        "max_abs_T": 1.3128837795447459,
+        "relative_L2_pct": 3.32076387994014,
+        "point_sample_count": 1800,
+        "frame_count": 60,
+        "scalar_count": 972000
+      },
+      "baseline_label": "V4相同训练范围的纯神经网络"
+    },
+    {
+      "model_id": "prediction_stator_magnitude",
+      "label": "定子42训练工况预测",
+      "training_scope": "original42",
+      "evaluation_role": "reused_test",
+      "metrics": {
+        "rmse_T": 0.012763300999947,
+        "mae_T": 0.006492097289547611,
+        "max_abs_T": 0.3035346850063818,
+        "relative_L2_pct": 1.5347137805255835,
+        "point_sample_count": 1800,
+        "frame_count": 60,
+        "scalar_count": 972000
+      },
+      "below_1pct": false
+    },
+    {
+      "model_id": "prediction_airgap_Br",
+      "label": "气隙42训练工况有符号Br预测",
+      "training_scope": "original42",
+      "evaluation_role": "reused_test",
+      "metrics": {
+        "rmse_T": 0.0028309263158909008,
+        "mae_T": 0.0015276087919039272,
+        "max_abs_T": 0.034106275352705495,
+        "relative_L2_pct": 0.5135330668543442,
+        "point_sample_count": 900,
+        "frame_count": 60,
+        "scalar_count": 486000
+      },
+      "below_1pct": true
+    },
+    {
+      "model_id": "fitting_rotor_magnitude",
+      "label": "转子全60训练内神经网络拟合",
+      "training_scope": "full60",
+      "evaluation_role": "training_fit",
+      "metrics": {
+        "rmse_T": 1.80225528370095e-15,
+        "mae_T": 7.038847278029018e-16,
+        "max_abs_T": 1.3489209749195652e-12,
+        "relative_L2_pct": 1.4927204931927708e-13,
+        "point_sample_count": 1800,
+        "frame_count": 60,
+        "scalar_count": 6480000
+      },
+      "below_1pct": true
+    },
+    {
+      "model_id": "fitting_stator_magnitude",
+      "label": "定子全60训练内神经网络拟合",
+      "training_scope": "full60",
+      "evaluation_role": "training_fit",
+      "metrics": {
+        "rmse_T": 2.1451365432473225e-15,
+        "mae_T": 9.36435041411888e-16,
+        "max_abs_T": 1.3019030298266898e-12,
+        "relative_L2_pct": 2.0843463370421373e-13,
+        "point_sample_count": 1800,
+        "frame_count": 60,
+        "scalar_count": 6480000
+      },
+      "below_1pct": true
+    },
+    {
+      "model_id": "fitting_airgap_Br",
+      "label": "气隙全60训练内神经网络拟合",
+      "training_scope": "full60",
+      "evaluation_role": "training_fit",
+      "metrics": {
+        "rmse_T": 1.0631740900063643e-15,
+        "mae_T": 3.8386190820193656e-16,
+        "max_abs_T": 6.871170299405094e-13,
+        "relative_L2_pct": 1.5663580557906257e-13,
+        "point_sample_count": 900,
+        "frame_count": 60,
+        "scalar_count": 3240000
+      },
+      "below_1pct": true
+    }
+  ],
+  "target": "Reduce both average and local error without confusing training fitting and prediction.",
+  "rotor_prediction_below_1pct": false,
+  "training_fit_is_not_prediction": true,
+  "previous_test_already_seen": true,
+  "validation_repeatedly_used_for_selection": true,
+  "final51_independent_validation": false,
+  "model_recipe_unchanged_after_final_replay": true,
+  "scientific_qa_pass_count": 1202
+}

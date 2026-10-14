@@ -1,0 +1,17 @@
+{
+  "source_sha256": "d875dfbfdc6b9ed56a7f62f590ee27b77ffefd477cd71f7109e0ae1fce448421",
+  "new_recipe_count": 60,
+  "existing_control_count": 2,
+  "alpha_grid": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "recipe_family": "4magnitude-NNs vsGP42 in signed/scalar routes(40), vsoldpureNN42 scalar(20); endpoints duplicated; retain V4mixed/pure2controls",
+  "selection": "Fullvalidation9 RMSEsubject tomaxAbs<=.75T, retain boundedV4 baseline; pureNN same amongneuralonly recipes. No pointweights or cropping.",
+  "final51": "Ifprimary containsone newNN, train exactlyone51NN withsame selectedstructure/signedlambda from51warmstart. Bindsame ratio with51GP; scalaroldpure42 component becomesfixed.25NN2+.75NN3 51pure. Ifnewroutefails primaryvalidation, retainpredeclaredV4 51fixedrecipe.",
+  "test_labels_read": false,
+  "full60fit_used": false
+}

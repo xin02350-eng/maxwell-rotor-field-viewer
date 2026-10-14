@@ -1,0 +1,13 @@
+{
+  "name": "final51_magnitude_ft_gate2_lambda0p02_seed42",
+  "gates": 2,
+  "lambda_signed": 0.02,
+  "seed": 42,
+  "adam_steps": 2000,
+  "lbfgs_blocks": 10,
+  "learning_rate": 0.001,
+  "gate_learning_rate": 0.0002,
+  "warmstart_model": "C:\\Users\\USER\\Documents\\Codex\\2026-10-03\\maxwell-1-12-300-8500\\work\\new60_opt_v4\\final51_refit\\final51_regime_sigmoid_affine2_principal_seed42\\model.npz",
+  "warmstart_model_sha256": "82005ff83988fdffa507fd4e51d9077639b3e5305ad603e5e2e7ce5e1d007ff2",
+  "warmstart_source_sha256": "6a0637b6898049092e2ee1b2873f9777ba1ae20b2c4cb354f38143a65eb42ea7"
+}

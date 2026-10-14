@@ -1,0 +1,71 @@
+{
+  "version": "V5validation-only-selection",
+  "primary": {
+    "model_relative_path": "magnitude_recipes/primary_model.npz",
+    "inference_module_relative_path": "select_magnitude_recipes.py",
+    "family": "mixed",
+    "validation": {
+      "relative_L2_pct": 2.442056493166266,
+      "rmse_T": 0.02901579138491019,
+      "mae_T": 0.008400276164074221,
+      "max_abs_T": 0.7402307693313133,
+      "worst_case_rmse_T": 0.0371321040262804
+    },
+    "components": [
+      {
+        "name": "V4mixed42",
+        "model_relative_path": "../../new60_opt_v4/radial_combo/primary_model.npz",
+        "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+        "quantity": "|B|",
+        "kwargs": {},
+        "family": "mixed",
+        "model_sha256": "a24e01ccba9d54c34f4b58191d961b7a0be4882bfa3893e54543e923d6920588",
+        "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+        "weight": 1
+      }
+    ],
+    "blend_route": "scalar_magnitude"
+  },
+  "pure_nn": {
+    "model_relative_path": "magnitude_recipes/pure_nn_model.npz",
+    "inference_module_relative_path": "select_magnitude_recipes.py",
+    "family": "neural",
+    "validation": {
+      "relative_L2_pct": 2.509153707875464,
+      "rmse_T": 0.029813020601334405,
+      "mae_T": 0.009918701726194187,
+      "max_abs_T": 0.7017403844339078,
+      "worst_case_rmse_T": 0.03772553050704136
+    },
+    "components": [
+      {
+        "name": "V4pure42",
+        "model_relative_path": "../../new60_opt_v4/radial_combo/pure_nn_model.npz",
+        "module_relative_path": "../../new60_opt_v4/radial_combo.py",
+        "quantity": "|B|",
+        "kwargs": {},
+        "family": "neural",
+        "model_sha256": "885167db82f6b961e6a50033d1e2ed63d31ac367b74e1b06c2ff0f909f54ab83",
+        "module_sha256": "38bdeed41fc1289e2041b756693b8b1ee5fcc41e859c195eca656ae91031d05d",
+        "weight": 0.25
+      },
+      {
+        "name": "magnitude_ft_gate2_lambda0p02_seed42",
+        "model_relative_path": "../magnitude_objective_nn/runs/magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+        "module_relative_path": "../magnitude_objective_nn/magnitude_point_nn.py",
+        "quantity": "Br,Bt",
+        "kwargs": {
+          "return_signed": true
+        },
+        "family": "neural",
+        "model_sha256": "b9987cd2d8d4e1c95e16784af00e2d4cec8909b2e54cc86a3e6a7adba4c48e9c",
+        "module_sha256": "7a5dacdb69afac034295438f7456e79323e3d1c8ba60f91995cbc73d88d23687",
+        "weight": 0.75
+      }
+    ],
+    "blend_route": "scalar_magnitude"
+  },
+  "test_labels_used": false,
+  "full60_fit_used": false,
+  "selected_new_primary_neural_ids": []
+}

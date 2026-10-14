@@ -1,0 +1,522 @@
+{
+  "version": "v5-prespecified-one-final51-magnitude-finetune-frozen",
+  "models": [
+    {
+      "id": "final51_magnitude_ft_gate2_lambda0p02_seed42",
+      "model_relative_path": "runs/final51_magnitude_ft_gate2_lambda0p02_seed42/model.npz",
+      "inference_module_relative_path": "magnitude_final51.py",
+      "model_sha256": "80cbd2355102787d73dff5b6fea06bdcd7871ff80e11f0e31d6e7266a6c9856c",
+      "inference_module_sha256": "d1871b1df27c6818195435bc2f9c5a127f0f1d6301f712bbc3e94b6dc732c46c",
+      "training_source_relative_path": "fine_tune_train51.py",
+      "training_source_sha256": "7c0e18ea9fb2d70eebedaa1f3a2da722774db1dd5b2283998f9fe8747cc4900a",
+      "predict_kwargs": {},
+      "signed_output_kwargs": {
+        "return_signed": true
+      },
+      "mean_output_kwargs": {
+        "return_mean": true
+      },
+      "validation": null,
+      "train51_fitting_magnitude": {
+        "relative_L2_pct": 1.7957651100701448,
+        "rmse_T": 0.021927001780548204,
+        "mae_T": 0.007548206324061873,
+        "max_abs_T": 0.634033191306766,
+        "worst_case_id": 59,
+        "worst_case_rmse_T": 0.03411960548029911,
+        "max_abs_location": {
+          "case_id": 35,
+          "frame_index": 23,
+          "point_index": 1359,
+          "point_id": 3159,
+          "prediction_T": 1.9555504918961835,
+          "truth_T": 1.3215173005894174,
+          "signed_error_T": 0.634033191306766
+        },
+        "per_case": [
+          {
+            "case_id": 0,
+            "rmse_T": 0.020788784860428126,
+            "relative_L2_pct": 2.11028428032808
+          },
+          {
+            "case_id": 3,
+            "rmse_T": 0.02437856367306697,
+            "relative_L2_pct": 1.7601103232991637
+          },
+          {
+            "case_id": 5,
+            "rmse_T": 0.02029955472480295,
+            "relative_L2_pct": 1.5558214616593637
+          },
+          {
+            "case_id": 6,
+            "rmse_T": 0.029115626315367113,
+            "relative_L2_pct": 2.574933036197823
+          },
+          {
+            "case_id": 7,
+            "rmse_T": 0.020117691851208683,
+            "relative_L2_pct": 1.6649166084840774
+          },
+          {
+            "case_id": 8,
+            "rmse_T": 0.02280712968469228,
+            "relative_L2_pct": 2.2656783486658876
+          },
+          {
+            "case_id": 10,
+            "rmse_T": 0.019460707435062813,
+            "relative_L2_pct": 1.5290281231017018
+          },
+          {
+            "case_id": 11,
+            "rmse_T": 0.017346482100056553,
+            "relative_L2_pct": 1.2786327688057746
+          },
+          {
+            "case_id": 13,
+            "rmse_T": 0.0170505672206077,
+            "relative_L2_pct": 1.5001275254489599
+          },
+          {
+            "case_id": 19,
+            "rmse_T": 0.013637242836629627,
+            "relative_L2_pct": 1.0765825823569048
+          },
+          {
+            "case_id": 20,
+            "rmse_T": 0.020122294660096254,
+            "relative_L2_pct": 2.0403029292429995
+          },
+          {
+            "case_id": 21,
+            "rmse_T": 0.019348044367129866,
+            "relative_L2_pct": 1.842038849264029
+          },
+          {
+            "case_id": 22,
+            "rmse_T": 0.018281828165388793,
+            "relative_L2_pct": 1.4061601842408096
+          },
+          {
+            "case_id": 23,
+            "rmse_T": 0.01994037759712198,
+            "relative_L2_pct": 1.8759800130445634
+          },
+          {
+            "case_id": 25,
+            "rmse_T": 0.017648062660817664,
+            "relative_L2_pct": 1.3439706456942366
+          },
+          {
+            "case_id": 26,
+            "rmse_T": 0.02227678648336413,
+            "relative_L2_pct": 1.7888834808102616
+          },
+          {
+            "case_id": 28,
+            "rmse_T": 0.011961841312091574,
+            "relative_L2_pct": 0.8628549327333094
+          },
+          {
+            "case_id": 29,
+            "rmse_T": 0.02825758255604906,
+            "relative_L2_pct": 2.7259196531193144
+          },
+          {
+            "case_id": 30,
+            "rmse_T": 0.01925988659172162,
+            "relative_L2_pct": 1.4065038055013508
+          },
+          {
+            "case_id": 31,
+            "rmse_T": 0.028995486682039027,
+            "relative_L2_pct": 2.5119164190982266
+          },
+          {
+            "case_id": 32,
+            "rmse_T": 0.028831186514313066,
+            "relative_L2_pct": 2.766098577753781
+          },
+          {
+            "case_id": 33,
+            "rmse_T": 0.008110337540467727,
+            "relative_L2_pct": 0.5783932323557165
+          },
+          {
+            "case_id": 34,
+            "rmse_T": 0.01732766018823768,
+            "relative_L2_pct": 1.3850941457724495
+          },
+          {
+            "case_id": 36,
+            "rmse_T": 0.024546352246094076,
+            "relative_L2_pct": 1.976461179484992
+          },
+          {
+            "case_id": 37,
+            "rmse_T": 0.02509782819042806,
+            "relative_L2_pct": 1.9825629455898706
+          },
+          {
+            "case_id": 39,
+            "rmse_T": 0.022858743665817863,
+            "relative_L2_pct": 2.29147745313121
+          },
+          {
+            "case_id": 42,
+            "rmse_T": 0.02298189450331507,
+            "relative_L2_pct": 2.0007830719060653
+          },
+          {
+            "case_id": 43,
+            "rmse_T": 0.013244063908880272,
+            "relative_L2_pct": 0.9346372292860551
+          },
+          {
+            "case_id": 44,
+            "rmse_T": 0.020621337342895035,
+            "relative_L2_pct": 1.5342963043814073
+          },
+          {
+            "case_id": 45,
+            "rmse_T": 0.020699361036871373,
+            "relative_L2_pct": 1.8005181767016092
+          },
+          {
+            "case_id": 46,
+            "rmse_T": 0.021205209108065903,
+            "relative_L2_pct": 1.9405765000548068
+          },
+          {
+            "case_id": 47,
+            "rmse_T": 0.022316851892475908,
+            "relative_L2_pct": 1.9119089086508458
+          },
+          {
+            "case_id": 48,
+            "rmse_T": 0.01306681265177316,
+            "relative_L2_pct": 1.022344400893414
+          },
+          {
+            "case_id": 49,
+            "rmse_T": 0.009372938210302037,
+            "relative_L2_pct": 0.6642745714167023
+          },
+          {
+            "case_id": 50,
+            "rmse_T": 0.00840901453796234,
+            "relative_L2_pct": 0.6004187722386829
+          },
+          {
+            "case_id": 52,
+            "rmse_T": 0.025286156012576246,
+            "relative_L2_pct": 1.8980272951470392
+          },
+          {
+            "case_id": 53,
+            "rmse_T": 0.031608696753687285,
+            "relative_L2_pct": 2.2967412087738763
+          },
+          {
+            "case_id": 54,
+            "rmse_T": 0.025316465290395097,
+            "relative_L2_pct": 1.8337101404781726
+          },
+          {
+            "case_id": 55,
+            "rmse_T": 0.024665650788417617,
+            "relative_L2_pct": 1.7604406278442408
+          },
+          {
+            "case_id": 56,
+            "rmse_T": 0.016089000174316557,
+            "relative_L2_pct": 1.4616755259650174
+          },
+          {
+            "case_id": 57,
+            "rmse_T": 0.0252051289849846,
+            "relative_L2_pct": 2.535938427934475
+          },
+          {
+            "case_id": 59,
+            "rmse_T": 0.03411960548029911,
+            "relative_L2_pct": 3.162815755672254
+          },
+          {
+            "case_id": 1,
+            "rmse_T": 0.021803555502120726,
+            "relative_L2_pct": 1.901783542710529
+          },
+          {
+            "case_id": 9,
+            "rmse_T": 0.02646911965348778,
+            "relative_L2_pct": 2.1517797119438664
+          },
+          {
+            "case_id": 14,
+            "rmse_T": 0.02217825283935906,
+            "relative_L2_pct": 2.2401733183625816
+          },
+          {
+            "case_id": 15,
+            "rmse_T": 0.02123112462163268,
+            "relative_L2_pct": 1.9335310610332308
+          },
+          {
+            "case_id": 24,
+            "rmse_T": 0.02524872351043374,
+            "relative_L2_pct": 1.9234294454898966
+          },
+          {
+            "case_id": 27,
+            "rmse_T": 0.02719230913502406,
+            "relative_L2_pct": 2.285035538810472
+          },
+          {
+            "case_id": 35,
+            "rmse_T": 0.02516975018584726,
+            "relative_L2_pct": 2.0380664781060007
+          },
+          {
+            "case_id": 40,
+            "rmse_T": 0.014915083084550827,
+            "relative_L2_pct": 1.0940230259224772
+          },
+          {
+            "case_id": 51,
+            "rmse_T": 0.024428757615803518,
+            "relative_L2_pct": 2.259238005151412
+          }
+        ]
+      },
+      "train51_static_mean": {
+        "signed_static_mean_relative_L2_pct": 4.039823906937511,
+        "signed_static_mean_component_rmse_T": 0.034842417291949625,
+        "signed_static_mean_component_max_abs_T": 1.7286812690109037,
+        "norm_of_signed_mean_relative_L2_pct": 1.7188018448416318,
+        "norm_of_signed_mean_rmse_T": 0.020964603440602365,
+        "norm_of_signed_mean_max_abs_T": 0.629500548261543,
+        "quantity_note": "Static signed mean/norm(mean), distinct from fullframe |B| and mean(|B|)"
+      },
+      "train51_full60_signed_components": {
+        "relative_L2_pct": 4.093015847956157,
+        "component_rmse_T": 0.03533931693313339,
+        "component_max_abs_T": 1.7317655908309666
+      },
+      "training_case_ids": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59,
+        1,
+        9,
+        14,
+        15,
+        24,
+        27,
+        35,
+        40,
+        51
+      ],
+      "validation_case_ids": [],
+      "excluded_test_case_ids": [
+        2,
+        4,
+        12,
+        16,
+        17,
+        18,
+        38,
+        41,
+        58
+      ],
+      "configuration": {
+        "name": "final51_magnitude_ft_gate2_lambda0p02_seed42",
+        "gates": 2,
+        "lambda_signed": 0.02,
+        "seed": 42,
+        "adam_steps": 2000,
+        "lbfgs_blocks": 10,
+        "learning_rate": 0.001,
+        "gate_learning_rate": 0.0002,
+        "warmstart_model": "C:\\Users\\USER\\Documents\\Codex\\2026-10-03\\maxwell-1-12-300-8500\\work\\new60_opt_v4\\final51_refit\\final51_regime_sigmoid_affine2_principal_seed42\\model.npz",
+        "warmstart_model_sha256": "82005ff83988fdffa507fd4e51d9077639b3e5305ad603e5e2e7ce5e1d007ff2",
+        "warmstart_source_sha256": "6a0637b6898049092e2ee1b2873f9777ba1ae20b2c4cb354f38143a65eb42ea7"
+      },
+      "new_trainable_parameters": 43200,
+      "new_parameters_per_point": 24,
+      "new_gradient_fine_tuning_run": true,
+      "from_scratch_training": false,
+      "best_step": 2100,
+      "selected_warmstart_step0": false,
+      "trainable_arrays_changed": 5,
+      "train51_selected_objective_T2": 0.0005050732879390911,
+      "history_relative_path": "runs/final51_magnitude_ft_gate2_lambda0p02_seed42/history.csv",
+      "history_sha256": "f2eae102f88a61d5cd51f2df4a818c985c4f78f545d614197011b0f10edccbc5",
+      "history_checkpoint_count": 51,
+      "result_relative_path": "runs/final51_magnitude_ft_gate2_lambda0p02_seed42/result.json",
+      "result_sha256": "cc0675cb41eb4885ee57b0437e404ff70ba3f0dea5e418d2277f10b45c8751a9",
+      "stdout_relative_path": "final51_magnitude_ft_gate2_lambda0p02_seed42_stdout.log",
+      "stdout_sha256": "e543d1cc9d64bc1379887638ce6951baf6628c5742115981f106a590493912fd",
+      "warmstart_model_sha256": "82005ff83988fdffa507fd4e51d9077639b3e5305ad603e5e2e7ce5e1d007ff2",
+      "warmstart_source_sha256": "6a0637b6898049092e2ee1b2873f9777ba1ae20b2c4cb354f38143a65eb42ea7",
+      "numpy_torch_float64_replay_max_abs_difference_T": 1.7763568394002505e-15
+    }
+  ],
+  "completed_new_neural_trainings": 1,
+  "completed_gradient_fine_tuning_runs": 1,
+  "completed_from_scratch_training_runs": 0,
+  "failed_attempts_excluded": [],
+  "protocol_relative_path": "candidate_protocol.json",
+  "protocol_sha256": "2335aef6117615c334fdb98e4c59673f8b4c4c1a3d62403883a14af859bcf13f",
+  "training_case_ids": [
+    0,
+    3,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    13,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    39,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    59,
+    1,
+    9,
+    14,
+    15,
+    24,
+    27,
+    35,
+    40,
+    51
+  ],
+  "validation_case_ids": [],
+  "excluded_test_case_ids": [
+    2,
+    4,
+    12,
+    16,
+    17,
+    18,
+    38,
+    41,
+    58
+  ],
+  "fulltrain_shape": [
+    51,
+    60,
+    1800
+  ],
+  "validation": null,
+  "train51_metrics_are_fitting": true,
+  "fixed_recipe": {
+    "old_V4_pure51_scalar_norm_weight": 0.25,
+    "new_this51_scalar_norm_weight": 0.75,
+    "old_V4_pure51_model_sha256": "4eac4e31cf76943e0449671d40e2af78e359b945471b4760678c73eb209e57ec"
+  },
+  "local_blend_evaluations": 0,
+  "inference": {
+    "api": "predict(model_or_path,nativeconditions,frame_index=None,return_signed=False,return_mean=False)",
+    "default_shape": "C60x1800 rawplanar magnitude T",
+    "signed_shape": "C60x3600 interleavedBrBt T",
+    "mean_shape": "C1800x2 staticmeanBrBt T",
+    "self_contained_numpy_module": true,
+    "dependencies": [
+      "numpy",
+      "threadpoolctl recommended CPU2threads"
+    ],
+    "xy_units": "mm",
+    "saved_firstcycle60frames_only": true
+  },
+  "independent_numpy_QA": {
+    "report_relative_path": "independent_numpy_replay_report.json",
+    "report_sha256": "9561b4fbf1236b7621bceea53273fa90732cbdd345e0b9cb20c8041f28b0ef98",
+    "checker_relative_path": "verify_final51.py",
+    "checker_sha256": "b05198527a924b1ea44f8473bfdcddcd06354f9568cb6d310e7d42eb1221508b",
+    "primitives_relative_path": "qa_primitives.py",
+    "primitives_sha256": "37959db16635e6db03ad27c0fcd548fbf261fecff9f3d6a7bc25ffd581bf43f0",
+    "passed_checks": 467,
+    "failed_checks": 0,
+    "original42_four_andV4_final51_immutable": true
+  },
+  "scope": "Actual51 fitting addon: originalval9 nowtraining; originaltest9notdecoded. No independentvalidation, no newblindtest; fixedrecipe previously selectedon42/9. Notfull60 fitting, not42baseline replacement.",
+  "test_labels_loaded": false,
+  "test_metrics_computed": false,
+  "full60_fit_labels_loaded": false,
+  "train51_labels_loaded": true,
+  "validation_point_weighting": false,
+  "hotspot_cropping": false,
+  "posthoc_magnitude_projection": false
+}

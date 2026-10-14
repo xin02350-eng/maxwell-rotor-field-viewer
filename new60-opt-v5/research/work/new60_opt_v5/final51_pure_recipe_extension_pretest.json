@@ -1,0 +1,19 @@
+{
+  "version": "V5_additional_pure51_refit_pretest_amendment",
+  "reason": "The four direct-magnitude fine-tunes did not beat the existing mixed42 whole-validation choice, but improved the genuine pureNN42 model. Refit that selected pureNN objective on51 as an explicitly separate control.",
+  "new_gradient_finetuning_runs": 1,
+  "structure": "sigmoid affine2-gate warmstart fromV4 actual51-trainedNN",
+  "lambda_signed": 0.02,
+  "seed": 42,
+  "adam_steps": 2000,
+  "lbfgs_iterations": 100,
+  "training_case_ids": "original42training+original9validation, in that exactorder",
+  "no_independent_validation": true,
+  "checkpoint": "minimum training51 complete originalT combinedmagnitude+signed objective at fixedcheckpoints",
+  "deployment_pure51": "0.25immutableV4pure51norm+0.75newdirect-magnitudeNN51norm",
+  "selection_basis": "original42 validation-only selection_validation_only.json: pureNN L2 2.509153707875464%, max .7017403844339078T, samefixed25/75 globalrecipe",
+  "mixed42_and_mixed51": "BothkeepimmutableV4selectedmodels; no newprimarytest-basedreselection",
+  "test_labels_used_for_training_or_selection": false,
+  "full60_fitting_used": false,
+  "test_status": "Original9testalreadyseenearlierruns; finalscore isreusedretrospective evaluation, notfreshblindtest"
+}

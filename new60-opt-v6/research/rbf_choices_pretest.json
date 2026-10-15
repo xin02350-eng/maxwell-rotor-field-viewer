@@ -1,0 +1,121 @@
+{
+  "regions": {
+    "rotor": {
+      "study": "rotor_signed",
+      "recipe": {
+        "route": "pointLOO_shrunk50",
+        "alpha": 0.5,
+        "metrics": {
+          "relative_L2_pct": 2.328794067783852,
+          "rmse_T": 0.027670040819416968,
+          "mae_T": 0.006912199805154139,
+          "max_abs_T": 0.7522845585696847,
+          "max_abs_indices": [
+            8,
+            2,
+            1359
+          ],
+          "worst_case_rmse_T": 0.036497796278554984
+        }
+      },
+      "shared_index": 47,
+      "protocol_sha256": "3346fc970b062008a8dbf10e9750eda00aeb7a00d7329389835a7137c8cc4ee9",
+      "results_sha256": "50bd81c37b1a006144c46532c115d3a30e690c81c24e8666734804402baba592"
+    },
+    "stator": {
+      "study": "stator_signed",
+      "recipe": {
+        "route": "pointLOO_shrunk50",
+        "alpha": 0.25,
+        "metrics": {
+          "relative_L2_pct": 0.7787654511591967,
+          "rmse_T": 0.007818015057176789,
+          "mae_T": 0.003441969275570032,
+          "max_abs_T": 0.2040957204132895,
+          "max_abs_indices": [
+            3,
+            22,
+            1442
+          ],
+          "worst_case_rmse_T": 0.015313071372626028
+        }
+      },
+      "shared_index": 67,
+      "protocol_sha256": "423162ac8c0abd0b1604c014d32d1822f68143ed5f0c9c7e77c1515deb51e017",
+      "results_sha256": "557582860e5ff26dce2475e5f0e67704a7727ddc066c1abb1ea624d3f25e0509"
+    },
+    "airgap": {
+      "study": "airgap_Br",
+      "recipe": {
+        "route": "shared",
+        "alpha": 0.5,
+        "metrics": {
+          "relative_L2_pct": 0.2846618146729237,
+          "rmse_T": 0.0018970809084312384,
+          "mae_T": 0.000883299992061226,
+          "max_abs_T": 0.04033065585616913,
+          "max_abs_indices": [
+            3,
+            17,
+            377
+          ],
+          "worst_case_rmse_T": 0.004554661884724019
+        }
+      },
+      "shared_index": 43,
+      "protocol_sha256": "12ef95534b6ceb58d8f9d53ba5eb1f49678aa66790b0abb04f93fc5aab10e7db",
+      "results_sha256": "a828c8fd14f213dedea0376c49f4e0ccca89736147704c0c4493ddbec72702e1"
+    }
+  },
+  "selection": "Full original9 validation RMSE, reused validation; no test read",
+  "original42_train_case_ids": [
+    0,
+    3,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    13,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    39,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    59
+  ],
+  "source_sha256": "8f8295b7a0a4a303e64ee0dfb97a6032fa4b700530745c3ce73e6375b7e52391",
+  "rbf_source_sha256": "95c81342e470d64b7a5a982e908ff6c7b1bb198949b430f68d28df1fddc1062e",
+  "runtime_source_sha256": "b089affae0cd7a43ef4ac4bc3272f74880e096707e490eed4aaa6d4a80370c21",
+  "final51_policy": "same chosen shared config, perpoint conditional trainLOO routing recomputed on51; same global blend weights; no independent validation",
+  "stator_airgap_final51_baseline": "original42 baseline retained, only new RBF branch trained on51; rotor baseline is existing51",
+  "test_labels_read": false
+}

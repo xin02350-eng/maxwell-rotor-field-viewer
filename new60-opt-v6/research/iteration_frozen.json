@@ -1,0 +1,135 @@
+{
+  "version": "V6_RBF",
+  "choices_sha256": "82ba13fb85430fa56e386344f864cc9b2695b6ec8588dcd21c1b3d4d287138cd",
+  "selected_models": [
+    {
+      "path": "rotor_signed/shared.npz",
+      "sha256": "e9c18891377a2d153968924b98505596d99a6d4f5d435eb30525a93769409d78",
+      "scope": "original42",
+      "region": "rotor"
+    },
+    {
+      "path": "rotor_signed/pointLOO.npz",
+      "sha256": "853a3e05e49e4c99fd030daa8b6aa456016a59e13c0fd9db3022147613aa16a4",
+      "scope": "original42",
+      "region": "rotor"
+    },
+    {
+      "path": "final51/rotor/shared.npz",
+      "sha256": "3d4b2b19de8846d5fe6214d962e76bc230423862316e6775b7b3a8e57b0ebb74",
+      "scope": "final51",
+      "region": "rotor"
+    },
+    {
+      "path": "final51/rotor/pointLOO.npz",
+      "sha256": "c1dd4e7d628aa93581df29ecc23b140595f20cccb12bd85725175f70eeadccbf",
+      "scope": "final51",
+      "region": "rotor"
+    },
+    {
+      "path": "stator_signed/shared.npz",
+      "sha256": "29dfefe66e1a622c513e1b62fbfe1cd35f47a48b5d7c0d7fe6426d13e399614e",
+      "scope": "original42",
+      "region": "stator"
+    },
+    {
+      "path": "stator_signed/pointLOO.npz",
+      "sha256": "085d5187c89cde8943fb35d4ce8c0b7645c4b9ed424319bac60748ab79f24129",
+      "scope": "original42",
+      "region": "stator"
+    },
+    {
+      "path": "final51/stator/shared.npz",
+      "sha256": "5b9937f262397fb4498041a0eabc02745e3c3a82ed9e701ab6d208a3d5810b8d",
+      "scope": "final51",
+      "region": "stator"
+    },
+    {
+      "path": "final51/stator/pointLOO.npz",
+      "sha256": "a30e8eaafca9ad54e5137cc487a10d262487c3f3d29c32f1ecfd6901b3dd87ac",
+      "scope": "final51",
+      "region": "stator"
+    },
+    {
+      "path": "airgap_Br/shared.npz",
+      "sha256": "625d501c8736eacc14b3ba3a8cd70a69c191455b54db49d36fda267e136869f2",
+      "scope": "original42",
+      "region": "airgap"
+    },
+    {
+      "path": "final51/airgap/shared.npz",
+      "sha256": "fdf0af0b670cff117c00366775ca80d02d5d872a53cf06f732dff9145c92d0c6",
+      "scope": "final51",
+      "region": "airgap"
+    }
+  ],
+  "sources": [
+    {
+      "path": "rbf_pointwise.py",
+      "sha256": "95c81342e470d64b7a5a982e908ff6c7b1bb198949b430f68d28df1fddc1062e"
+    },
+    {
+      "path": "rbf_neural.py",
+      "sha256": "9fd6ecc628aaaef4519adb088be39d9211c7422cb2de9827795905d9d0e5e084"
+    },
+    {
+      "path": "inference_v6.py",
+      "sha256": "b089affae0cd7a43ef4ac4bc3272f74880e096707e490eed4aaa6d4a80370c21"
+    },
+    {
+      "path": "refit51.py",
+      "sha256": "8f8295b7a0a4a303e64ee0dfb97a6032fa4b700530745c3ce73e6375b7e52391"
+    },
+    {
+      "path": "freeze_and_evaluate_v6.py",
+      "sha256": "a34f93dbd936012ff6004f22236972374236eb504ad5cff41d5785d8f0173fa3"
+    }
+  ],
+  "rbf_candidate_count": 420,
+  "actual_RBF_neural_gradient_runs": 4,
+  "neural_result_sha256": "4a4c87d308111f726bc3705e80450c4327a07fc42281ad09669eb3f5e4f0d460",
+  "neural_best_validation": {
+    "number": 2,
+    "configuration": {
+      "hidden": 16,
+      "lambda_signed": 0.02,
+      "adam_steps": 1200,
+      "lr": 0.002,
+      "center_lr": 0.001,
+      "head_prior": 0.0001,
+      "seed": 42
+    },
+    "best_step": 50,
+    "validation": {
+      "relative_L2_pct": 2.4965793766731936,
+      "rmse_T": 0.02966361612523374,
+      "mae_T": 0.008950026536191032,
+      "max_abs_T": 0.7357277404067655,
+      "max_abs_indices": [
+        8,
+        53,
+        1359
+      ],
+      "worst_case_rmse_T": 0.03907783975033738
+    },
+    "model_sha256": "0fec6d76d1d0941ae8f1397437e1dc421231c491911e9bf04f58d51e8851c39f",
+    "source_sha256": "9fd6ecc628aaaef4519adb088be39d9211c7422cb2de9827795905d9d0e5e084",
+    "actual_gradient_NN_training": true
+  },
+  "test_case_ids": [
+    2,
+    4,
+    12,
+    16,
+    17,
+    18,
+    38,
+    41,
+    58
+  ],
+  "test_status": "Already seen in V1-V5, retrospective reused-test, not fresh blind",
+  "selection": "RBF recipes fixed by full original validation9 before test loading; new Gaussian NN diagnostic comparison does not replace these RBF recipes",
+  "fitting_models": "V3/V5 full60 fitting unchanged; no full60 fitting labels used in V6",
+  "test_labels_used_for_training": false,
+  "test_labels_used_for_selection": false
+}
